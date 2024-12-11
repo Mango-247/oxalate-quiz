@@ -315,7 +315,87 @@
     "oxalate": "1"
   },
   {
-    "food": "Black Bean, Dwarf Bean, Field Bean, Flageolet Bean, French Bean, Garden Bean, Green Bean, Haricot, Haricot Bean, Haricot Vert, Kidney Bean, Navy Bean, Pop Bean, Popping Bean, Snap Bean, String Bean, Wax Bean",
+    "food": "Black Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Dwarf Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Field Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Flageolet Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "French Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Garden Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Green Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Haricot",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Haricot Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Haricot Vert",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Kidney Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Navy Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Pop Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Popping Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Snap Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "String Bean",
+    "quantity": "31.2 mg",
+    "oxalate": "31"
+  },
+  {
+    "food": "Wax Bean",
     "quantity": "31.2 mg",
     "oxalate": "31"
   },
