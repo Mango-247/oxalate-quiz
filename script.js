@@ -105,7 +105,7 @@ function updateButtons() {
             addButton.style.display = playerRows.length < 8 ? 'inline-block' : 'none';
             removeButton.style.display = playerRows.length > 1 ? 'inline-block' : 'none';
         } else {
-            // Hide all buttons for non-last rows
+
             addButton.style.display = 'none';
             if (removeButton) {
                 removeButton.style.display = 'none';
@@ -113,7 +113,6 @@ function updateButtons() {
         }
     });
 }
-
 
 function findClosestPlayer() {
     const inputs = document.querySelectorAll('.guess-input');
@@ -158,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentFood = getRandomFood();
         displayFood(currentFood);
 
-        // Enforce character limit on the first player label
         firstPlayerLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
 
         rerollButton.addEventListener('click', () => {
@@ -167,15 +165,15 @@ document.addEventListener('DOMContentLoaded', () => {
             currentFood = getRandomFood();
             displayFood(currentFood);
             unlockInputs();
+            submitButton.disabled = false; 
         });
 
         submitButton.addEventListener('click', () => {
             lockInputs();
             resultDiv.textContent = `Actual content: ${currentFood.oxalate} mg`;
             findClosestPlayer();
-            submitButton.disabled = true; // Disable the submit button when the answer is shown
+            submitButton.disabled = true; 
         });
-
 
         input.addEventListener('input', updateSubmitButtonState);
 
