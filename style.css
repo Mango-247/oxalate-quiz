@@ -103,32 +103,32 @@ body {
 
 
 .add-button, .remove-button {
-    width: 36px; /* Adjust size for consistency */
-    height: 36px; /* Ensure equal dimensions for a perfect circle */
+    width: 32px; 
+    height: 32px; 
     border: none;
-    border-radius: 50%; /* Make the buttons circular */
-    font-size: 16px; /* Adjust for readability */
+    border-radius: 50%; 
+    font-size: 14px; 
     font-weight: bold;
-    display: inline-flex; /* Use flex for alignment */
+    display: flex; 
     justify-content: center;
     align-items: center;
     background-color: red;
     color: white;
-    margin-left: 5px; /* Add some spacing */
+    margin-left: 5px; 
+    box-sizing: border-box;
     text-align: center;
-    box-sizing: border-box; /* Include padding and border in dimensions */
 }
 
 .add-button:hover, .remove-button:hover {
     background-color: darkred;
 }
 
-/* Mobile-Specific Adjustments */
+
 @media (max-width: 768px) {
     .add-button, .remove-button {
-        width: 32px; /* Slightly smaller size for mobile */
+        width: 32px;
         height: 32px;
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 14px; 
         margin-left: 4px;
     }
 }
