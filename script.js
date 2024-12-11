@@ -119,6 +119,7 @@ function updateButtons() {
 function findClosestPlayer() {
     const inputs = document.querySelectorAll('.guess-input');
     const playerLabels = document.querySelectorAll('.player-label');
+    console.log(`Player labels: ${playerLabels}`)
     const closestPlayerDiv = document.getElementById('closest-player');
 
     let closestPlayer = null;
