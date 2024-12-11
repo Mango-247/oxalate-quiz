@@ -66,7 +66,7 @@ function addPlayerInput() {
         const newInput = document.createElement('input');
         newInput.type = 'number';
         newInput.classList.add('guess-input');
-        newInput.placeholder = 'Enter oxalate content (mg)';
+        newInput.placeholder = 'Enter guess (mg)';
         newInput.disabled = inputsDisabled;
 
 
