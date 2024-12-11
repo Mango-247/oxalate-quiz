@@ -101,10 +101,18 @@ function updateButtons() {
         const addButton = row.querySelector('.add-button');
         const removeButton = row.querySelector('.remove-button');
 
-        addButton.style.display = index === playerRows.length - 1 && playerRows.length < 8 ? 'inline-block' : 'none';
-        removeButton.style.display = playerRows.length > 1 ? 'inline-block' : 'none';
+        if (index === playerRows.length - 1) {
+            // Show buttons only for the last input
+            addButton.style.display = playerRows.length < 8 ? 'inline-block' : 'none';
+            removeButton.style.display = playerRows.length > 1 ? 'inline-block' : 'none';
+        } else {
+            // Hide buttons for other rows
+            addButton.style.display = 'none';
+            removeButton.style.display = 'none';
+        }
     });
 }
+
 
 function findClosestPlayer() {
     const inputs = document.querySelectorAll('.guess-input');
