@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         submitButton.addEventListener('click', () => {
             lockInputs();
-            resultDiv.textContent = `Actual content: ${currentFood.oxalate} mg`;
+            resultDiv.textContent = `Actual content: ${currentFood.oxalate}`;
             findClosestPlayer();
             submitButton.disabled = true; 
         });
