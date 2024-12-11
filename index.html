@@ -10,9 +10,16 @@
     <div class="container">
         <button id="reroll" class="reroll-button">Reroll food</button>
         <div id="food-name" class="food-name"></div>
-        <input type="text" id="guess-input" placeholder="Enter oxalate content (mg)" />
+        <div id="players-container" class="players-container">
+            <div class="player-row">
+                <div class="player-label" contenteditable="true">P1</div>
+                <input type="text" class="guess-input" placeholder="Enter oxalate content (mg)" />
+                <button class="add-button">+</button>
+            </div>
+        </div>
         <button id="submit" class="submit-button">Submit</button>
         <div id="result" class="result"></div>
+        <div id="closest-player" class="closest-player"></div>
     </div>
     <script src="script.js"></script>
 </body>
