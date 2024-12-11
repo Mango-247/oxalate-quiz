@@ -10,19 +10,25 @@ function getRandomFood() {
     return foods[randomIndex];
 }
 
+function displayFood(food) {
+    const foodNameDiv = document.getElementById('food-name');
+    foodNameDiv.textContent = food.food;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     fetchFoods().then(() => {
         const rerollButton = document.getElementById('reroll');
         const submitButton = document.getElementById('submit');
-        const foodNameDiv = document.getElementById('food-name');
         const resultDiv = document.getElementById('result');
-        let currentFood = null;
+        let currentFood = getRandomFood();
+
+        // Display a food on page load
+        displayFood(currentFood);
 
         rerollButton.addEventListener('click', () => {
             resultDiv.textContent = ''; // Clear previous result
-            const food = getRandomFood();
-            currentFood = food;
-            foodNameDiv.textContent = food.food;
+            currentFood = getRandomFood();
+            displayFood(currentFood);
         });
 
         submitButton.addEventListener('click', () => {
@@ -36,4 +42,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
