@@ -110,7 +110,7 @@
     "oxalate": "5"
   },
   {
-    "food": "Artificial Sweetner <span class=\"food_alt small\">[Artificial Sweetener]</span>",
+    "food": "Artificial Sweetner",
     "quantity": "1 mg",
     "oxalate": "1"
   },
@@ -370,7 +370,7 @@
     "oxalate": "1"
   },
   {
-    "food": "Bok Choy (Chinese Cabbage) <span class=\"food_alt small\">[Bok Choi, Pak Choy, Pak Choi]</span>",
+    "food": "Bok Choy",
     "quantity": "1 mg",
     "oxalate": "1"
   },
@@ -815,7 +815,7 @@
     "oxalate": "3"
   },
   {
-    "food": "Chickpea, Garbanzo <span class=\"food_alt small\">[Chick Pea]</span>",
+    "food": "Chickpea, Garbanzo",
     "quantity": "2.4 mg",
     "oxalate": "2"
   },
@@ -1850,17 +1850,17 @@
     "oxalate": "23"
   },
   {
-    "food": "Lean Hamburg (75%) <span class=\"food_alt small\">[Hamburger]</span>",
+    "food": "Lean Hamburg (75%) ",
     "quantity": "0 mg",
     "oxalate": "0"
   },
   {
-    "food": "Lean Hamburg (85%) <span class=\"food_alt small\">[Hamburger]</span>",
+    "food": "Lean Hamburg (85%) ",
     "quantity": "0 mg",
     "oxalate": "0"
   },
   {
-    "food": "Lean Hamburg (90%) <span class=\"food_alt small\">[Hamburger]</span>",
+    "food": "Lean Hamburg (90%) ",
     "quantity": "1 mg",
     "oxalate": "1"
   },
@@ -2745,7 +2745,7 @@
     "oxalate": "5"
   },
   {
-    "food": "Poppyseed <span class=\"food_alt small\">[Poppy Seed]</span>",
+    "food": "Poppyseed",
     "quantity": "1620 mg",
     "oxalate": "1620"
   },
@@ -3110,7 +3110,7 @@
     "oxalate": "3"
   },
   {
-    "food": "Sherbert <span class=\"food_alt small\">[Sherbet]</span>",
+    "food": "Sherbert",
     "quantity": "0 mg",
     "oxalate": "0"
   },
@@ -3350,7 +3350,7 @@
     "oxalate": "1"
   },
   {
-    "food": "Sweetened Instant Iced Tea <span class=\"food_alt small\">[Ice Tea]</span>",
+    "food": "Sweetened Instant Iced Tea",
     "quantity": "0 mg",
     "oxalate": "0"
   },
@@ -3615,7 +3615,7 @@
     "oxalate": "0"
   },
   {
-    "food": "Waterchestnuts <span class=\"food_alt small\">[Water Chestnuts]</span>",
+    "food": "Waterchestnuts",
     "quantity": "0 mg",
     "oxalate": "0"
   },
