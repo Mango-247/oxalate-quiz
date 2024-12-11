@@ -133,7 +133,7 @@ function findClosestPlayer() {
         const label = playerLabels[index]?.textContent || `Player ${index + 1}`;
         console.log(`Player ${index + 1}: Guess=${guess}, Label=${label}`);
 
-        if (!isNaN(guess)) {
+        //if (!isNaN(guess)) {
             const diff = Math.abs(currentFood.oxalate - guess);
             if (diff < closestDiff) {
                 closestPlayer = label;
@@ -142,7 +142,7 @@ function findClosestPlayer() {
             } else if (diff === closestDiff) {
                 isTie = true;
             }
-        }
+       // }
     });
 
     if (!currentFood) {
