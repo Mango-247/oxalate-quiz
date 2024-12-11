@@ -87,7 +87,7 @@ body {
 }
 
 .guess-input:focus {
-    outline: 2px solid black;
+    outline: 1px solid black;
     outline-offset: 0; 
 }
 
