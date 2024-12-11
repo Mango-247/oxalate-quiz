@@ -88,8 +88,8 @@ body {
 }
 
 .guess-input:focus {
-    outline: 2px solid black; /* Emphasized black outline on focus */
-    outline-offset: 0; /* Ensure no offset from the element's edge */
+    outline: 2px solid black;
+    outline-offset: 0; 
 }
 
 .add-button, .remove-button {
