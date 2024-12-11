@@ -36,6 +36,12 @@ body {
     background-color: darkred;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .reroll-button:hover, .submit-button:hover {
+        background-color: red;
+    }
+}
+
 .food-name {
     font-size: 18px; 
     font-weight: bold;
