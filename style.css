@@ -43,6 +43,13 @@ body {
     margin: 20px 0;
 }
 
+.quantity {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0;
+}
+
 .players-container {
     display: flex;
     flex-direction: column;
