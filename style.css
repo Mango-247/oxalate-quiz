@@ -89,9 +89,9 @@ body {
 }
 
 .guess-input:focus {
-    outline: none; /* Remove focus outline */
-    border: 1px solid black; /* Keep border black when focused */
-    border-radius: 5px; /* Retain rounded corners */
+    outline: none; 
+    border: 1px solid red;
+    border-radius: 5px;
 }
 
 
