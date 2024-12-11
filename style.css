@@ -47,27 +47,27 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .player-row {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
     margin: 5px 0;
 }
 
 .player-label {
-    width: 50px;
     background-color: blue;
     color: white;
     text-align: center;
     font-weight: bold;
     border-radius: 5px;
     margin-right: 5px;
-    padding: 5px;
+    padding: 5px 10px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    max-width: fit-content;
 }
 
 .guess-input {
@@ -75,6 +75,7 @@ body {
     padding: 10px;
     width: 200px;
     font-size: 16px;
+    text-align: center;
 }
 
 .add-button, .remove-button {
