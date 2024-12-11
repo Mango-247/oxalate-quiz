@@ -103,11 +103,11 @@ body {
 
 
 .add-button, .remove-button {
-    width: 22.5px; 
-    height: 22.5px; 
+    width: 40px; /* Ensure equal width and height */
+    height: 40px; 
     border: none;
-    border-radius: 50%;
-    font-size: 13.5px; 
+    border-radius: 50%; /* Ensure perfect circles */
+    font-size: 16px; /* Adjust size for better legibility */
     font-weight: bold;
     cursor: pointer;
     display: flex;
@@ -116,7 +116,14 @@ body {
     background-color: red;
     color: white;
     margin-left: 3.75px; 
+    text-align: center; /* Center the text */
+    line-height: 1; /* Prevent extra space affecting alignment */
 }
+
+.add-button:hover, .remove-button:hover {
+    background-color: darkred;
+}
+
 
 .add-button:hover, .remove-button:hover {
     background-color: darkred;
