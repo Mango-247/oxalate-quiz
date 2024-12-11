@@ -55,6 +55,8 @@ function addPlayerInput() {
     if (currentPlayers < 8) {
         const newRow = document.createElement('div');
         newRow.classList.add('player-row');
+        newRow.style.display = 'flex'; // Ensure the row uses flex layout
+        newRow.style.alignItems = 'center'; // Align items centrally
 
         const newLabel = document.createElement('div');
         newLabel.classList.add('player-label');
@@ -62,13 +64,11 @@ function addPlayerInput() {
         newLabel.textContent = `Player ${currentPlayers + 1}`;
         newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
 
-        // Updated input element type to 'number'
         const newInput = document.createElement('input');
         newInput.type = 'number';
         newInput.classList.add('guess-input');
         newInput.placeholder = 'Enter guess (mg)';
         newInput.disabled = inputsDisabled;
-
 
         const addButton = document.createElement('button');
         addButton.classList.add('add-button');
@@ -87,6 +87,7 @@ function addPlayerInput() {
 
         newInput.addEventListener('input', updateSubmitButtonState);
 
+        // Append elements
         newRow.appendChild(newLabel);
         newRow.appendChild(newInput);
         newRow.appendChild(addButton);
@@ -96,6 +97,7 @@ function addPlayerInput() {
         updateButtons();
     }
 }
+
 
 
 function updateButtons() {
