@@ -119,19 +119,24 @@ function updateButtons() {
 function findClosestPlayer() {
     const inputs = document.querySelectorAll('.guess-input');
     const playerLabels = document.querySelectorAll('.player-label');
-    console.log(`Player labels: ${playerLabels}`)
     const closestPlayerDiv = document.getElementById('closest-player');
 
     let closestPlayer = null;
     let closestDiff = Infinity;
     let isTie = false;
 
+    console.log("Current Food Oxalate: ", currentFood ? currentFood.oxalate : 'None');
+    console.log("Player Inputs and Labels:");
+
     inputs.forEach((input, index) => {
         const guess = parseFloat(input.value);
+        const label = playerLabels[index]?.textContent || `Player ${index + 1}`;
+        console.log(`Player ${index + 1}: Guess=${guess}, Label=${label}`);
+
         if (!isNaN(guess)) {
             const diff = Math.abs(currentFood.oxalate - guess);
             if (diff < closestDiff) {
-                closestPlayer = playerLabels[index].textContent;
+                closestPlayer = label;
                 closestDiff = diff;
                 isTie = false;
             } else if (diff === closestDiff) {
@@ -140,14 +145,24 @@ function findClosestPlayer() {
         }
     });
 
+    if (!currentFood) {
+        closestPlayerDiv.textContent = "No food selected!";
+        console.error("Error: No currentFood available to compare guesses.");
+        return;
+    }
+
     if (isTie) {
         closestPlayerDiv.textContent = "It's a tie!";
+        console.log("Result: Tie between players.");
     } else if (closestDiff === 0) {
         closestPlayerDiv.textContent = `${closestPlayer} got it right!`;
+        console.log("Result: Exact match by", closestPlayer);
     } else {
         closestPlayerDiv.textContent = `${closestPlayer} was the closest!`;
+        console.log("Result: Closest player is", closestPlayer, "with difference of", closestDiff);
     }
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchFoods().then(() => {
