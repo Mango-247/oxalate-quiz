@@ -62,11 +62,17 @@ function addPlayerInput() {
         newLabel.textContent = `Player ${currentPlayers + 1}`;
         newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
 
+        // Updated input element type to 'number'
         const newInput = document.createElement('input');
-        newInput.type = 'text';
+        newInput.type = 'number';
         newInput.classList.add('guess-input');
         newInput.placeholder = 'Enter oxalate content (mg)';
         newInput.disabled = inputsDisabled;
+
+        newInput.min = "0"; 
+        newInput.max = "10000"; 
+        newInput.step = "0.1";
+
 
         const addButton = document.createElement('button');
         addButton.classList.add('add-button');
@@ -94,6 +100,7 @@ function addPlayerInput() {
         updateButtons();
     }
 }
+
 
 function updateButtons() {
     const container = document.getElementById('players-container');
