@@ -78,6 +78,17 @@ function addPlayerInput() {
         removeButton.classList.add('remove-button');
         removeButton.textContent = '-';
 
+        // Adjust text positioning on mobile
+        if (isMobileDevice()) {
+            console.log("Mobile")
+            addButton.style.position = 'relative';
+            addButton.style.left = '-5px'; // Shift text 5px to the left
+            removeButton.style.position = 'relative';
+            removeButton.style.left = '-2px'; // Shift text 2px to the left
+        } else {
+            console.log("Not mobile")
+        }
+
         addButton.addEventListener('click', addPlayerInput);
         removeButton.addEventListener('click', () => {
             newRow.remove();
@@ -97,6 +108,12 @@ function addPlayerInput() {
         updateButtons();
     }
 }
+
+// Helper function to detect if the device is mobile
+function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
 
 
 
