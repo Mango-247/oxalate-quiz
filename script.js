@@ -57,7 +57,7 @@ function addPlayerInput() {
         const newLabel = document.createElement('div');
         newLabel.classList.add('player-label');
         newLabel.contentEditable = "true";
-        newLabel.textContent = `P${currentPlayers + 1}`;
+        newLabel.textContent = `Player ${currentPlayers + 1}`;
         newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
 
         const newInput = document.createElement('input');
