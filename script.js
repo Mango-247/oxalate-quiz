@@ -107,7 +107,9 @@ function updateButtons() {
         } else {
             // Hide all buttons for non-last rows
             addButton.style.display = 'none';
-            removeButton.style.display = 'none';
+            if (removeButton) {
+                removeButton.style.display = 'none';
+            }
         }
     });
 }
