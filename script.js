@@ -1,5 +1,6 @@
 let foods = [];
 let currentFood = null;
+let inputsDisabled = false;
 
 async function fetchFoods() {
     const response = await fetch('foods.json');
@@ -19,11 +20,20 @@ function displayFood(food) {
 function lockInputs() {
     const inputs = document.querySelectorAll('.guess-input');
     inputs.forEach(input => input.disabled = true);
+    inputsDisabled = true;
 }
 
 function unlockInputs() {
     const inputs = document.querySelectorAll('.guess-input');
     inputs.forEach(input => input.disabled = false);
+    inputsDisabled = false;
+}
+
+function updateSubmitButtonState() {
+    const inputs = document.querySelectorAll('.guess-input');
+    const submitButton = document.getElementById('submit');
+    const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
+    submitButton.disabled = !allFilled;
 }
 
 function addPlayerInput() {
@@ -33,16 +43,17 @@ function addPlayerInput() {
     if (currentPlayers < 8) {
         const newRow = document.createElement('div');
         newRow.classList.add('player-row');
-        
+
         const newLabel = document.createElement('div');
         newLabel.classList.add('player-label');
         newLabel.contentEditable = "true";
         newLabel.textContent = `P${currentPlayers + 1}`;
-        
+
         const newInput = document.createElement('input');
         newInput.type = 'text';
         newInput.classList.add('guess-input');
         newInput.placeholder = 'Enter oxalate content (mg)';
+        newInput.disabled = inputsDisabled;
 
         const addButton = document.createElement('button');
         addButton.classList.add('add-button');
@@ -56,7 +67,10 @@ function addPlayerInput() {
         removeButton.addEventListener('click', () => {
             newRow.remove();
             updateButtons();
+            updateSubmitButtonState();
         });
+
+        newInput.addEventListener('input', updateSubmitButtonState);
 
         newRow.appendChild(newLabel);
         newRow.appendChild(newInput);
@@ -118,12 +132,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const rerollButton = document.getElementById('reroll');
         const submitButton = document.getElementById('submit');
         const resultDiv = document.getElementById('result');
-        currentFood = getRandomFood();
+        const input = document.querySelector('.guess-input');
 
+        currentFood = getRandomFood();
         displayFood(currentFood);
 
         rerollButton.addEventListener('click', () => {
-            resultDiv.textContent = ''; // Clear previous result
+            resultDiv.textContent = '';
             document.getElementById('closest-player').textContent = '';
             currentFood = getRandomFood();
             displayFood(currentFood);
@@ -136,6 +151,10 @@ document.addEventListener('DOMContentLoaded', () => {
             findClosestPlayer();
         });
 
+        input.addEventListener('input', updateSubmitButtonState);
+
         document.querySelector('.add-button').addEventListener('click', addPlayerInput);
+
+        updateSubmitButtonState();
     });
 });
