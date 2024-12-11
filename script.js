@@ -144,9 +144,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const submitButton = document.getElementById('submit');
         const resultDiv = document.getElementById('result');
         const input = document.querySelector('.guess-input');
+        const firstPlayerLabel = document.querySelector('.player-label');
 
         currentFood = getRandomFood();
         displayFood(currentFood);
+
+        // Enforce character limit on the first player label
+        firstPlayerLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
 
         rerollButton.addEventListener('click', () => {
             resultDiv.textContent = '';
