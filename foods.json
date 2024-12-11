@@ -110,7 +110,7 @@
     "oxalate": "5 mg"
   },
   {
-    "food": "Artificial Sweetner <span class=\"food_alt small\">[Artificial Sweetener]</span>",
+    "food": "Artificial Sweetner",
     "quantity": "1 packet",
     "oxalate": "1 mg"
   },
@@ -315,7 +315,87 @@
     "oxalate": "0.5 mg"
   },
   {
-    "food": "Black Bean, Dwarf Bean, Field Bean, Flageolet Bean, French Bean, Garden Bean, Green Bean, Haricot, Haricot Bean, Haricot Vert, Kidney Bean, Navy Bean, Pop Bean, Popping Bean, Snap Bean, String Bean, Wax Bean",
+    "food": "Black Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Dwarf Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Field Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Flageolet Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "French Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Garden Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Green Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Haricot",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Haricot Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Haricot Vert",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Kidney Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Navy Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Pop Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Popping Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Snap Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "String Bean",
+    "quantity": "100 g",
+    "oxalate": "31.2 mg"
+  },
+  {
+    "food": "Wax Bean",
     "quantity": "100 g",
     "oxalate": "31.2 mg"
   },
@@ -370,7 +450,7 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Bok Choy (Chinese Cabbage) <span class=\"food_alt small\">[Bok Choi, Pak Choy, Pak Choi]</span>",
+    "food": "Bok Choy",
     "quantity": "1 cup, raw",
     "oxalate": "1 mg"
   },
@@ -815,7 +895,7 @@
     "oxalate": "3 mg"
   },
   {
-    "food": "Chickpea, Garbanzo <span class=\"food_alt small\">[Chick Pea]</span>",
+    "food": "Chickpea, Garbanzo",
     "quantity": "100 g",
     "oxalate": "2.4 mg"
   },
@@ -1850,17 +1930,17 @@
     "oxalate": "23 mg"
   },
   {
-    "food": "Lean Hamburg (75%) <span class=\"food_alt small\">[Hamburger]</span>",
+    "food": "Lean Hamburger (75%)",
     "quantity": "3 oz",
     "oxalate": "0 mg"
   },
   {
-    "food": "Lean Hamburg (85%) <span class=\"food_alt small\">[Hamburger]</span>",
+    "food": "Lean Hamburger (85%)",
     "quantity": "3 oz",
     "oxalate": "0 mg"
   },
   {
-    "food": "Lean Hamburg (90%) <span class=\"food_alt small\">[Hamburger]</span>",
+    "food": "Lean Hamburger (90%)",
     "quantity": "3 oz",
     "oxalate": "1 mg"
   },
@@ -2745,7 +2825,7 @@
     "oxalate": "5 mg"
   },
   {
-    "food": "Poppyseed <span class=\"food_alt small\">[Poppy Seed]</span>",
+    "food": "Poppyseed",
     "quantity": "100 g",
     "oxalate": "1620 mg"
   },
@@ -3110,7 +3190,7 @@
     "oxalate": "3 mg"
   },
   {
-    "food": "Sherbert <span class=\"food_alt small\">[Sherbet]</span>",
+    "food": "Sherbert",
     "quantity": "1/2 cup",
     "oxalate": "0 mg"
   },
@@ -3350,7 +3430,7 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Sweetened Instant Iced Tea <span class=\"food_alt small\">[Ice Tea]</span>",
+    "food": "Sweetened Instant Iced Tea",
     "quantity": "1 cup",
     "oxalate": "0 mg"
   },
@@ -3615,7 +3695,7 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Waterchestnuts <span class=\"food_alt small\">[Water Chestnuts]</span>",
+    "food": "Waterchestnuts",
     "quantity": "4 waterchestnuts",
     "oxalate": "0 mg"
   },
