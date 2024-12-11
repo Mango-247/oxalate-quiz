@@ -55,8 +55,8 @@ function addPlayerInput() {
     if (currentPlayers < 8) {
         const newRow = document.createElement('div');
         newRow.classList.add('player-row');
-        newRow.style.display = 'flex'; // Ensure the row uses flex layout
-        newRow.style.alignItems = 'center'; // Align items centrally
+        newRow.style.display = 'flex'; 
+        newRow.style.alignItems = 'center'; 
 
         const newLabel = document.createElement('div');
         newLabel.classList.add('player-label');
@@ -79,7 +79,6 @@ function addPlayerInput() {
 
         newInput.addEventListener('input', updateSubmitButtonState);
 
-        // Append elements
         newRow.appendChild(newLabel);
         newRow.appendChild(newInput);
         newRow.appendChild(addButton);
@@ -90,31 +89,28 @@ function addPlayerInput() {
     }
 }
 
-// Helper function to create buttons
 function createButton(text, className, onClick) {
     const button = document.createElement('button');
     button.classList.add(className);
     button.textContent = text;
-    button.style.width = '36px'; // Match CSS for static button
-    button.style.height = '36px'; // Match CSS for static button
+    button.style.width = '36px'; 
+    button.style.height = '36px'; 
     button.style.display = 'flex';
     button.style.justifyContent = 'center';
     button.style.alignItems = 'center';
-    button.style.fontSize = '16px'; // Match static button font size
+    button.style.fontSize = '16px'; 
     button.style.fontWeight = 'bold';
     button.style.border = 'none';
-    button.style.borderRadius = '50%'; // Match static button shape
+    button.style.borderRadius = '50%'; 
     button.style.backgroundColor = 'red';
     button.style.color = 'white';
-    button.style.padding = '0'; // Ensure no extra padding
+    button.style.padding = '0'; 
     button.style.textAlign = 'center';
     button.style.boxSizing = 'border-box';
+    button.style.cursor = 'pointer'; 
     button.addEventListener('click', onClick);
     return button;
 }
-
-
-
 
 function updateButtons() {
     const container = document.getElementById('players-container');
@@ -146,7 +142,6 @@ function findClosestPlayer() {
     let closestDiff = Infinity;
     let isTie = false;
 
-    // Ensure oxalate value is a clean number
     const cleanOxalate = parseFloat(String(currentFood.oxalate).replace(/[^\d.-]/g, ''));
 
     inputs.forEach((input, index) => {
@@ -171,12 +166,6 @@ function findClosestPlayer() {
         closestPlayerDiv.textContent = `${closestPlayer} was the closest!`;
     }
 }
-
-
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchFoods().then(() => {
