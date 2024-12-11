@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <title>Oxalate Content Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        input, button, .player-label {
+            font-size: 16px;
+        }
+        html, body {
+            touch-action: manipulation;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -22,6 +31,16 @@
         <div id="result" class="result"></div>
         <div id="closest-player" class="closest-player"></div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener('gesturestart', function (event) {
+            event.preventDefault();
+        });
+        document.addEventListener('gesturechange', function (event) {
+            event.preventDefault();
+        });
+        document.addEventListener('gestureend', function (event) {
+            event.preventDefault();
+        });
+    </script>
 </body>
 </html>
