@@ -2,7 +2,7 @@ let foods = [];
 let currentFood = null;
 let inputsDisabled = false;
 
-//async function fetchFoods() {
+async function fetchFoods() {
     const response = await fetch('foods.json');
     foods = await response.json();
 }
