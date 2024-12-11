@@ -103,21 +103,24 @@ body {
 
 
 .add-button, .remove-button {
-    width: 32px; 
-    height: 32px; 
+    width: 36px; /* Equal width and height for a perfect circle */
+    height: 36px;
     border: none;
-    border-radius: 50%; 
-    font-size: 14px; 
+    border-radius: 50%; /* Always circular */
+    font-size: 16px; /* Consistent font size */
     font-weight: bold;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Flexbox for centering text */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
     background-color: red;
     color: white;
-    margin-left: 5px; 
-    box-sizing: border-box;
-    text-align: center;
+    margin-left: 5px; /* Maintain spacing */
+    box-sizing: border-box; /* Ensure dimensions include padding and border */
+    text-align: center; /* Explicit text centering */
+    line-height: normal; /* Reset line height to avoid extra spacing */
+    padding: 0; /* Remove any default padding */
 }
+
 
 .add-button:hover, .remove-button:hover {
     background-color: darkred;
