@@ -125,7 +125,7 @@ function findClosestPlayer() {
     let closestDiff = Infinity;
     let isTie = false;
 
-    // Debug: Check the current food's oxalate value
+    // Ensure currentFood is properly initialized
     if (!currentFood || typeof currentFood.oxalate !== 'number') {
         console.error("Error: currentFood is not properly initialized or does not have a valid 'oxalate' property.");
         closestPlayerDiv.textContent = "Error: No food data available!";
@@ -137,12 +137,17 @@ function findClosestPlayer() {
     console.log("Player Inputs and Labels:");
 
     inputs.forEach((input, index) => {
-        const guess = parseFloat(input.value);
+        const guess = parseFloat(input.value.trim());
         const label = playerLabels[index]?.textContent || `Player ${index + 1}`;
         console.log(`Player ${index + 1}: Guess=${guess}, Label=${label}`);
 
+        // Validate the guess
         if (!isNaN(guess)) {
             const diff = Math.abs(currentFood.oxalate - guess);
+
+            // Debugging details for each comparison
+            console.log(`Player ${label} Difference:`, diff);
+
             if (diff < closestDiff) {
                 closestPlayer = label;
                 closestDiff = diff;
@@ -155,8 +160,8 @@ function findClosestPlayer() {
         }
     });
 
-    // Handle results based on the findings
-    if (!closestPlayer && inputs.length > 0) {
+    // Handle results based on findings
+    if (!closestPlayer) {
         closestPlayerDiv.textContent = "No valid guesses made!";
         console.warn("No valid guesses were submitted.");
     } else if (isTie) {
@@ -165,11 +170,12 @@ function findClosestPlayer() {
     } else if (closestDiff === 0) {
         closestPlayerDiv.textContent = `${closestPlayer} got it right!`;
         console.log("Result: Exact match by", closestPlayer);
-    } else if (closestPlayer) {
+    } else {
         closestPlayerDiv.textContent = `${closestPlayer} was the closest!`;
         console.log("Result: Closest player is", closestPlayer, "with difference of", closestDiff);
     }
 }
+
 
 
 
