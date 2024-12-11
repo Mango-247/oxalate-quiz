@@ -125,27 +125,18 @@ function findClosestPlayer() {
     let closestDiff = Infinity;
     let isTie = false;
 
-    // Debugging: Ensure currentFood is valid
-    if (!currentFood || typeof currentFood.oxalate !== 'number') {
-        console.error("Error: currentFood is null or does not have a valid 'oxalate' property.");
-        closestPlayerDiv.textContent = "Error: Food data is unavailable.";
-        return;
-    }
-
-    console.log("Current Food Oxalate:", currentFood.oxalate);
+    console.log("Current Food Oxalate: ", currentFood ? currentFood.oxalate : 'None');
+    console.log("Player Inputs and Labels:");
 
     inputs.forEach((input, index) => {
         const guess = parseFloat(input.value);
-
-        // Debugging: Log each player's input
-        console.log(`Player ${index + 1} guessed: ${guess}`);
+        const label = playerLabels[index]?.textContent || `Player ${index + 1}`;
+        console.log(`Player ${index + 1}: Guess=${guess}, Label=${label}`);
 
         if (!isNaN(guess)) {
             const diff = Math.abs(currentFood.oxalate - guess);
-            console.log(`Difference for Player ${index + 1}:`, diff);
-
             if (diff < closestDiff) {
-                closestPlayer = playerLabels[index].textContent;
+                closestPlayer = label;
                 closestDiff = diff;
                 isTie = false;
             } else if (diff === closestDiff) {
@@ -154,19 +145,24 @@ function findClosestPlayer() {
         }
     });
 
-    // Debugging: Log final results
-    console.log("Closest Player:", closestPlayer);
-    console.log("Closest Difference:", closestDiff);
-    console.log("Is Tie:", isTie);
+    if (!currentFood) {
+        closestPlayerDiv.textContent = "No food selected!";
+        console.error("Error: No currentFood available to compare guesses.");
+        return;
+    }
 
     if (isTie) {
         closestPlayerDiv.textContent = "It's a tie!";
+        console.log("Result: Tie between players.");
     } else if (closestDiff === 0) {
         closestPlayerDiv.textContent = `${closestPlayer} got it right!`;
+        console.log("Result: Exact match by", closestPlayer);
     } else {
         closestPlayerDiv.textContent = `${closestPlayer} was the closest!`;
+        console.log("Result: Closest player is", closestPlayer, "with difference of", closestDiff);
     }
 }
+
 
 
 
