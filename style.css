@@ -84,13 +84,13 @@ body {
     font-size: 12px; 
     text-align: center;
     flex-grow: 1;
-    border: 1px solid black; /* Ensure a consistent black border */
-    border-radius: 5px; /* Rounded corners */
+    border: 2px solid black; 
+    border-radius: 5px; 
 }
 
 .guess-input:focus {
     outline: none; 
-    border: 1px solid red;
+    border: 2px solid red;
     border-radius: 5px;
 }
 
