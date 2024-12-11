@@ -121,8 +121,12 @@ function updateButtons() {
         const removeButton = row.querySelector('.remove-button');
         console.log(index)
         if (index === playerRows.length - 1) {
-            addButton.style.display = playerRows.length < 8 ? 'inline-block' : 'none';
-            removeButton.style.display = playerRows.length > 1 ? 'inline-block' : 'none';
+            if (addButton) {
+                addButton.style.display = playerRows.length < 8 ? 'inline-block' : 'none';
+            }
+            if (removeButton) {
+                removeButton.style.display = playerRows.length > 1 ? 'inline-block' : 'none';
+            }
         } else {
 
             addButton.style.display = 'none';
