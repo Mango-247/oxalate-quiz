@@ -36,6 +36,16 @@ function updateSubmitButtonState() {
     submitButton.disabled = !allFilled;
 }
 
+function enforceCharacterLimit(event, maxLength = 8) {
+    const element = event.target;
+    const value = element.textContent;
+    const key = event.key;
+
+    if (value.length >= maxLength && !['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight'].includes(key)) {
+        event.preventDefault();
+    }
+}
+
 function addPlayerInput() {
     const container = document.getElementById('players-container');
     const currentPlayers = container.children.length;
@@ -48,11 +58,7 @@ function addPlayerInput() {
         newLabel.classList.add('player-label');
         newLabel.contentEditable = "true";
         newLabel.textContent = `P${currentPlayers + 1}`;
-        newLabel.addEventListener('input', () => {
-            if (newLabel.textContent.length > 8) {
-                newLabel.textContent = newLabel.textContent.slice(0, 8);
-            }
-        });
+        newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
 
         const newInput = document.createElement('input');
         newInput.type = 'text';
