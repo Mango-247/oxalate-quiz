@@ -52,6 +52,7 @@ body {
 .player-row {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 5px 0;
 }
 
@@ -63,9 +64,10 @@ body {
     font-weight: bold;
     border-radius: 5px;
     margin-right: 5px;
+    padding: 5px;
     white-space: nowrap;
-    overflow-x: scroll;
-    cursor: text;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .guess-input {
@@ -88,6 +90,7 @@ body {
     align-items: center;
     background-color: red;
     color: white;
+    margin-left: 5px;
 }
 
 .add-button:hover, .remove-button:hover {
