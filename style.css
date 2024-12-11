@@ -87,9 +87,9 @@ body {
 }
 
 .guess-input:focus {
-    outline: 1px solid black;
-    outline-offset: 0; 
+    border: 1px solid red;
 }
+
 
 .add-button, .remove-button {
     width: 22.5px; 
