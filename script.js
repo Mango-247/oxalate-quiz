@@ -70,27 +70,8 @@ function addPlayerInput() {
         newInput.placeholder = 'Enter guess (mg)';
         newInput.disabled = inputsDisabled;
 
-        const addButton = document.createElement('button');
-        addButton.classList.add('add-button');
-        addButton.textContent = '+';
-
-        const removeButton = document.createElement('button');
-        removeButton.classList.add('remove-button');
-        removeButton.textContent = '-';
-
-        // Adjust text positioning on mobile
-        if (isMobileDevice()) {
-            console.log("Mobile")
-            addButton.style.position = 'relative';
-            addButton.style.left = '-5px'; // Shift text 5px to the left
-            removeButton.style.position = 'relative';
-            removeButton.style.left = '-2px'; // Shift text 2px to the left
-        } else {
-            console.log("Not mobile")
-        }
-
-        addButton.addEventListener('click', addPlayerInput);
-        removeButton.addEventListener('click', () => {
+        const addButton = createButton('+', 'add-button', addPlayerInput);
+        const removeButton = createButton('-', 'remove-button', () => {
             newRow.remove();
             updateButtons();
             updateSubmitButtonState();
@@ -109,9 +90,27 @@ function addPlayerInput() {
     }
 }
 
-// Helper function to detect if the device is mobile
-function isMobileDevice() {
-    return /Mobi|Android/i.test(navigator.userAgent);
+// Helper function to create buttons
+function createButton(text, className, onClick) {
+    const button = document.createElement('button');
+    button.classList.add(className);
+    button.textContent = text;
+    button.style.width = '36px'; // Match CSS for static button
+    button.style.height = '36px'; // Match CSS for static button
+    button.style.display = 'flex';
+    button.style.justifyContent = 'center';
+    button.style.alignItems = 'center';
+    button.style.fontSize = '16px'; // Match static button font size
+    button.style.fontWeight = 'bold';
+    button.style.border = 'none';
+    button.style.borderRadius = '50%'; // Match static button shape
+    button.style.backgroundColor = 'red';
+    button.style.color = 'white';
+    button.style.padding = '0'; // Ensure no extra padding
+    button.style.textAlign = 'center';
+    button.style.boxSizing = 'border-box';
+    button.addEventListener('click', onClick);
+    return button;
 }
 
 
