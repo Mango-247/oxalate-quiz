@@ -7,6 +7,8 @@ body {
     margin: 0;
     background-color: #f9f9f9;
     text-align: center;
+    touch-action: manipulation; /* Prevent touch gestures like pinch-zoom */
+    overflow: hidden; /* Prevent scrolling or zooming */
 }
 
 .container {
@@ -24,7 +26,7 @@ body {
     padding: 7.5px 15px; 
     border: none;
     border-radius: 7.5px; 
-    font-size: 12px; 
+    font-size: 16px; /* Updated to 16px to prevent input zoom on mobile */
     font-weight: bold;
     cursor: pointer;
     display: block;
@@ -75,13 +77,14 @@ body {
     padding: 3.75px 7.5px; 
     flex-shrink: 0;
     max-width: fit-content;
+    font-size: 16px; /* Ensure proper size to avoid zooming */
 }
 
 .guess-input {
     margin: 0 3.75px; 
     padding: 7.5px; 
     width: 150px; 
-    font-size: 12px; 
+    font-size: 16px; /* Updated to prevent zooming on input focus */
     text-align: center;
     flex-grow: 1;
 }
@@ -91,7 +94,7 @@ body {
     height: 22.5px; 
     border: none;
     border-radius: 50%;
-    font-size: 13.5px; 
+    font-size: 16px; /* Updated for consistent size */
     font-weight: bold;
     cursor: pointer;
     display: flex;
