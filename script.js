@@ -48,6 +48,11 @@ function addPlayerInput() {
         newLabel.classList.add('player-label');
         newLabel.contentEditable = "true";
         newLabel.textContent = `P${currentPlayers + 1}`;
+        newLabel.addEventListener('input', () => {
+            if (newLabel.textContent.length > 8) {
+                newLabel.textContent = newLabel.textContent.slice(0, 8);
+            }
+        });
 
         const newInput = document.createElement('input');
         newInput.type = 'text';
