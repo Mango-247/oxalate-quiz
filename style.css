@@ -84,7 +84,6 @@ body {
     font-size: 12px; 
     text-align: center;
     flex-grow: 1;
-    outline: 1px solid black;
 }
 
 .guess-input:focus {
