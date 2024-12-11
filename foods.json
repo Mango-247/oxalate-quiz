@@ -1,3130 +1,3787 @@
 [
   {
     "food": "Alaskan King Crab",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Alfalfa Sprouts",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "All-Bran Buds",
+    "quantity": "20 mg",
     "oxalate": "20"
   },
   {
     "food": "All-Bran Original",
+    "quantity": "26 mg",
     "oxalate": "26"
   },
   {
     "food": "All-Bran with Extra Fiber",
+    "quantity": "11 mg",
     "oxalate": "11"
   },
   {
     "food": "All-Purpose Flour",
+    "quantity": "17 mg",
     "oxalate": "17"
   },
   {
     "food": "Almond",
+    "quantity": "407.3 mg",
     "oxalate": "407"
   },
   {
     "food": "Almonds",
+    "quantity": "122 mg",
     "oxalate": "122"
   },
   {
     "food": "Amaranth",
+    "quantity": "1090 mg",
     "oxalate": "1090"
   },
   {
     "food": "American Cheese",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Antelope",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Apple Butter",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Apple Cinnamon Cheerios",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Apple Juice",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Apple Pie ",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Apple Sauce",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Apple, with skin, raw",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Apples",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Apples, Bramley's Seedling (Raw)",
+    "quantity": "1.5 mg",
     "oxalate": "2"
   },
   {
     "food": "Apricot Juice",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Apricots ",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Artichokes",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
-    "food": "Artificial Sweetner",
+    "food": "Artificial Sweetner <span class=\"food_alt small\">[Artificial Sweetener]</span>",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Asparagus",
+    "quantity": "6 mg",
     "oxalate": "6"
   },
   {
     "food": "Asparagus",
+    "quantity": "130 mg",
     "oxalate": "130"
   },
   {
     "food": "Asparagus (Boiled)",
+    "quantity": "1.9 mg",
     "oxalate": "2"
   },
   {
     "food": "Aubergine, Eggplant",
+    "quantity": "29.1 mg",
     "oxalate": "29"
   },
   {
     "food": "Avocados",
+    "quantity": "19 mg",
     "oxalate": "19"
   },
   {
     "food": "Bacon",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Bacon, streaky (Fried)",
+    "quantity": "0.6 mg",
     "oxalate": "1"
   },
   {
     "food": "Baked Potato with Skin",
+    "quantity": "97 mg",
     "oxalate": "97"
   },
   {
     "food": "Bamboo Shoots",
+    "quantity": "35 mg",
     "oxalate": "35"
   },
   {
     "food": "Banana",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Banana (Raw)",
+    "quantity": "0.7 mg",
     "oxalate": "1"
   },
   {
     "food": "Banana Nut Crunch",
+    "quantity": "25 mg",
     "oxalate": "25"
   },
   {
     "food": "Banana, Plantain",
+    "quantity": "524 mg",
     "oxalate": "524"
   },
   {
     "food": "Banana, Sagar, ripe, raw",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Barley Malt Flour",
-    "oxalate": "0"
-  },
-  {
-    "food": "Maple Syrup",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Barley, whole-grain, raw",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Basic 4",
+    "quantity": "17 mg",
     "oxalate": "17"
   },
   {
     "food": "Beans, French, Blue Lake (Boiled)",
+    "quantity": "30.2 mg",
     "oxalate": "30"
   },
   {
     "food": "Beans, French, Guernsey Runner (Boiled)",
+    "quantity": "22.8 mg",
     "oxalate": "23"
   },
   {
     "food": "Beans, Runner, Mont d'Or (Boiled)",
+    "quantity": "26.6 mg",
     "oxalate": "27"
   },
   {
     "food": "Beans, seeds and pods, raw",
+    "quantity": "25 mg",
     "oxalate": "25"
   },
   {
     "food": "Beans, snap",
+    "quantity": "360 mg",
     "oxalate": "360"
   },
   {
     "food": "Beans, Summer Runner (Boiled)",
+    "quantity": "7.2 mg",
     "oxalate": "7"
   },
   {
     "food": "Beef (Roasted)",
+    "quantity": "0.4 mg",
     "oxalate": "0"
   },
   {
     "food": "Beef, corned, Fray Bentos (Canned)",
+    "quantity": "0.2 mg",
     "oxalate": "0"
   },
   {
     "food": "Beer (Light)",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Beer (Regular)",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Beet leaves",
+    "quantity": "610 mg",
     "oxalate": "610"
   },
   {
-    "food": "Beet",
-    "oxalate": "40"
-  },
-  {
-    "food": "Beetroot",
-    "oxalate": "40"
-  },
-  {
-    "food": "Garden Beet",
-    "oxalate": "40"
-  },
-  {
-    "food": "Sugar Beet",
+    "food": "Beet, Beetroot, Garden Beet, Sugar Beet",
+    "quantity": "40.4 mg",
     "oxalate": "40"
   },
   {
     "food": "Beetroot, fresh, peeled, boiled, drained",
+    "quantity": "100 mg",
     "oxalate": "100"
   },
   {
     "food": "Beetroot, fresh, peeled, raw",
+    "quantity": "100 mg",
     "oxalate": "100"
   },
   {
     "food": "Beetroot, Ruby Globe (Boiled)",
+    "quantity": "121 mg",
     "oxalate": "121"
   },
   {
     "food": "Beets",
+    "quantity": "76 mg",
     "oxalate": "76"
   },
   {
-    "food": "Bell Pepper",
+    "food": "Bell Pepper, Cherry Pepper, Cone Pepper, Green Pepper, Paprika, Sweet Pepper",
+    "quantity": "117.1 mg",
     "oxalate": "117"
   },
   {
-    "food": "Cherry Pepper",
-    "oxalate": "117"
-  },
-  {
-    "food": "Cone Pepper",
-    "oxalate": "117"
-  },
-  {
-    "food": "Green Pepper",
-    "oxalate": "117"
-  },
-  {
-    "food": "Paprika",
-    "oxalate": "117"
-  },
-  {
-    "food": "Sweet Pepper",
-    "oxalate": "117"
-  },
-  {
-    "food": "Ben Nut",
+    "food": "Ben Nut, Benzolive Tree, Drumstick Tree, Horseradish Tree, Jacinto (Sp.), Moringa, West Indian Ben",
+    "quantity": "0-101 mg",
     "oxalate": "101"
   },
   {
     "food": "Berry Bust Cheerios",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
-    "food": "Biscuits",
+    "food": "Biscuits (plain or buttermilk)",
+    "quantity": "6 mg",
     "oxalate": "6"
   },
   {
     "food": "Biscuits, Marie",
+    "quantity": "4.5 mg",
     "oxalate": "5"
   },
   {
-    "food": "Bitter Lettuce",
+    "food": "Bitter Lettuce (Latex Exudate)",
+    "quantity": "1000 mg",
     "oxalate": "1000"
   },
   {
     "food": "Bitter Melon, Sorosi",
+    "quantity": "0.5 mg",
     "oxalate": "1"
   },
   {
-    "food": "Black Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Dwarf Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Field Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Flageolet Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "French Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Garden Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Green Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Haricot",
-    "oxalate": "31"
-  },
-  {
-    "food": "Haricot Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Haricot Vert",
-    "oxalate": "31"
-  },
-  {
-    "food": "Kidney Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Navy Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Pop Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Popping Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Snap Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "String Bean",
-    "oxalate": "31"
-  },
-  {
-    "food": "Wax Bean",
+    "food": "Black Bean, Dwarf Bean, Field Bean, Flageolet Bean, French Bean, Garden Bean, Green Bean, Haricot, Haricot Bean, Haricot Vert, Kidney Bean, Navy Bean, Pop Bean, Popping Bean, Snap Bean, String Bean, Wax Bean",
+    "quantity": "31.2 mg",
     "oxalate": "31"
   },
   {
     "food": "Black Currant",
+    "quantity": "20 mg",
     "oxalate": "20"
   },
   {
     "food": "Black Gram",
+    "quantity": "27.8 mg",
     "oxalate": "28"
   },
   {
     "food": "Black Pepper",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Black Pepper, Pepper, White Pepper",
+    "quantity": "3400 mg",
     "oxalate": "3400"
   },
   {
     "food": "Black-currants, Cotswold Cross (Raw)",
+    "quantity": "4.3 mg",
     "oxalate": "4"
   },
   {
     "food": "Blackberries",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Blueberries",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Blueberry Morning",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "Blueberry Muffins",
+    "quantity": "9 mg",
     "oxalate": "9"
   },
   {
     "food": "Bluefish",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
-    "food": "Bok Choy",
+    "food": "Bok Choy (Chinese Cabbage) <span class=\"food_alt small\">[Bok Choi, Pak Choy, Pak Choi]</span>",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Bologna",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Bran Flakes with Raisins, Single Brand",
+    "quantity": "57 mg",
     "oxalate": "57"
   },
   {
     "food": "Bran Muffin Low fat",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Bran Muffins",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Bran Muffins (store)",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Bran, 100%",
+    "quantity": "25 mg",
     "oxalate": "25"
   },
   {
     "food": "Bran, 40%",
+    "quantity": "36 mg",
     "oxalate": "36"
   },
   {
     "food": "Bread, Allinson's",
+    "quantity": "20.7 mg",
     "oxalate": "21"
   },
   {
     "food": "Bread, white",
+    "quantity": "4.9 mg",
     "oxalate": "5"
   },
   {
     "food": "Brewer's Yeast",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Broadbean, Faba Bean, Habas",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Broccoli",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Broccoli",
+    "quantity": "190 mg",
     "oxalate": "190"
   },
   {
     "food": "Brown Rice Flour",
+    "quantity": "65 mg",
     "oxalate": "65"
   },
   {
     "food": "Brown Rice, cooked",
+    "quantity": "24 mg",
     "oxalate": "24"
   },
   {
     "food": "Brown Sugar",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Brownies",
+    "quantity": "31 mg",
     "oxalate": "31"
   },
   {
     "food": "Brussel Sprouts",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Brussel sprouts, Cambridge Special (Boiled)",
+    "quantity": "2.1 mg",
     "oxalate": "2"
   },
   {
     "food": "Brussels sprouts",
+    "quantity": "360 mg",
     "oxalate": "360"
   },
   {
     "food": "Buckwheat (Leaf)",
+    "quantity": "11100 mg",
     "oxalate": "11100"
   },
   {
     "food": "Buckwheat Groats",
+    "quantity": "133 mg",
     "oxalate": "133"
   },
   {
     "food": "Buffalo",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Bulgur, cooked",
+    "quantity": "86 mg",
     "oxalate": "86"
   },
   {
     "food": "Bullion Cube",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Burritos with beans",
+    "quantity": "17 mg",
     "oxalate": "17"
   },
   {
     "food": "Burritos with beans & meat",
+    "quantity": "16 mg",
     "oxalate": "16"
   },
   {
     "food": "Butter",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Butter, fresh",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Butter, Salted",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Buttermilk",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Cabbage",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Cabbage",
+    "quantity": "100 mg",
     "oxalate": "100"
   },
   {
     "food": "Cabbage, Red Cabbage, White Cabbage",
+    "quantity": "35 mg",
     "oxalate": "35"
   },
   {
     "food": "Cabbage, spring, Durham early (Boiled)",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Cabbage, summer, June Giant (Boiled)",
+    "quantity": "0.6 mg",
     "oxalate": "1"
   },
   {
     "food": "Cabbage, winter, January King (Boiled)",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Cacao",
+    "quantity": "500 mg",
     "oxalate": "500"
   },
   {
     "food": "Cake (homemade)",
+    "quantity": "16 mg",
     "oxalate": "16"
   },
   {
     "food": "Cake (Low Fat Only)",
+    "quantity": "11 mg",
     "oxalate": "11"
   },
   {
     "food": "Cake (store brand)",
+    "quantity": "15 mg",
     "oxalate": "15"
   },
   {
     "food": "Cake, fruit",
+    "quantity": "11.8 mg",
     "oxalate": "12"
   },
   {
     "food": "Cake, sponge",
+    "quantity": "7.4 mg",
     "oxalate": "7"
   },
   {
     "food": "Candies with Nuts (ex Snickers)",
+    "quantity": "38 mg",
     "oxalate": "38"
   },
   {
     "food": "Canned Cherries",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Canned Peaches",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Canned Pears",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Canned Pineapple",
+    "quantity": "24 mg",
     "oxalate": "24"
   },
   {
     "food": "Cantaloupe",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Cap'n Crunch",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Carambola, Star Fruit",
+    "quantity": "5000-9580 mg",
     "oxalate": "9580"
   },
   {
     "food": "Carnation Instant Breakfast",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Carrot",
+    "quantity": "5.6 mg",
     "oxalate": "6"
   },
   {
     "food": "Carrot",
+    "quantity": "500 mg",
     "oxalate": "500"
   },
   {
     "food": "Carrot Juice",
+    "quantity": "27 mg",
     "oxalate": "27"
   },
   {
     "food": "Carrot, raw",
+    "quantity": "6 mg",
     "oxalate": "6"
   },
   {
     "food": "Carrots (Canned, Smedley's)",
+    "quantity": "7.4 mg",
     "oxalate": "7"
   },
   {
     "food": "Carrots, Autumn King (Boiled)",
+    "quantity": "22.7 mg",
     "oxalate": "23"
   },
   {
     "food": "Carrots, cooked",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Carrots, raw",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Cashew",
+    "quantity": "318.4 mg",
     "oxalate": "318"
   },
   {
     "food": "Cashew nuts, raw",
+    "quantity": "318 mg",
     "oxalate": "318"
   },
   {
     "food": "Cashews",
+    "quantity": "49 mg",
     "oxalate": "49"
   },
   {
     "food": "Cassava",
+    "quantity": "1260 mg",
     "oxalate": "1260"
   },
   {
     "food": "Cassava, Tapioca, Yuca",
+    "quantity": "17.1 mg",
     "oxalate": "17"
   },
   {
     "food": "Catsup/Ketchup",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Cauliflower",
+    "quantity": "6.8 mg",
     "oxalate": "7"
   },
   {
     "food": "Cauliflower",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Cauliflower",
+    "quantity": "150 mg",
     "oxalate": "150"
   },
   {
     "food": "Cauliflower, Pioneer (Boiled)",
+    "quantity": "1.1 mg",
     "oxalate": "1"
   },
   {
     "food": "Celery",
+    "quantity": "190 mg",
     "oxalate": "190"
   },
   {
     "food": "Celery, Cooked ",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Celery, raw",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Celery, stems (Raw)",
+    "quantity": "17.5 mg",
     "oxalate": "18"
   },
   {
     "food": "Chayote",
+    "quantity": "34 mg",
     "oxalate": "34"
   },
   {
     "food": "Cheddar Cheese",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Cheerios",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "Cheese, Cheshire",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Cheeseburger with bun",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Cherries",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Chicken",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Chicken (Boiled)",
+    "quantity": "0.3 mg",
     "oxalate": "0"
   },
   {
     "food": "Chicken Dog",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Chicken Liver",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Chicken Noodle Soup",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Chicken Nuggets",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Chicken Roll",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Chicken Soup, Fray Bentos (Canned)",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
-    "food": "Chickpea, Garbanzo",
+    "food": "Chickpea, Garbanzo <span class=\"food_alt small\">[Chick Pea]</span>",
+    "quantity": "2.4 mg",
     "oxalate": "2"
   },
   {
     "food": "Chicory",
+    "quantity": "210 mg",
     "oxalate": "210"
   },
   {
     "food": "Chili Powder",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Chili with Beans",
+    "quantity": "24 mg",
     "oxalate": "24"
   },
   {
     "food": "Chilli (chili), green, stir-fried",
+    "quantity": "100 mg",
     "oxalate": "100"
   },
   {
     "food": "Chilli, green, with seeds, raw",
+    "quantity": "29 mg",
     "oxalate": "29"
   },
   {
     "food": "Chilli, red, dry",
+    "quantity": "67 mg",
     "oxalate": "67"
   },
   {
     "food": "Chinese Parsley, Cilantro, Coriander (Leaf)",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Chives",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Chives",
+    "quantity": "1480 mg",
     "oxalate": "1480"
   },
   {
     "food": "Chives (Raw)",
+    "quantity": "1.1 mg",
     "oxalate": "1"
   },
   {
     "food": "Chocolate Chip Cookies (Low Fat Only)",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Chocolate Chip Cookies (store brand)",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Chocolate Milk",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Chocolate Pudding, Instant",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Chocolate Syrup",
+    "quantity": "38 mg",
     "oxalate": "38"
   },
   {
     "food": "Cinnamon Toast Crunch",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Clam Chowder",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Clams, raw",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Cocoa Krispies",
+    "quantity": "11 mg",
     "oxalate": "11"
   },
   {
     "food": "Cocoa Powder",
+    "quantity": "67 mg",
     "oxalate": "67"
   },
   {
     "food": "Cocoa Puffs",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Cocoa, powder, Rowntree's",
+    "quantity": "623 mg",
     "oxalate": "623"
   },
   {
     "food": "Coconut water",
+    "quantity": "318 mg",
     "oxalate": "318"
   },
   {
     "food": "Cod Liver Fish Oil",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Cod Liver Oil",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Cod, pacific",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Coffee",
+    "quantity": "15.4 mg",
     "oxalate": "15"
   },
   {
     "food": "Coffee",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Coffee Creamer",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Coffee Decaff",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Coffee, ground, containing 5% chicory, Kardomah (2 g in 100 ml water, infused for 5 min)",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Coffee, Nescafe powder",
+    "quantity": "57 mg",
     "oxalate": "57"
   },
   {
     "food": "Collards",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Collards",
+    "quantity": "450 mg",
     "oxalate": "450"
   },
   {
     "food": "Complete Oat Bran Flakes",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Complete Wheat Bran",
+    "quantity": "34 mg",
     "oxalate": "34"
   },
   {
     "food": "Coriander",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Coriander leaves, raw",
+    "quantity": "47 mg",
     "oxalate": "47"
   },
   {
     "food": "Corn",
+    "quantity": "9.9 mg",
     "oxalate": "10"
   },
   {
     "food": "Corn",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Corn Bran",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Corn Bread",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Corn Chex",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Corn Flakes",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Corn Flour",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Corn Grits",
+    "quantity": "97 mg",
     "oxalate": "97"
   },
   {
     "food": "Corn Pops",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Corn Syrup (high Fructose)",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Corn Syrup (Light)",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Corn, sweet",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Cornbread",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Cornflakes",
+    "quantity": "5.6 mg",
     "oxalate": "6"
   },
   {
     "food": "Cornmeal",
+    "quantity": "64 mg",
     "oxalate": "64"
   },
   {
     "food": "Cornstarch",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Cottage Cheese",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Cottage Cheese Fat Free",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Count Chocula",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Couscous",
+    "quantity": "15 mg",
     "oxalate": "15"
   },
   {
     "food": "Cracked Wheat Bread",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Cracklin' Oat Bran",
+    "quantity": "15 mg",
     "oxalate": "15"
   },
   {
     "food": "Cranberry Almond Crunch (Morning Traditions)",
+    "quantity": "35 mg",
     "oxalate": "35"
   },
   {
     "food": "Cranberry Sauce",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Cream  ",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Cream Cheese",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Cream Cheese Fat Free",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Cream Cheese Low Fat",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Cream of Wheat ",
+    "quantity": "18 mg",
     "oxalate": "18"
   },
   {
     "food": "Cream Sauce, Homemade",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Cream Substitute",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Crispix",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Cucumber ",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Cucumbers",
+    "quantity": "20 mg",
     "oxalate": "20"
   },
   {
     "food": "Custard",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Custard apple, raw",
+    "quantity": "30 mg",
     "oxalate": "30"
   },
   {
     "food": "Danish Pastry Homemade",
+    "quantity": "14 mg",
     "oxalate": "14"
   },
   {
     "food": "Danish Pastry, Fruit Filled",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Dates",
+    "quantity": "24 mg",
     "oxalate": "24"
   },
   {
     "food": "Doughnut",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Dried Apples",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Dried Apricots",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Dried Cranberries",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Dried Figs",
+    "quantity": "24 mg",
     "oxalate": "24"
   },
   {
     "food": "Dried Pineapples",
+    "quantity": "30 mg",
     "oxalate": "30"
   },
   {
     "food": "Dried Prunes",
+    "quantity": "11 mg",
     "oxalate": "11"
   },
   {
     "food": "Egg Beaters",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Eggbeaters",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Eggplant",
+    "quantity": "190 mg",
     "oxalate": "190"
   },
   {
     "food": "Eggroll",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Eggs",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Eggs",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Eggs, fresh, whole (Boiled)",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Emblic, raw",
+    "quantity": "296 mg",
     "oxalate": "296"
   },
   {
     "food": "Enchilada with Cheese & beef",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Enchilada with Chicken",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Endive",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Endive",
+    "quantity": "110 mg",
     "oxalate": "110"
   },
   {
     "food": "English Muffin",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "English Muffin Multi-Grain",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "English Muffin Wheat",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "English Muffin Whole Wheat",
+    "quantity": "12 mg",
     "oxalate": "12"
   },
   {
     "food": "English Muffins - Multi-Grain",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "English Muffins - Reg",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "English Muffins - Wheat",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "European Grape, Grape, Grapevine, Wine Grape",
+    "quantity": "3.4 mg",
     "oxalate": "3"
   },
   {
     "food": "Farina Cereal",
+    "quantity": "16 mg",
     "oxalate": "16"
   },
   {
     "food": "Fat Free Milk",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Fava Beans",
+    "quantity": "20 mg",
     "oxalate": "20"
   },
   {
     "food": "Fiber One",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Fig Bars",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Fig, dried",
+    "quantity": "100 mg",
     "oxalate": "100"
   },
   {
     "food": "Figs",
+    "quantity": "9 mg",
     "oxalate": "9"
   },
   {
     "food": "Flaxseed",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Flounder",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "French Fries",
+    "quantity": "51 mg",
     "oxalate": "51"
   },
   {
     "food": "French Fries (homemade or fast food)",
+    "quantity": "51 mg",
     "oxalate": "51"
   },
   {
     "food": "French Toast",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Froot Loops",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Frosted Cheerios",
+    "quantity": "6 mg",
     "oxalate": "6"
   },
   {
     "food": "Frosted Flakes",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Frosted Mini-Wheats",
+    "quantity": "28 mg",
     "oxalate": "28"
   },
   {
     "food": "Frozen Fish Sticks",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Frozen Yogurt",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Fruit & Fiber Dates, Raisins & Walnuts",
+    "quantity": "41 mg",
     "oxalate": "41"
   },
   {
     "food": "Fruit Cocktail",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Fruit Roll-Ups",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Fruity Pebbles",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Fudge Sauce",
+    "quantity": "28 mg",
     "oxalate": "28"
   },
   {
     "food": "Garden Sorrel",
+    "quantity": "300 mg",
     "oxalate": "300"
   },
   {
     "food": "Garlic",
+    "quantity": "360 mg",
     "oxalate": "360"
   },
   {
     "food": "Garlic Powder",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Gatorade",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Gelatin",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Ginger",
+    "quantity": "500 mg",
     "oxalate": "500"
   },
   {
     "food": "Ginger, peeled, stir-fried without oil",
+    "quantity": "100 mg",
     "oxalate": "100"
   },
   {
     "food": "Golden Grahams",
+    "quantity": "9 mg",
     "oxalate": "9"
   },
   {
     "food": "Gooseberries, Keepsake (Stewed)",
+    "quantity": "2.6 mg",
     "oxalate": "3"
   },
   {
     "food": "Graham Crackers",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Granola Bars Low Fat",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Granola Bars- Hard & Plain",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Granola Oats & Honey, 100% Natural",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Grape Juice",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Grape Nuts",
+    "quantity": "14 mg",
     "oxalate": "14"
   },
   {
     "food": "Grape Nuts Flakes",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Grapefruit",
+    "quantity": "12 mg",
     "oxalate": "12"
   },
   {
     "food": "Grapefruit (Raw)",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Grapefruit Juice",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Grapes",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Gravy",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Great Grains Crunch Pecan",
+    "quantity": "18 mg",
     "oxalate": "18"
   },
   {
     "food": "Great Grains Raisin, Dates & Pecans",
+    "quantity": "17 mg",
     "oxalate": "17"
   },
   {
     "food": "Green Pepper",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Grilled Cheese Sandwich",
+    "quantity": "12 mg",
     "oxalate": "12"
   },
   {
     "food": "Ground Beef",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Guava",
+    "quantity": "14 mg",
     "oxalate": "14"
   },
   {
     "food": "Guava, green, raw",
+    "quantity": "14 mg",
     "oxalate": "14"
   },
   {
     "food": "Haddock",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Haddock (Boiled)",
+    "quantity": "0.2 mg",
     "oxalate": "0"
   },
   {
     "food": "Halibut",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Ham",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Ham (Boiled)",
+    "quantity": "0.4 mg",
     "oxalate": "0"
   },
   {
     "food": "Harmony",
+    "quantity": "11 mg",
     "oxalate": "11"
   },
   {
     "food": "Healthy Choice Multi-Grain Flakes",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Healthy Valley Oat Bran Flakes",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Herring (Atlantic & Pacific)",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Homemade Cream Sauce",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Honey",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Honey Bunches of Oats Honey Roasted",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Honey Bunches of Oats with Almonds",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Honey Crunch Corn Flakes",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Honey Nut Cheerios",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Honey Nut Clusters",
+    "quantity": "23 mg",
     "oxalate": "23"
   },
   {
     "food": "Honey Nut Oats",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Honeycomb",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Honeydew Melon",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Horlicks, powder",
+    "quantity": "4.1 mg",
     "oxalate": "4"
   },
   {
     "food": "Horseradish",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Hot Chili Peppers",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Hot Chocolate (homemade)",
+    "quantity": "65 mg",
     "oxalate": "65"
   },
   {
     "food": "Hot Dog with Bun",
+    "quantity": "9 mg",
     "oxalate": "9"
   },
   {
     "food": "Hot Dogs",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Hummus",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Ice Cream (Vanilla)",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Ice Cream Light",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Iceberg Lettuce",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Indian Tamarind, Kilytree, Tamarind",
+    "quantity": "196 mg",
     "oxalate": "196"
   },
   {
     "food": "Italian Salad Dressing",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Jackfruit, ripe, raw",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Jam, red plum",
+    "quantity": "0.5 mg",
     "oxalate": "1"
   },
   {
     "food": "Jam/Jelly",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Jambolan, raw",
+    "quantity": "89 mg",
     "oxalate": "89"
   },
   {
     "food": "Jello",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Just Right Fruit & Nut",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Just Right with Crunchy Nuggets",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Kale",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Kale",
+    "quantity": "20 mg",
     "oxalate": "20"
   },
   {
     "food": "Kashi Go Lean",
+    "quantity": "14 mg",
     "oxalate": "14"
   },
   {
     "food": "Kashi Go Lean Bar",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Kashi Good Friends",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Kashi Heart to Heart",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "Kiwi",
+    "quantity": "16 mg",
     "oxalate": "16"
   },
   {
     "food": "Kix",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Kool-Aid",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Lambsquarter",
+    "quantity": "30000 mg",
     "oxalate": "30000"
   },
   {
     "food": "Lard",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Lasagna",
+    "quantity": "23 mg",
     "oxalate": "23"
   },
   {
     "food": "Lasagna with meat",
+    "quantity": "23 mg",
     "oxalate": "23"
   },
   {
-    "food": "Lean Hamburg (75%)",
+    "food": "Lean Hamburg (75%) <span class=\"food_alt small\">[Hamburger]</span>",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
-    "food": "Lean Hamburg (85%)",
+    "food": "Lean Hamburg (85%) <span class=\"food_alt small\">[Hamburger]</span>",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
-    "food": "Lean Hamburg (90%)",
+    "food": "Lean Hamburg (90%) <span class=\"food_alt small\">[Hamburger]</span>",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Lemon Juice (canned or bottled)",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Lemon Juice Raw (concentrate)",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Lemonade (diet)",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Lemonade (frozen from concentrate)",
+    "quantity": "15 mg",
     "oxalate": "15"
   },
   {
     "food": "Lemons",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Lentil",
+    "quantity": "21.2 mg",
     "oxalate": "21"
   },
   {
     "food": "Lentil Soup",
+    "quantity": "39 mg",
     "oxalate": "39"
   },
   {
     "food": "Lettuce",
+    "quantity": "13.6 mg",
     "oxalate": "14"
   },
   {
     "food": "Lettuce",
+    "quantity": "330 mg",
     "oxalate": "330"
   },
   {
     "food": "Lettuce, Webbs Wonderful (Raw)",
+    "quantity": "1.7 mg",
     "oxalate": "2"
   },
   {
     "food": "Limes",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Liquor (80 proof)",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Liver",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Low Fat 100% Natural Granola with Raisins",
+    "quantity": "15 mg",
     "oxalate": "15"
   },
   {
     "food": "Low Fat Cheese",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Low Fat Cottage Cheese",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Low Fat Cream Cheese",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Low Fat Granola with Raisins",
+    "quantity": "16 mg",
     "oxalate": "16"
   },
   {
     "food": "Low Fat Muffins",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Lowfat Frozen Yogurt",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Lucky Charms",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Lucozade ",
+    "quantity": "0.1 mg",
     "oxalate": "0"
   },
   {
     "food": "Lychee, raw",
+    "quantity": "19 mg",
     "oxalate": "19"
   },
   {
     "food": "Macaroni & Cheese",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Mackeral",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Maize/corn, yellow, dried, raw",
+    "quantity": "6 mg",
     "oxalate": "6"
   },
   {
     "food": "Mango",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Mango",
+    "quantity": "30 mg",
     "oxalate": "30"
   },
   {
     "food": "Mango Juice",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Mango, Fazli, orange flesh, ripe, raw",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Mango, Langra, yellow flesh, ripe, raw",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Margarine",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Marmalade, shredless",
+    "quantity": "10.8 mg",
     "oxalate": "11"
   },
   {
     "food": "Marrow, Mosse Cream (Raw)",
+    "quantity": "0.5 mg",
     "oxalate": "1"
   },
   {
     "food": "Mashed Potatoes",
+    "quantity": "29 mg",
     "oxalate": "29"
   },
   {
     "food": "Mayonnaise",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Meatballs",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Melon, Futi, orange flesh, ripe, raw",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Milk Chocolate Candies",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Milk, 1%",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Milk, 2%",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Milk, fresh",
+    "quantity": "0.5 mg",
     "oxalate": "1"
   },
   {
     "food": "Millet, cooked",
+    "quantity": "62 mg",
     "oxalate": "62"
   },
   {
     "food": "Miso",
+    "quantity": "40 mg",
     "oxalate": "40"
   },
   {
     "food": "Miso Soup",
+    "quantity": "111 mg",
     "oxalate": "111"
   },
   {
     "food": "Mixed Nuts (with Peanuts)",
+    "quantity": "39 mg",
     "oxalate": "39"
   },
   {
     "food": "Mixed Vegetables, frozen",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Molasses",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Moose",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Mozzarella Cheese",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Mueslix  ",
+    "quantity": "17 mg",
     "oxalate": "17"
   },
   {
     "food": "Mueslix Apple & Almond Crunch",
+    "quantity": "20 mg",
     "oxalate": "20"
   },
   {
     "food": "Muffins Low Fat",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Multi-Bran Chex",
+    "quantity": "36 mg",
     "oxalate": "36"
   },
   {
     "food": "Mung Beans",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Murraya (Fruit)",
+    "quantity": "524 mg",
     "oxalate": "524"
   },
   {
     "food": "Mushroom, Agaricus (Cooked)",
+    "quantity": "48.9-72.8 mg",
     "oxalate": "73"
   },
   {
     "food": "Mushroom, Agaricus (Raw)",
+    "quantity": "58.9-74.9 mg",
     "oxalate": "75"
   },
   {
     "food": "Mushroom, Cep, Porcini, Penny Bun, King Bolete (Cooked)",
+    "quantity": "33.1 mg",
     "oxalate": "33"
   },
   {
     "food": "Mushroom, Cep, Porcini, Penny Bun, King Bolete (Raw)",
+    "quantity": "43.6 mg",
     "oxalate": "44"
   },
   {
     "food": "Mushroom, Chanterelle (Cooked)",
+    "quantity": "35.2 mg",
     "oxalate": "35"
   },
   {
     "food": "Mushroom, Chanterelle (Raw)",
+    "quantity": "42.1 mg",
     "oxalate": "42"
   },
   {
     "food": "Mushroom, Hedgehog, Sweet Tooth (Cooked)",
+    "quantity": "23.3 mg",
     "oxalate": "23"
   },
   {
     "food": "Mushroom, Hedgehog, Sweet Tooth (Raw)",
+    "quantity": "26.4 mg",
     "oxalate": "26"
   },
   {
     "food": "Mushroom, Oyster (Cooked)",
+    "quantity": "48.5 mg",
     "oxalate": "49"
   },
   {
     "food": "Mushroom, Oyster (Raw)",
+    "quantity": "104.1 mg",
     "oxalate": "104"
   },
   {
     "food": "Mushroom, Piopino, Piopparello, Velvet (Cooked)",
+    "quantity": "58.6 mg",
     "oxalate": "59"
   },
   {
     "food": "Mushroom, Piopino, Piopparello, Velvet (Raw)",
+    "quantity": "80.3 mg",
     "oxalate": "80"
   },
   {
     "food": "Mushroom, Shiitake (Cooked)",
+    "quantity": "124.6 mg",
     "oxalate": "125"
   },
   {
     "food": "Mushroom, Shiitake (Raw)",
+    "quantity": "101.4 mg",
     "oxalate": "101"
   },
   {
     "food": "Mushrooms",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Muskmelon, Bangee, light orange flesh, ripe, raw",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Mustard Greens",
+    "quantity": "128.7 mg",
     "oxalate": "129"
   },
   {
     "food": "Mustard Greens",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Mustard, yellow ",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Nabisco Honey Nut Shredded Wheat Bite Size",
+    "quantity": "47 mg",
     "oxalate": "47"
   },
   {
     "food": "Nabisco Shredded Wheat",
+    "quantity": "42 mg",
     "oxalate": "42"
   },
   {
     "food": "Nachos with Cheese",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Nance (Bark)",
+    "quantity": "0-2730 mg",
     "oxalate": "2730"
   },
   {
     "food": "Nature Valley Cinnimon & Raisins Granola ",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Navy Beans",
+    "quantity": "76 mg",
     "oxalate": "76"
   },
   {
     "food": "Nectarine",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Non Fat Ice Cream",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Non Fat Yogurt with Fruit",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Non-Dairy Creamer",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Nut, almond, with skin",
+    "quantity": "300 mg",
     "oxalate": "300"
   },
   {
     "food": "Nut, brazil, raw or blanched",
+    "quantity": "100 mg",
     "oxalate": "100"
   },
   {
     "food": "Nut, cashew, roasted, salted",
+    "quantity": "100 mg",
     "oxalate": "100"
   },
   {
     "food": "Nut, hazelnut, raw",
+    "quantity": "100 mg",
     "oxalate": "100"
   },
   {
     "food": "Nut, pine, raw",
+    "quantity": "100 mg",
     "oxalate": "100"
   },
   {
     "food": "Oaker Oat Cinnamon Life",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Oat Bran",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Oat Bran Bread",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Oat Bran Muffin",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Oat Bran, raw",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Oat Flour",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Oatmeal Bread ",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Oatmeal Cereal",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Oatmeal Cookie (homemade)",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Oatmeal Cookies (store)",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Oatmeal Crisp with Almonds",
+    "quantity": "24 mg",
     "oxalate": "24"
   },
   {
     "food": "Oatmeal porridge",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Oatmeal Raisin Crisp",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Oatmeal Squares",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Oats",
+    "quantity": "40 mg",
     "oxalate": "40"
   },
   {
     "food": "Okra",
+    "quantity": "10.3 mg",
     "oxalate": "10"
   },
   {
     "food": "Okra",
+    "quantity": "57 mg",
     "oxalate": "57"
   },
   {
     "food": "Okra",
+    "quantity": "50 mg",
     "oxalate": "50"
   },
   {
     "food": "Olive Oil & Vinegar",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Olives",
+    "quantity": "18 mg",
     "oxalate": "18"
   },
   {
     "food": "Onion",
+    "quantity": "50 mg",
     "oxalate": "50"
   },
   {
     "food": "Onion Rings",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Onion, raw",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Onion, Shallot",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Onions",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Onions, Best of All (Raw)",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Orange",
+    "quantity": "29 mg",
     "oxalate": "29"
   },
   {
     "food": "Orange",
+    "quantity": "8.7 mg",
     "oxalate": "9"
   },
   {
     "food": "Orange Juice",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Orange, raw",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Oranges (Raw)",
+    "quantity": "6.2 mg",
     "oxalate": "6"
   },
   {
     "food": "Oriental Vegetables, frozen",
+    "quantity": "6 mg",
     "oxalate": "6"
   },
   {
     "food": "Original Shredded Wheat & Bran",
+    "quantity": "53 mg",
     "oxalate": "53"
   },
   {
     "food": "Ovaltine, powder",
+    "quantity": "45.9 mg",
     "oxalate": "46"
   },
   {
     "food": "Oxo cubes",
+    "quantity": "1.6 mg",
     "oxalate": "2"
   },
   {
     "food": "Oxtail Soup, Fray Bentos (Canned)",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Oysters",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Pancake Syrup",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Pancakes (dry mix)",
+    "quantity": "37 mg",
     "oxalate": "37"
   },
   {
     "food": "Pancakes (Homemade)",
+    "quantity": "11 mg",
     "oxalate": "11"
   },
   {
     "food": "Pancakes (Homemade)",
+    "quantity": "22 mg",
     "oxalate": "22"
   },
   {
     "food": "Pancakes (mix)",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Papaya",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Papaya, ripe, raw",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Parsley",
+    "quantity": "1700 mg",
     "oxalate": "1700"
   },
   {
     "food": "Parsley, Moss curled (Raw)",
+    "quantity": "166 mg",
     "oxalate": "166"
   },
   {
     "food": "Parsnip",
+    "quantity": "20.5 mg",
     "oxalate": "21"
   },
   {
     "food": "Parsnip",
+    "quantity": "15 mg",
     "oxalate": "15"
   },
   {
     "food": "Parsnip",
+    "quantity": "40 mg",
     "oxalate": "40"
   },
   {
     "food": "Pea",
+    "quantity": "6 mg",
     "oxalate": "6"
   },
   {
     "food": "Pea",
+    "quantity": "50 mg",
     "oxalate": "50"
   },
   {
     "food": "Peach",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Peaches",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Peaches (Canned in syrup)",
+    "quantity": "1.2 mg",
     "oxalate": "1"
   },
   {
     "food": "Peanut Butter",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Peanut Butter Reduced Fat",
+    "quantity": "16 mg",
     "oxalate": "16"
   },
   {
     "food": "Peanuts",
+    "quantity": "27 mg",
     "oxalate": "27"
   },
   {
     "food": "Pear millet, whole-grain, raw",
+    "quantity": "21 mg",
     "oxalate": "21"
   },
   {
     "food": "Pears",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Pears (Canned in syrup)",
+    "quantity": "1.7 mg",
     "oxalate": "2"
   },
   {
     "food": "Peas",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Peas (Canned, Smedley's)",
+    "quantity": "0.8 mg",
     "oxalate": "1"
   },
   {
     "food": "Peas, fresh, Feltham First (Boiled)",
+    "quantity": "1.3 mg",
     "oxalate": "1"
   },
   {
     "food": "Pecans",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Pepper",
+    "quantity": "40 mg",
     "oxalate": "40"
   },
   {
     "food": "Pickles",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Pies (homemade)",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Pineapple",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Pineapple",
+    "quantity": "5.8 mg",
     "oxalate": "6"
   },
   {
     "food": "Pineapple (Canned in syrup)",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Pineapple Juice",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Pineapple, Joldugee, ripe, raw",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Pineapple, ripe, raw",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Pistachios",
+    "quantity": "14 mg",
     "oxalate": "14"
   },
   {
     "food": "Pizza with Cheese",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Plaice (Boiled)",
+    "quantity": "0.3 mg",
     "oxalate": "0"
   },
   {
     "food": "Plain Yogurt",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Plaintain",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Plums",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Plums, Giant Prune, Victoria (Stewed)",
+    "quantity": "3.4 mg",
     "oxalate": "3"
   },
   {
     "food": "Plums, Jefferson's Golden Gage (Stewed)",
+    "quantity": "1.1 mg",
     "oxalate": "1"
   },
   {
     "food": "Pollock",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Pomegranate",
+    "quantity": "14 mg",
     "oxalate": "14"
   },
   {
     "food": "Pomegranate, ripe, with seed, raw",
+    "quantity": "14 mg",
     "oxalate": "14"
   },
   {
     "food": "Popcorn, air-popped",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Popcorn, oil-popped",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
-    "food": "Poppyseed",
+    "food": "Poppyseed <span class=\"food_alt small\">[Poppy Seed]</span>",
+    "quantity": "1620 mg",
     "oxalate": "1620"
   },
   {
     "food": "Popsicle ",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Poptart ",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Pork",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Postum (coffee Substitute)",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Potato",
+    "quantity": "15 mg",
     "oxalate": "15"
   },
   {
     "food": "Potato",
+    "quantity": "50 mg",
     "oxalate": "50"
   },
   {
     "food": "Potato Chips",
+    "quantity": "21 mg",
     "oxalate": "21"
   },
   {
     "food": "Potato Salad",
+    "quantity": "17 mg",
     "oxalate": "17"
   },
   {
     "food": "Potato, Diamond, raw",
+    "quantity": "12 mg",
     "oxalate": "12"
   },
   {
     "food": "Potatoes (Boiled)",
+    "quantity": "2.3 mg",
     "oxalate": "2"
   },
   {
     "food": "Powdered Milk",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Pretzels, Hard & Salted",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Product 19",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Prune Juice",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Pudding Popsicle",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Puffed Kashi",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Puffed Rice",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Puffed Wheat",
+    "quantity": "9 mg",
     "oxalate": "9"
   },
   {
     "food": "Pumpkin (Juice)",
+    "quantity": "40 mg",
     "oxalate": "40"
   },
   {
     "food": "Pumpkin Seeds",
+    "quantity": "17 mg",
     "oxalate": "17"
   },
   {
     "food": "Purslane",
+    "quantity": "1310 mg",
     "oxalate": "1310"
   },
   {
     "food": "Purslane, Verdolaga",
+    "quantity": "1679 mg",
     "oxalate": "1679"
   },
   {
     "food": "Quaker Oat Life",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Radish",
+    "quantity": "9.2 mg",
     "oxalate": "9"
   },
   {
     "food": "Radish",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Radish",
+    "quantity": "480 mg",
     "oxalate": "480"
   },
   {
     "food": "Radishes, French Breakfast (Raw)",
+    "quantity": "0.3 mg",
     "oxalate": "0"
   },
   {
     "food": "Raisin Bran ",
+    "quantity": "46 mg",
     "oxalate": "46"
   },
   {
     "food": "Raisin Bran Crunch",
+    "quantity": "27 mg",
     "oxalate": "27"
   },
   {
     "food": "Raisin Nut Bran",
+    "quantity": "24 mg",
     "oxalate": "24"
   },
   {
     "food": "Raisin Squares Mini-Wheats",
+    "quantity": "41 mg",
     "oxalate": "41"
   },
   {
     "food": "Raisins",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Raspberries",
+    "quantity": "48 mg",
     "oxalate": "48"
   },
   {
     "food": "Raspberries, Malling Exploit (Raw)",
+    "quantity": "2.2 mg",
     "oxalate": "2"
   },
   {
     "food": "Red Kidney Beans",
+    "quantity": "15 mg",
     "oxalate": "15"
   },
   {
     "food": "Red River Cereal",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Red Wine",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Reese's Puffs",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "Refried Beans",
+    "quantity": "16 mg",
     "oxalate": "16"
   },
   {
     "food": "Rhubarb",
+    "quantity": "541 mg",
     "oxalate": "541"
   },
   {
     "food": "Rhubarb (Leaf)",
+    "quantity": "1100 mg",
     "oxalate": "1100"
   },
   {
     "food": "Rhubarb (Plant)",
+    "quantity": "1336 mg",
     "oxalate": "1336"
   },
   {
     "food": "Rhubarb, Giant Grooveless Crimson, end of season (Stewed)",
+    "quantity": "460 mg",
     "oxalate": "460"
   },
   {
     "food": "Rhubarb, stalk, raw",
+    "quantity": "400 mg",
     "oxalate": "400"
   },
   {
     "food": "Rhubarb, Victoria, end of season (Stewed)",
+    "quantity": "620 mg",
     "oxalate": "620"
   },
   {
     "food": "Rhubarb, Victoria, forced (Stewed)",
+    "quantity": "260 mg",
     "oxalate": "260"
   },
   {
     "food": "Rice",
+    "quantity": "4.6 mg",
     "oxalate": "5"
   },
   {
     "food": "Rice Bran",
+    "quantity": "281 mg",
     "oxalate": "281"
   },
   {
     "food": "Rice Cake",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Rice Chex",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Rice Dream ",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Rice flaked",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Rice Krispies",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Rice Krispy Treat",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Rice Pudding",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Rice Pudding",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Rice, BR-28, parboiled, milled, raw",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Rice, white, sunned, aromatic, raw",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Rice, white, sunned, polished, milled, raw",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Ritz Crackers",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Romaine Lettuce",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Rutabaga",
+    "quantity": "31 mg",
     "oxalate": "31"
   },
   {
     "food": "Rutabaga",
+    "quantity": "30 mg",
     "oxalate": "30"
   },
   {
     "food": "Rye Bread",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Salmon (all types)",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Salsa",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Salt",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Saltines",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Sardines",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Sauerkraut",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Scallions",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Sea Vegetables",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
-    "food": "Sherbert",
+    "food": "Sherbert <span class=\"food_alt small\">[Sherbet]</span>",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Shortening",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Shrimp",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Silverbeet, boiled, drained",
+    "quantity": "600 mg",
     "oxalate": "600"
   },
   {
     "food": "Silverbeet, raw",
+    "quantity": "500 mg",
     "oxalate": "500"
   },
   {
     "food": "Smacks",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Smart Start",
+    "quantity": "15 mg",
     "oxalate": "15"
   },
   {
     "food": "Snack Cakes- cr",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Snakegourd",
+    "quantity": "34 mg",
     "oxalate": "34"
   },
   {
     "food": "Sodas (all types)",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Sorghum, raw",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Sour Cream",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Soy Burger",
+    "quantity": "12 mg",
     "oxalate": "12"
   },
   {
     "food": "Soy Flour",
+    "quantity": "94 mg",
     "oxalate": "94"
   },
   {
     "food": "Soy Milk",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Soy Protein Isolate",
+    "quantity": "27 mg",
     "oxalate": "27"
   },
   {
     "food": "Soy Sauce",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Soybean",
+    "quantity": "77 mg",
     "oxalate": "77"
   },
   {
     "food": "Soybeans",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Spaghetti",
+    "quantity": "11 mg",
     "oxalate": "11"
   },
   {
     "food": "Spearmint",
+    "quantity": "3.8 mg",
     "oxalate": "4"
   },
   {
     "food": "Spearmint leaves, fresh",
+    "quantity": "33 mg",
     "oxalate": "33"
   },
   {
     "food": "Special K",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Special K Red Berries",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Spinach",
+    "quantity": "658 mg",
     "oxalate": "658"
   },
   {
     "food": "Spinach",
+    "quantity": "970 mg",
     "oxalate": "970"
   },
   {
     "food": "Spinach beet, Beet Perpetual (Boiled)",
+    "quantity": "692 mg",
     "oxalate": "692"
   },
   {
     "food": "Spinach, cooked",
+    "quantity": "755 mg",
     "oxalate": "755"
   },
   {
     "food": "Spinach, English, boiled, drained",
+    "quantity": "400 mg",
     "oxalate": "400"
   },
   {
     "food": "Spinach, English, raw",
+    "quantity": "300 mg",
     "oxalate": "300"
   },
   {
     "food": "Spinach, frozen (Boiled)",
+    "quantity": "458 mg",
     "oxalate": "458"
   },
   {
     "food": "Spinach, frozen, boiled, drained",
+    "quantity": "500 mg",
     "oxalate": "500"
   },
   {
     "food": "Spinach, Long-standing, round (Boiled)",
+    "quantity": "780 mg",
     "oxalate": "780"
   },
   {
     "food": "Spinach, raw",
+    "quantity": "656 mg",
     "oxalate": "656"
   },
   {
     "food": "Spoonsize Shredded Wheat",
+    "quantity": "45 mg",
     "oxalate": "45"
   },
   {
     "food": "Squash",
+    "quantity": "20 mg",
     "oxalate": "20"
   },
   {
     "food": "Strawberries",
+    "quantity": "2 mg",
     "oxalate": "2"
   },
   {
     "food": "Strawberries, Huxley (Raw)",
+    "quantity": "1.9 mg",
     "oxalate": "2"
   },
   {
     "food": "String Beans",
+    "quantity": "9 mg",
     "oxalate": "9"
   },
   {
     "food": "Stuffing",
+    "quantity": "36 mg",
     "oxalate": "36"
   },
   {
     "food": "Sugar",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Sunflower Seeds",
+    "quantity": "12 mg",
     "oxalate": "12"
   },
   {
     "food": "Sweet Potato",
+    "quantity": "100 mg",
     "oxalate": "100"
   },
   {
     "food": "Sweet potato",
+    "quantity": "240 mg",
     "oxalate": "240"
   },
   {
     "food": "Sweet Potatoes",
+    "quantity": "28 mg",
     "oxalate": "28"
   },
   {
     "food": "Sweet Rolls Low Fat",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Sweet Whey Dried",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Sweet Whey Fluid",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
-    "food": "Sweetened Instant Iced Tea",
+    "food": "Sweetened Instant Iced Tea <span class=\"food_alt small\">[Ice Tea]</span>",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Swordfish",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Tacos",
+    "quantity": "12 mg",
     "oxalate": "12"
   },
   {
     "food": "Tahini",
+    "quantity": "16 mg",
     "oxalate": "16"
   },
   {
     "food": "Tahini, sesame seed pulp",
+    "quantity": "600 mg",
     "oxalate": "600"
   },
   {
     "food": "Tangerine",
+    "quantity": "10 mg",
     "oxalate": "10"
   },
   {
     "food": "Tapioca Pudding",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Taro",
+    "quantity": "133.4 mg",
     "oxalate": "133"
   },
   {
     "food": "Tea",
+    "quantity": "1000 mg",
     "oxalate": "1000"
   },
   {
     "food": "Tea, Brewed",
+    "quantity": "14 mg",
     "oxalate": "14"
   },
   {
     "food": "Tea, Indian, blended, dry leaves",
+    "quantity": "375-1450 mg",
     "oxalate": "1450"
   },
   {
     "food": "Tea, Indian, infusion (1 g in 100 ml water, infused for 2 min)",
+    "quantity": "4.6 mg",
     "oxalate": "5"
   },
   {
     "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 10 min)",
+    "quantity": "11.5 mg",
     "oxalate": "12"
   },
   {
     "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 15 min)",
+    "quantity": "12.6 mg",
     "oxalate": "13"
   },
   {
     "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 2 min)",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 5 min)",
+    "quantity": "10.1 mg",
     "oxalate": "10"
   },
   {
     "food": "Team Cheerios",
+    "quantity": "6 mg",
     "oxalate": "6"
   },
   {
     "food": "Toasted Oatmeal ",
+    "quantity": "6 mg",
     "oxalate": "6"
   },
   {
     "food": "Tofu",
+    "quantity": "13 mg",
     "oxalate": "13"
   },
   {
     "food": "Tomatillo",
+    "quantity": "53.6 mg",
     "oxalate": "54"
   },
   {
     "food": "Tomato",
+    "quantity": "26.3 mg",
     "oxalate": "26"
   },
   {
     "food": "Tomato",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Tomato",
+    "quantity": "50 mg",
     "oxalate": "50"
   },
   {
     "food": "Tomato Juice",
+    "quantity": "14 mg",
     "oxalate": "14"
   },
   {
     "food": "Tomato Sauce",
+    "quantity": "17 mg",
     "oxalate": "17"
   },
   {
     "food": "Tomato, red, ripe, raw",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "Tomatoes (Raw)",
+    "quantity": "5.3 mg",
     "oxalate": "5"
   },
   {
     "food": "Tortilla Corn Chips",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Tortillas, Corn",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Tortillas, flour",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "Total Corn Flakes",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Total Raisin Bran",
+    "quantity": "31 mg",
     "oxalate": "31"
   },
   {
     "food": "Trail Mix",
+    "quantity": "15 mg",
     "oxalate": "15"
   },
   {
     "food": "Triscuits",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Trix",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Tuna Fish (in oil)",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Tuna Fish (in water)",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Tuna Salad",
+    "quantity": "6 mg",
     "oxalate": "6"
   },
   {
     "food": "Turkey",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Turkey Dogs",
+    "quantity": "3 mg",
     "oxalate": "3"
   },
   {
     "food": "Turnip",
+    "quantity": "30 mg",
     "oxalate": "30"
   },
   {
     "food": "Turnip",
+    "quantity": "210 mg",
     "oxalate": "210"
   },
   {
     "food": "Turnip greens",
+    "quantity": "50 mg",
     "oxalate": "50"
   },
   {
     "food": "Turnip, Early Snowball, white (Boiled)",
+    "quantity": "0.8 mg",
     "oxalate": "1"
   },
   {
     "food": "Uncle Sam",
+    "quantity": "11 mg",
     "oxalate": "11"
   },
   {
     "food": "V8 Juice",
+    "quantity": "18 mg",
     "oxalate": "18"
   },
   {
     "food": "Vanilla Pudding",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Vegetable Beef Soup",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Veggie Burger",
+    "quantity": "24 mg",
     "oxalate": "24"
   },
   {
     "food": "Venison",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Wafflecrisp",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Walnuts",
+    "quantity": "31 mg",
     "oxalate": "31"
   },
   {
     "food": "Water",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
-    "food": "Waterchestnuts",
+    "food": "Waterchestnuts <span class=\"food_alt small\">[Water Chestnuts]</span>",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Watercress",
+    "quantity": "310 mg",
     "oxalate": "310"
   },
   {
     "food": "Watermelon",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Watermelon, ripe, raw",
+    "quantity": "11 mg",
     "oxalate": "11"
   },
   {
     "food": "Waxgourd",
+    "quantity": "3.4 mg",
     "oxalate": "3"
   },
   {
     "food": "Wheat",
+    "quantity": "11.1 mg",
     "oxalate": "11"
   },
   {
     "food": "Wheat Berries",
+    "quantity": "98 mg",
     "oxalate": "98"
   },
   {
     "food": "Wheat Bran Bread",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Wheat Chex",
+    "quantity": "7 mg",
     "oxalate": "7"
   },
   {
     "food": "Wheat Crackers",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Wheat flour, brown, whole grain, raw",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "Wheat Flour, Whole Grain",
+    "quantity": "29 mg",
     "oxalate": "29"
   },
   {
     "food": "Wheat Thins, Reduced Fat",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Wheat, whole, raw",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "Wheaties",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "Wheaties Raisin Bran",
+    "quantity": "11 mg",
     "oxalate": "11"
   },
   {
     "food": "Wheetabix Whole Wheat",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "Whipped Cream",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Whipped Topping",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "White Bread",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "White Rice Flour",
+    "quantity": "11 mg",
     "oxalate": "11"
   },
   {
     "food": "White Rice, cooked",
+    "quantity": "4 mg",
     "oxalate": "4"
   },
   {
     "food": "White Wine",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Whiting",
+    "quantity": "0 mg",
     "oxalate": "0"
   },
   {
     "food": "Whole Grain Total",
+    "quantity": "8 mg",
     "oxalate": "8"
   },
   {
     "food": "Whole Milk",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Whole Oat Bread ",
+    "quantity": "5 mg",
     "oxalate": "5"
   },
   {
     "food": "Whole Wheat Bread",
+    "quantity": "6 mg",
     "oxalate": "6"
   },
   {
     "food": "Wild Game Meat",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Yam, tuber, raw",
+    "quantity": "15 mg",
     "oxalate": "15"
   },
   {
     "food": "Yams",
+    "quantity": "40 mg",
     "oxalate": "40"
   },
   {
     "food": "Yellow Squash",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Yogurt with Fruit",
+    "quantity": "1 mg",
     "oxalate": "1"
   },
   {
     "food": "Zucchini",
+    "quantity": "1 mg",
     "oxalate": "1"
   }
 ]
