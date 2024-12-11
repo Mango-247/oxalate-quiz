@@ -102,11 +102,10 @@ function updateButtons() {
         const removeButton = row.querySelector('.remove-button');
 
         if (index === playerRows.length - 1) {
-            // Show buttons only for the last input
             addButton.style.display = playerRows.length < 8 ? 'inline-block' : 'none';
             removeButton.style.display = playerRows.length > 1 ? 'inline-block' : 'none';
         } else {
-            // Hide buttons for other rows
+            // Hide all buttons for non-last rows
             addButton.style.display = 'none';
             removeButton.style.display = 'none';
         }
