@@ -7,8 +7,6 @@ body {
     margin: 0;
     background-color: #f9f9f9;
     text-align: center;
-    touch-action: manipulation; /* Prevent touch gestures like pinch-zoom */
-    overflow: hidden; /* Prevent scrolling or zooming */
 }
 
 .container {
@@ -26,7 +24,7 @@ body {
     padding: 7.5px 15px; 
     border: none;
     border-radius: 7.5px; 
-    font-size: 16px; /* Updated to 16px to prevent input zoom on mobile */
+    font-size: 12px; 
     font-weight: bold;
     cursor: pointer;
     display: block;
@@ -77,16 +75,20 @@ body {
     padding: 3.75px 7.5px; 
     flex-shrink: 0;
     max-width: fit-content;
-    font-size: 16px; /* Ensure proper size to avoid zooming */
 }
 
 .guess-input {
     margin: 0 3.75px; 
     padding: 7.5px; 
     width: 150px; 
-    font-size: 16px; /* Updated to prevent zooming on input focus */
+    font-size: 16px; /* Prevent zoom on mobile */
     text-align: center;
     flex-grow: 1;
+    outline: none; /* Remove blue outline */
+}
+
+.guess-input:focus {
+    box-shadow: 0 0 0 2px black; /* Add black outline on focus */
 }
 
 .add-button, .remove-button {
@@ -94,7 +96,7 @@ body {
     height: 22.5px; 
     border: none;
     border-radius: 50%;
-    font-size: 16px; /* Updated for consistent size */
+    font-size: 13.5px; 
     font-weight: bold;
     cursor: pointer;
     display: flex;
