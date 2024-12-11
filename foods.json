@@ -80,8 +80,8 @@
     "oxalate": "2 mg"
   },
   {
-    "food": "Apple, with skin, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Apple, with skin, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "10 mg"
   },
   {
@@ -90,7 +90,7 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Apples, Bramley's Seedling (Raw)",
+    "food": "Bramley Apple (Raw)",
     "quantity": "100 g fresh weight",
     "oxalate": "1.5 mg"
   },
@@ -180,8 +180,8 @@
     "oxalate": "524 mg"
   },
   {
-    "food": "Banana, Sagar, ripe, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Banana, Sagar, ripe, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "3 mg"
   },
   {
@@ -190,8 +190,8 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Barley, whole-grain, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Barley, whole-grain, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "2 mg"
   },
   {
@@ -200,23 +200,13 @@
     "oxalate": "17 mg"
   },
   {
-    "food": "Beans, French, Blue Lake (Boiled)",
+    "food": "Blue Lake Beans (Boiled)",
     "quantity": "100 g fresh weight",
     "oxalate": "30.2 mg"
   },
   {
-    "food": "Beans, French, Guernsey Runner (Boiled)",
-    "quantity": "100 g fresh weight",
-    "oxalate": "22.8 mg"
-  },
-  {
-    "food": "Beans, Runner, Mont d'Or (Boiled)",
-    "quantity": "100 g fresh weight",
-    "oxalate": "26.6 mg"
-  },
-  {
-    "food": "Beans, seeds and pods, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Beans, seeds and pods, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "25 mg"
   },
   {
@@ -235,7 +225,7 @@
     "oxalate": "0.4 mg"
   },
   {
-    "food": "Beef, corned, Fray Bentos (Canned)",
+    "food": "Fray Bentos Corned Beef (Canned)",
     "quantity": "100 g fresh weight",
     "oxalate": "0.2 mg"
   },
@@ -255,17 +245,17 @@
     "oxalate": "610 mg"
   },
   {
-    "food": "Beet, Beetroot, Garden Beet, Sugar Beet",
+    "food": "Beet / Beetroot",
     "quantity": "100 g",
     "oxalate": "40.4 mg"
   },
   {
-    "food": "Beetroot, fresh, peeled, boiled, drained",
+    "food": "Beetroot, peeled + Boiled",
     "quantity": "100 g",
     "oxalate": "100 mg"
   },
   {
-    "food": "Beetroot, fresh, peeled, raw",
+    "food": "Beetroot, fresh, peeled, Raw",
     "quantity": "100 g",
     "oxalate": "100 mg"
   },
@@ -315,7 +305,7 @@
     "oxalate": "7 mg"
   },
   {
-    "food": "Biscuits (plain or buttermilk)",
+    "food": "Biscuits (plain/buttermilk)",
     "quantity": "1 biscuit",
     "oxalate": "6 mg"
   },
@@ -325,7 +315,7 @@
     "oxalate": "4.5 mg"
   },
   {
-    "food": "Bitter Lettuce (Latex Exudate)",
+    "food": "Bitter Lettuce",
     "quantity": "100 g",
     "oxalate": "1000 mg"
   },
@@ -435,12 +425,12 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Black Pepper, Pepper, White Pepper",
+    "food": "Black Pepper",
     "quantity": "100 g",
     "oxalate": "3400 mg"
   },
   {
-    "food": "Black-currants, Cotswold Cross (Raw)",
+    "food": "Black-currants (Raw)",
     "quantity": "100 g fresh weight",
     "oxalate": "4.3 mg"
   },
@@ -471,7 +461,7 @@
   },
   {
     "food": "Bok Choy",
-    "quantity": "1 cup, raw",
+    "quantity": "1 cup, Raw",
     "oxalate": "1 mg"
   },
   {
@@ -480,7 +470,7 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Bran Flakes with Raisins, Single Brand",
+    "food": "Bran Flakes with Raisins",
     "quantity": "1 cup",
     "oxalate": "57 mg"
   },
@@ -565,7 +555,7 @@
     "oxalate": "2 mg"
   },
   {
-    "food": "Brussel sprouts, Cambridge Special (Boiled)",
+    "food": "Brussel sprouts  (Boiled)",
     "quantity": "100 g fresh weight",
     "oxalate": "2.1 mg"
   },
@@ -640,22 +630,22 @@
     "oxalate": "100 mg"
   },
   {
-    "food": "Cabbage, Red Cabbage, White Cabbage",
+    "food": "Cabbage",
     "quantity": "100 g",
     "oxalate": "35 mg"
   },
   {
-    "food": "Cabbage, spring, Durham early (Boiled)",
+    "food": "Boiled Spring Cabbage",
     "quantity": "100 g fresh weight",
     "oxalate": "1 mg"
   },
   {
-    "food": "Cabbage, summer, June Giant (Boiled)",
+    "food": "Boiled Summer Cabbage",
     "quantity": "100 g fresh weight",
     "oxalate": "0.6 mg"
   },
   {
-    "food": "Cabbage, winter, January King (Boiled)",
+    "food": "Boiled Winter Cabbage",
     "quantity": "100 g fresh weight",
     "oxalate": "2 mg"
   },
@@ -690,7 +680,7 @@
     "oxalate": "7.4 mg"
   },
   {
-    "food": "Candies with Nuts (ex Snickers)",
+    "food": "Candy with Nuts (ex Snickers)",
     "quantity": "2 oz",
     "oxalate": "38 mg"
   },
@@ -745,8 +735,8 @@
     "oxalate": "27 mg"
   },
   {
-    "food": "Carrot, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Carrot, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "6 mg"
   },
   {
@@ -765,7 +755,7 @@
     "oxalate": "7 mg"
   },
   {
-    "food": "Carrots, raw",
+    "food": "Carrots, Raw",
     "quantity": "1/2 lg carrot",
     "oxalate": "10 mg"
   },
@@ -775,8 +765,8 @@
     "oxalate": "318.4 mg"
   },
   {
-    "food": "Cashew nuts, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Cashew nuts, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "318 mg"
   },
   {
@@ -830,7 +820,7 @@
     "oxalate": "10 mg"
   },
   {
-    "food": "Celery, raw",
+    "food": "Celery, Raw",
     "quantity": "1 stalk",
     "oxalate": "3 mg"
   },
@@ -905,7 +895,7 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Chicken Soup, Fray Bentos (Canned)",
+    "food": "Fray Bentos Chicken Soup (Canned)",
     "quantity": "100 g fresh weight",
     "oxalate": "3 mg"
   },
@@ -930,22 +920,22 @@
     "oxalate": "24 mg"
   },
   {
-    "food": "Chilli (chili), green, stir-fried",
+    "food": "Green Chilli, stir-fried",
     "quantity": "100 g",
     "oxalate": "100 mg"
   },
   {
-    "food": "Chilli, green, with seeds, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Green Chilli with seeds, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "29 mg"
   },
   {
     "food": "Chilli, red, dry",
-    "quantity": "100 g edible portion of fresh weight",
+    "quantity": "100 g edible portion",
     "oxalate": "67 mg"
   },
   {
-    "food": "Chinese Parsley, Cilantro, Coriander (Leaf)",
+    "food": "Cilantro / Coriander (Leaf)",
     "quantity": "100 g",
     "oxalate": "5 mg"
   },
@@ -965,12 +955,12 @@
     "oxalate": "1.1 mg"
   },
   {
-    "food": "Chocolate Chip Cookies (Low Fat Only)",
+    "food": "Choc Chip Cookies (Low Fat)",
     "quantity": "1 cookie",
     "oxalate": "7 mg"
   },
   {
-    "food": "Chocolate Chip Cookies (store brand)",
+    "food": "Choc Chip Cookies (Store Bought)",
     "quantity": "1 cookie",
     "oxalate": "10 mg"
   },
@@ -1000,7 +990,7 @@
     "oxalate": "13 mg"
   },
   {
-    "food": "Clams, raw",
+    "food": "Clams, Raw",
     "quantity": "3 oz  ",
     "oxalate": "0 mg"
   },
@@ -1026,7 +1016,7 @@
   },
   {
     "food": "Coconut water",
-    "quantity": "100 g edible portion of fresh weight",
+    "quantity": "100 g edible portion",
     "oxalate": "318 mg"
   },
   {
@@ -1065,7 +1055,7 @@
     "oxalate": "2 mg"
   },
   {
-    "food": "Coffee, ground, containing 5% chicory, Kardomah (2 g in 100 ml water, infused for 5 min)",
+    "food": "Coffee, ground",
     "quantity": "100 g fresh weight",
     "oxalate": "1 mg"
   },
@@ -1100,8 +1090,8 @@
     "oxalate": "10 mg"
   },
   {
-    "food": "Coriander leaves, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Coriander leaves, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "47 mg"
   },
   {
@@ -1215,7 +1205,7 @@
     "oxalate": "15 mg"
   },
   {
-    "food": "Cranberry Almond Crunch (Morning Traditions)",
+    "food": "Cranberry Almond Crunch",
     "quantity": "1 cup",
     "oxalate": "35 mg"
   },
@@ -1280,8 +1270,8 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Custard apple, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Custard apple, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "30 mg"
   },
   {
@@ -1370,8 +1360,8 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Emblic, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Emblic, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "296 mg"
   },
   {
@@ -1430,7 +1420,7 @@
     "oxalate": "7 mg"
   },
   {
-    "food": "European Grape, Grape, Grapevine, Wine Grape",
+    "food": "Grapes",
     "quantity": "100 g",
     "oxalate": "3.4 mg"
   },
@@ -1485,7 +1475,7 @@
     "oxalate": "51 mg"
   },
   {
-    "food": "French Fries (homemade or fast food)",
+    "food": "French Fries",
     "quantity": "4 oz or 1/2 cup",
     "oxalate": "51 mg"
   },
@@ -1525,7 +1515,7 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Fruit & Fiber Dates, Raisins & Walnuts",
+    "food": "Dates, Raisins & Walnuts",
     "quantity": "1 cup",
     "oxalate": "41 mg"
   },
@@ -1590,7 +1580,7 @@
     "oxalate": "9 mg"
   },
   {
-    "food": "Gooseberries, Keepsake (Stewed)",
+    "food": "Stewed Gooseberries",
     "quantity": "100 g fresh weight",
     "oxalate": "2.6 mg"
   },
@@ -1610,7 +1600,7 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Granola Oats & Honey, 100% Natural",
+    "food": "Granola Oats & Honey",
     "quantity": "1/2 cup",
     "oxalate": "13 mg"
   },
@@ -1660,11 +1650,6 @@
     "oxalate": "18 mg"
   },
   {
-    "food": "Great Grains Raisin, Dates & Pecans",
-    "quantity": "2/3 cup",
-    "oxalate": "17 mg"
-  },
-  {
     "food": "Green Pepper",
     "quantity": "1 ring",
     "oxalate": "1 mg"
@@ -1685,8 +1670,8 @@
     "oxalate": "14 mg"
   },
   {
-    "food": "Guava, green, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Guava, green, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "14 mg"
   },
   {
@@ -1720,12 +1705,12 @@
     "oxalate": "11 mg"
   },
   {
-    "food": "Healthy Choice Multi-Grain Flakes",
+    "food": "Multi-Grain Flakes",
     "quantity": "3/4 cup",
     "oxalate": "7 mg"
   },
   {
-    "food": "Healthy Valley Oat Bran Flakes",
+    "food": "Oat Bran Flakes",
     "quantity": "1 cup",
     "oxalate": "0 mg"
   },
@@ -1745,12 +1730,12 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Honey Bunches of Oats Honey Roasted",
+    "food": "Honey Bunches of Oats",
     "quantity": "3/4 cup",
     "oxalate": "3 mg"
   },
   {
-    "food": "Honey Bunches of Oats with Almonds",
+    "food": "Honey Bunches of Oats + Almonds",
     "quantity": "3/4 cup",
     "oxalate": "2 mg"
   },
@@ -1835,7 +1820,7 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Indian Tamarind, Kilytree, Tamarind",
+    "food": "Indian Tamarind",
     "quantity": "100 g",
     "oxalate": "196 mg"
   },
@@ -1845,8 +1830,8 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Jackfruit, ripe, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Jackfruit, ripe, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "10 mg"
   },
   {
@@ -1860,8 +1845,8 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Jambolan, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Jambolan, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "89 mg"
   },
   {
@@ -1873,11 +1858,6 @@
     "food": "Just Right Fruit & Nut",
     "quantity": "1 cup",
     "oxalate": "13 mg"
-  },
-  {
-    "food": "Just Right with Crunchy Nuggets",
-    "quantity": "1 cup",
-    "oxalate": "5 mg"
   },
   {
     "food": "Kale",
@@ -1960,7 +1940,7 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Lemon Juice (canned or bottled)",
+    "food": "Lemon Juice (canned/bottled)",
     "quantity": "1 cup",
     "oxalate": "4 mg"
   },
@@ -1975,7 +1955,7 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Lemonade (frozen from concentrate)",
+    "food": "Lemonade (from concentrate)",
     "quantity": "8 oz",
     "oxalate": "15 mg"
   },
@@ -2005,7 +1985,7 @@
     "oxalate": "330 mg"
   },
   {
-    "food": "Lettuce, Webbs Wonderful (Raw)",
+    "food": "Webbs Wonderful Lettuce (Raw)",
     "quantity": "100 g fresh weight",
     "oxalate": "1.7 mg"
   },
@@ -2025,7 +2005,7 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Low Fat 100% Natural Granola with Raisins",
+    "food": "Low Fat Granola with Raisins",
     "quantity": "3/4 cup",
     "oxalate": "15 mg"
   },
@@ -2070,8 +2050,8 @@
     "oxalate": "0.1 mg"
   },
   {
-    "food": "Lychee, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Lychee, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "19 mg"
   },
   {
@@ -2085,8 +2065,8 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Maize/corn, yellow, dried, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Maize/corn (yellow, Raw)",
+    "quantity": "100 g edible portion",
     "oxalate": "6 mg"
   },
   {
@@ -2105,13 +2085,13 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Mango, Fazli, orange flesh, ripe, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Fazli Mango (Raw)",
+    "quantity": "100 g edible portion",
     "oxalate": "3 mg"
   },
   {
-    "food": "Mango, Langra, yellow flesh, ripe, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Langra Mango (Raw)",
+    "quantity": "100 g edible portion",
     "oxalate": "3 mg"
   },
   {
@@ -2145,8 +2125,8 @@
     "oxalate": "2 mg"
   },
   {
-    "food": "Melon, Futi, orange flesh, ripe, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Futi Melon (Raw)",
+    "quantity": "100 g edible portion",
     "oxalate": "2 mg"
   },
   {
@@ -2240,63 +2220,53 @@
     "oxalate": "524 mg"
   },
   {
-    "food": "Mushroom, Cep, Porcini, Penny Bun, King Bolete (Cooked)",
-    "quantity": "100 g dry weight",
+    "food": "Porcini Mushroom (Cooked)",
+    "quantity": "100 g",
     "oxalate": "33.1 mg"
   },
   {
-    "food": "Mushroom, Cep, Porcini, Penny Bun, King Bolete (Raw)",
-    "quantity": "100 g dry weight",
+    "food": "Porcini Mushroom (Raw)",
+    "quantity": "100 g",
     "oxalate": "43.6 mg"
   },
   {
-    "food": "Mushroom, Chanterelle (Cooked)",
-    "quantity": "100 g dry weight",
+    "food": "Chanterelle Mushroom (Cooked)",
+    "quantity": "100 g",
     "oxalate": "35.2 mg"
   },
   {
     "food": "Mushroom, Chanterelle (Raw)",
-    "quantity": "100 g dry weight",
+    "quantity": "100 g",
     "oxalate": "42.1 mg"
   },
   {
-    "food": "Mushroom, Hedgehog, Sweet Tooth (Cooked)",
-    "quantity": "100 g dry weight",
+    "food": "Hedgehog Mushroom (Cooked)",
+    "quantity": "100 g",
     "oxalate": "23.3 mg"
   },
   {
-    "food": "Mushroom, Hedgehog, Sweet Tooth (Raw)",
-    "quantity": "100 g dry weight",
+    "food": "Hedgehog Mushroom (Raw)",
+    "quantity": "100 g",
     "oxalate": "26.4 mg"
   },
   {
     "food": "Mushroom, Oyster (Cooked)",
-    "quantity": "100 g dry weight",
+    "quantity": "100 g",
     "oxalate": "48.5 mg"
   },
   {
     "food": "Mushroom, Oyster (Raw)",
-    "quantity": "100 g dry weight",
+    "quantity": "100 g",
     "oxalate": "104.1 mg"
   },
   {
-    "food": "Mushroom, Piopino, Piopparello, Velvet (Cooked)",
-    "quantity": "100 g dry weight",
-    "oxalate": "58.6 mg"
-  },
-  {
-    "food": "Mushroom, Piopino, Piopparello, Velvet (Raw)",
-    "quantity": "100 g dry weight",
-    "oxalate": "80.3 mg"
-  },
-  {
     "food": "Mushroom, Shiitake (Cooked)",
-    "quantity": "100 g dry weight",
+    "quantity": "100 g",
     "oxalate": "124.6 mg"
   },
   {
     "food": "Mushroom, Shiitake (Raw)",
-    "quantity": "100 g dry weight",
+    "quantity": "100 g",
     "oxalate": "101.4 mg"
   },
   {
@@ -2305,8 +2275,8 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Muskmelon, Bangee, light orange flesh, ripe, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Muskmelon (Raw)",
+    "quantity": "100 g edible portion",
     "oxalate": "2 mg"
   },
   {
@@ -2325,7 +2295,7 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Nabisco Honey Nut Shredded Wheat Bite Size",
+    "food": "Nabisco Honey Nut Shredded Wheat",
     "quantity": "1 cup",
     "oxalate": "47 mg"
   },
@@ -2340,7 +2310,7 @@
     "oxalate": "13 mg"
   },
   {
-    "food": "Nature Valley Cinnimon & Raisins Granola ",
+    "food": "Cinnimon & Raisins Granola ",
     "quantity": "3/4 cup",
     "oxalate": "13 mg"
   },
@@ -2375,7 +2345,7 @@
     "oxalate": "300 mg"
   },
   {
-    "food": "Nut, brazil, raw or blanched",
+    "food": "Nut, brazil, Raw or blanched",
     "quantity": "100 g",
     "oxalate": "100 mg"
   },
@@ -2385,12 +2355,12 @@
     "oxalate": "100 mg"
   },
   {
-    "food": "Nut, hazelnut, raw",
+    "food": "Nut, hazelnut, Raw",
     "quantity": "100 g",
     "oxalate": "100 mg"
   },
   {
-    "food": "Nut, pine, raw",
+    "food": "Nut, pine, Raw",
     "quantity": "100 g",
     "oxalate": "100 mg"
   },
@@ -2415,7 +2385,7 @@
     "oxalate": "4 mg"
   },
   {
-    "food": "Oat Bran, raw",
+    "food": "Oat Bran, Raw",
     "quantity": "1/3 cup",
     "oxalate": "0 mg"
   },
@@ -2505,8 +2475,8 @@
     "oxalate": "5 mg"
   },
   {
-    "food": "Onion, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Onion, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "3 mg"
   },
   {
@@ -2540,8 +2510,8 @@
     "oxalate": "2 mg"
   },
   {
-    "food": "Orange, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Orange, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "10 mg"
   },
   {
@@ -2555,7 +2525,7 @@
     "oxalate": "6 mg"
   },
   {
-    "food": "Original Shredded Wheat & Bran",
+    "food": "Shredded Wheat & Bran",
     "quantity": "1 1/4 cup",
     "oxalate": "53 mg"
   },
@@ -2570,7 +2540,7 @@
     "oxalate": "1.6 mg"
   },
   {
-    "food": "Oxtail Soup, Fray Bentos (Canned)",
+    "food": "Fray Bentos Oxtail Soup (Canned)",
     "quantity": "100 g fresh weight",
     "oxalate": "1 mg"
   },
@@ -2610,8 +2580,8 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Papaya, ripe, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Papaya, ripe, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "1 mg"
   },
   {
@@ -2680,8 +2650,8 @@
     "oxalate": "27 mg"
   },
   {
-    "food": "Pear millet, whole-grain, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Pear millet, whole-grain, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "21 mg"
   },
   {
@@ -2705,7 +2675,7 @@
     "oxalate": "0.8 mg"
   },
   {
-    "food": "Peas, fresh, Feltham First (Boiled)",
+    "food": "Boiled Peas",
     "quantity": "100 g fresh weight",
     "oxalate": "1.3 mg"
   },
@@ -2750,13 +2720,13 @@
     "oxalate": "3 mg"
   },
   {
-    "food": "Pineapple, Joldugee, ripe, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Pineapple (Raw)",
+    "quantity": "100 g edible portion",
     "oxalate": "5 mg"
   },
   {
-    "food": "Pineapple, ripe, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Pineapple, ripe, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "5 mg"
   },
   {
@@ -2790,16 +2760,6 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Plums, Giant Prune, Victoria (Stewed)",
-    "quantity": "100 g fresh weight",
-    "oxalate": "3.4 mg"
-  },
-  {
-    "food": "Plums, Jefferson's Golden Gage (Stewed)",
-    "quantity": "100 g fresh weight",
-    "oxalate": "1.1 mg"
-  },
-  {
     "food": "Pollock",
     "quantity": "3 oz",
     "oxalate": "0 mg"
@@ -2810,8 +2770,8 @@
     "oxalate": "14 mg"
   },
   {
-    "food": "Pomegranate, ripe, with seed, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Pomegranate (Raw)",
+    "quantity": "100 g edible portion",
     "oxalate": "14 mg"
   },
   {
@@ -2870,8 +2830,8 @@
     "oxalate": "17 mg"
   },
   {
-    "food": "Potato, Diamond, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Potato, Diamond, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "12 mg"
   },
   {
@@ -2960,7 +2920,7 @@
     "oxalate": "480 mg"
   },
   {
-    "food": "Radishes, French Breakfast (Raw)",
+    "food": "Radishes  (Raw)",
     "quantity": "100 g fresh weight",
     "oxalate": "0.3 mg"
   },
@@ -2995,7 +2955,7 @@
     "oxalate": "48 mg"
   },
   {
-    "food": "Raspberries, Malling Exploit (Raw)",
+    "food": "Malling Exploit Raspberries (Raw)",
     "quantity": "100 g fresh weight",
     "oxalate": "2.2 mg"
   },
@@ -3040,22 +3000,22 @@
     "oxalate": "1336 mg"
   },
   {
-    "food": "Rhubarb, Giant Grooveless Crimson, end of season (Stewed)",
+    "food": "Grooveless Rhubarb (Stewed)",
     "quantity": "100 g fresh weight",
     "oxalate": "460 mg"
   },
   {
-    "food": "Rhubarb, stalk, raw",
+    "food": "Rhubarb, stalk, Raw",
     "quantity": "100 g",
     "oxalate": "400 mg"
   },
   {
-    "food": "Rhubarb, Victoria, end of season (Stewed)",
+    "food": "Victoria Rhubarb (Stewed)",
     "quantity": "100 g fresh weight",
     "oxalate": "620 mg"
   },
   {
-    "food": "Rhubarb, Victoria, forced (Stewed)",
+    "food": "Victoria Rhubarb, forced (Stewed)",
     "quantity": "100 g fresh weight",
     "oxalate": "260 mg"
   },
@@ -3086,7 +3046,7 @@
   },
   {
     "food": "Rice flaked",
-    "quantity": "100 g edible portion of fresh weight",
+    "quantity": "100 g edible portion",
     "oxalate": "0 mg"
   },
   {
@@ -3110,18 +3070,8 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Rice, BR-28, parboiled, milled, raw",
-    "quantity": "100 g edible portion of fresh weight",
-    "oxalate": "1 mg"
-  },
-  {
-    "food": "Rice, white, sunned, aromatic, raw",
-    "quantity": "100 g edible portion of fresh weight",
-    "oxalate": "1 mg"
-  },
-  {
-    "food": "Rice, white, sunned, polished, milled, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "White Rice",
+    "quantity": "100 g edible portion",
     "oxalate": "1 mg"
   },
   {
@@ -3205,12 +3155,12 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Silverbeet, boiled, drained",
+    "food": "Silverbeet, Boiled, drained",
     "quantity": "100 g",
     "oxalate": "600 mg"
   },
   {
-    "food": "Silverbeet, raw",
+    "food": "Silverbeet, Raw",
     "quantity": "100 g",
     "oxalate": "500 mg"
   },
@@ -3240,8 +3190,8 @@
     "oxalate": "0 mg"
   },
   {
-    "food": "Sorghum, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Sorghum, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "10 mg"
   },
   {
@@ -3296,7 +3246,7 @@
   },
   {
     "food": "Spearmint leaves, fresh",
-    "quantity": "100 g edible portion of fresh weight",
+    "quantity": "100 g edible portion",
     "oxalate": "33 mg"
   },
   {
@@ -3320,7 +3270,7 @@
     "oxalate": "970 mg"
   },
   {
-    "food": "Spinach beet, Beet Perpetual (Boiled)",
+    "food": "Spinach beet, (Boiled)",
     "quantity": "100 g fresh weight",
     "oxalate": "692 mg"
   },
@@ -3330,32 +3280,32 @@
     "oxalate": "755 mg"
   },
   {
-    "food": "Spinach, English, boiled, drained",
+    "food": "English Spinach (Boiled)",
     "quantity": "100 g",
     "oxalate": "400 mg"
   },
   {
-    "food": "Spinach, English, raw",
+    "food": "English Spinach, Raw",
     "quantity": "100 g",
     "oxalate": "300 mg"
   },
   {
-    "food": "Spinach, frozen (Boiled)",
+    "food": "frozen Spinach (Boiled)",
     "quantity": "100 g fresh weight",
     "oxalate": "458 mg"
   },
   {
-    "food": "Spinach, frozen, boiled, drained",
+    "food": "frozen Spinach (Boiled + Drained)",
     "quantity": "100 g",
     "oxalate": "500 mg"
   },
   {
-    "food": "Spinach, Long-standing, round (Boiled)",
+    "food": "Long-standing Spinach (Boiled)",
     "quantity": "100 g fresh weight",
     "oxalate": "780 mg"
   },
   {
-    "food": "Spinach, raw",
+    "food": "Spinach, Raw",
     "quantity": "1 cup",
     "oxalate": "656 mg"
   },
@@ -3370,12 +3320,12 @@
     "oxalate": "20 mg"
   },
   {
-    "food": "Strawberries",
+    "food": "StRawberries",
     "quantity": "1/2 cup",
     "oxalate": "2 mg"
   },
   {
-    "food": "Strawberries, Huxley (Raw)",
+    "food": "StRawberries, Huxley (Raw)",
     "quantity": "100 g fresh weight",
     "oxalate": "1.9 mg"
   },
@@ -3480,31 +3430,6 @@
     "oxalate": "14 mg"
   },
   {
-    "food": "Tea, Indian, infusion (1 g in 100 ml water, infused for 2 min)",
-    "quantity": "100 g fresh weight",
-    "oxalate": "4.6 mg"
-  },
-  {
-    "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 10 min)",
-    "quantity": "100 g fresh weight",
-    "oxalate": "11.5 mg"
-  },
-  {
-    "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 15 min)",
-    "quantity": "100 g fresh weight",
-    "oxalate": "12.6 mg"
-  },
-  {
-    "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 2 min)",
-    "quantity": "100 g fresh weight",
-    "oxalate": "7 mg"
-  },
-  {
-    "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 5 min)",
-    "quantity": "100 g fresh weight",
-    "oxalate": "10.1 mg"
-  },
-  {
     "food": "Team Cheerios",
     "quantity": "1 cup",
     "oxalate": "6 mg"
@@ -3550,8 +3475,8 @@
     "oxalate": "17 mg"
   },
   {
-    "food": "Tomato, red, ripe, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Tomato, red, ripe, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "4 mg"
   },
   {
@@ -3640,7 +3565,7 @@
     "oxalate": "50 mg"
   },
   {
-    "food": "Turnip, Early Snowball, white (Boiled)",
+    "food": "Early Snowball Turnip (Boiled)",
     "quantity": "100 g fresh weight",
     "oxalate": "0.8 mg"
   },
@@ -3705,8 +3630,8 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Watermelon, ripe, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Watermelon, ripe, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "11 mg"
   },
   {
@@ -3740,8 +3665,8 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Wheat flour, brown, whole grain, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Brown Wheat flour",
+    "quantity": "100 g edible portion",
     "oxalate": "8 mg"
   },
   {
@@ -3755,8 +3680,8 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Wheat, whole, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Wheat, whole, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "8 mg"
   },
   {
@@ -3835,8 +3760,8 @@
     "oxalate": "1 mg"
   },
   {
-    "food": "Yam, tuber, raw",
-    "quantity": "100 g edible portion of fresh weight",
+    "food": "Yam, tuber, Raw",
+    "quantity": "100 g edible portion",
     "oxalate": "15 mg"
   },
   {
