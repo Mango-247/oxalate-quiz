@@ -11,25 +11,25 @@ body {
 
 .container {
     text-align: center;
-    padding: 15px; /* 20px * 0.75 */
+    padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 7.5px; /* 10px * 0.75 */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* 4px * 0.75 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .reroll-button, .submit-button {
     background-color: red;
     color: white;
-    padding: 7.5px 15px; /* 10px 20px * 0.75 */
+    padding: 10px 20px;
     border: none;
-    border-radius: 7.5px; /* 10px * 0.75 */
-    font-size: 12px; /* 16px * 0.75 */
+    border-radius: 10px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     display: block;
-    margin: 7.5px auto; /* 10px * 0.75 */
-    width: 150px; /* 200px * 0.75 */
+    margin: 10px auto;
+    width: 200px;
 }
 
 .reroll-button:hover, .submit-button:hover {
@@ -37,17 +37,17 @@ body {
 }
 
 .food-name {
-    font-size: 18px; /* 24px * 0.75 */
+    font-size: 24px;
     font-weight: bold;
     color: black;
-    margin: 15px 0; /* 20px * 0.75 */
+    margin: 20px 0;
 }
 
 .quantity {
-    font-size: 18px; /* 24px * 0.75 */
+    font-size: 24px;
     font-weight: bold;
     color: black;
-    margin: 15px 0; /* 20px * 0.75 */
+    margin: 20px 0;
 }
 
 .players-container {
@@ -62,7 +62,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    margin: 3.75px 0; /* 5px * 0.75 */
+    margin: 5px 0;
 }
 
 .player-label {
@@ -70,28 +70,28 @@ body {
     color: white;
     text-align: center;
     font-weight: bold;
-    border-radius: 3.75px; /* 5px * 0.75 */
-    margin-right: 3.75px; /* 5px * 0.75 */
-    padding: 3.75px 7.5px; /* 5px 10px * 0.75 */
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
     flex-shrink: 0;
     max-width: fit-content;
 }
 
 .guess-input {
-    margin: 0 3.75px; /* 5px * 0.75 */
-    padding: 7.5px; /* 10px * 0.75 */
-    width: 150px; /* 200px * 0.75 */
-    font-size: 12px; /* 16px * 0.75 */
+    margin: 0 5px;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
     text-align: center;
     flex-grow: 1;
 }
 
 .add-button, .remove-button {
-    width: 22.5px; /* 30px * 0.75 */
-    height: 22.5px; /* 30px * 0.75 */
+    width: 30px;
+    height: 30px;
     border: none;
     border-radius: 50%;
-    font-size: 13.5px; /* 18px * 0.75 */
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     display: flex;
@@ -99,7 +99,7 @@ body {
     align-items: center;
     background-color: red;
     color: white;
-    margin-left: 3.75px; /* 5px * 0.75 */
+    margin-left: 5px;
 }
 
 .add-button:hover, .remove-button:hover {
@@ -107,8 +107,8 @@ body {
 }
 
 .result, .closest-player {
-    margin-top: 15px; /* 20px * 0.75 */
-    font-size: 13.5px; /* 18px * 0.75 */
+    margin-top: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: black;
 }
