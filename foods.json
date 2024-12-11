@@ -1,7 +1,3130 @@
 [
-    {"food": "Spinach", "oxalate": 755},
-    {"food": "Beet Greens", "oxalate": 916},
-    {"food": "Rhubarb", "oxalate": 860},
-    {"food": "Almonds", "oxalate": 469},
-    {"food": "Potatoes", "oxalate": 97}
+  {
+    "food": "Alaskan King Crab",
+    "oxalate": "0"
+  },
+  {
+    "food": "Alfalfa Sprouts",
+    "oxalate": "0"
+  },
+  {
+    "food": "All-Bran Buds",
+    "oxalate": "20"
+  },
+  {
+    "food": "All-Bran Original",
+    "oxalate": "26"
+  },
+  {
+    "food": "All-Bran with Extra Fiber",
+    "oxalate": "11"
+  },
+  {
+    "food": "All-Purpose Flour",
+    "oxalate": "17"
+  },
+  {
+    "food": "Almond",
+    "oxalate": "407"
+  },
+  {
+    "food": "Almonds",
+    "oxalate": "122"
+  },
+  {
+    "food": "Amaranth",
+    "oxalate": "1090"
+  },
+  {
+    "food": "American Cheese",
+    "oxalate": "0"
+  },
+  {
+    "food": "Antelope",
+    "oxalate": "0"
+  },
+  {
+    "food": "Apple Butter",
+    "oxalate": "0"
+  },
+  {
+    "food": "Apple Cinnamon Cheerios",
+    "oxalate": "5"
+  },
+  {
+    "food": "Apple Juice",
+    "oxalate": "2"
+  },
+  {
+    "food": "Apple Pie ",
+    "oxalate": "5"
+  },
+  {
+    "food": "Apple Sauce",
+    "oxalate": "2"
+  },
+  {
+    "food": "Apple, with skin, raw",
+    "oxalate": "10"
+  },
+  {
+    "food": "Apples",
+    "oxalate": "1"
+  },
+  {
+    "food": "Apples, Bramley's Seedling (Raw)",
+    "oxalate": "2"
+  },
+  {
+    "food": "Apricot Juice",
+    "oxalate": "2"
+  },
+  {
+    "food": "Apricots ",
+    "oxalate": "0"
+  },
+  {
+    "food": "Artichokes",
+    "oxalate": "5"
+  },
+  {
+    "food": "Artificial Sweetner",
+    "oxalate": "1"
+  },
+  {
+    "food": "Asparagus",
+    "oxalate": "6"
+  },
+  {
+    "food": "Asparagus",
+    "oxalate": "130"
+  },
+  {
+    "food": "Asparagus (Boiled)",
+    "oxalate": "2"
+  },
+  {
+    "food": "Aubergine, Eggplant",
+    "oxalate": "29"
+  },
+  {
+    "food": "Avocados",
+    "oxalate": "19"
+  },
+  {
+    "food": "Bacon",
+    "oxalate": "0"
+  },
+  {
+    "food": "Bacon, streaky (Fried)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Baked Potato with Skin",
+    "oxalate": "97"
+  },
+  {
+    "food": "Bamboo Shoots",
+    "oxalate": "35"
+  },
+  {
+    "food": "Banana",
+    "oxalate": "3"
+  },
+  {
+    "food": "Banana (Raw)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Banana Nut Crunch",
+    "oxalate": "25"
+  },
+  {
+    "food": "Banana, Plantain",
+    "oxalate": "524"
+  },
+  {
+    "food": "Banana, Sagar, ripe, raw",
+    "oxalate": "3"
+  },
+  {
+    "food": "Barley Malt Flour",
+    "oxalate": "0"
+  },
+  {
+    "food": "Maple Syrup",
+    "oxalate": "0"
+  },
+  {
+    "food": "Barley, whole-grain, raw",
+    "oxalate": "2"
+  },
+  {
+    "food": "Basic 4",
+    "oxalate": "17"
+  },
+  {
+    "food": "Beans, French, Blue Lake (Boiled)",
+    "oxalate": "30"
+  },
+  {
+    "food": "Beans, French, Guernsey Runner (Boiled)",
+    "oxalate": "23"
+  },
+  {
+    "food": "Beans, Runner, Mont d'Or (Boiled)",
+    "oxalate": "27"
+  },
+  {
+    "food": "Beans, seeds and pods, raw",
+    "oxalate": "25"
+  },
+  {
+    "food": "Beans, snap",
+    "oxalate": "360"
+  },
+  {
+    "food": "Beans, Summer Runner (Boiled)",
+    "oxalate": "7"
+  },
+  {
+    "food": "Beef (Roasted)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Beef, corned, Fray Bentos (Canned)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Beer (Light)",
+    "oxalate": "3"
+  },
+  {
+    "food": "Beer (Regular)",
+    "oxalate": "4"
+  },
+  {
+    "food": "Beet leaves",
+    "oxalate": "610"
+  },
+  {
+    "food": "Beet",
+    "oxalate": "40"
+  },
+  {
+    "food": "Beetroot",
+    "oxalate": "40"
+  },
+  {
+    "food": "Garden Beet",
+    "oxalate": "40"
+  },
+  {
+    "food": "Sugar Beet",
+    "oxalate": "40"
+  },
+  {
+    "food": "Beetroot, fresh, peeled, boiled, drained",
+    "oxalate": "100"
+  },
+  {
+    "food": "Beetroot, fresh, peeled, raw",
+    "oxalate": "100"
+  },
+  {
+    "food": "Beetroot, Ruby Globe (Boiled)",
+    "oxalate": "121"
+  },
+  {
+    "food": "Beets",
+    "oxalate": "76"
+  },
+  {
+    "food": "Bell Pepper",
+    "oxalate": "117"
+  },
+  {
+    "food": "Cherry Pepper",
+    "oxalate": "117"
+  },
+  {
+    "food": "Cone Pepper",
+    "oxalate": "117"
+  },
+  {
+    "food": "Green Pepper",
+    "oxalate": "117"
+  },
+  {
+    "food": "Paprika",
+    "oxalate": "117"
+  },
+  {
+    "food": "Sweet Pepper",
+    "oxalate": "117"
+  },
+  {
+    "food": "Ben Nut",
+    "oxalate": "101"
+  },
+  {
+    "food": "Berry Bust Cheerios",
+    "oxalate": "7"
+  },
+  {
+    "food": "Biscuits",
+    "oxalate": "6"
+  },
+  {
+    "food": "Biscuits, Marie",
+    "oxalate": "5"
+  },
+  {
+    "food": "Bitter Lettuce",
+    "oxalate": "1000"
+  },
+  {
+    "food": "Bitter Melon, Sorosi",
+    "oxalate": "1"
+  },
+  {
+    "food": "Black Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Dwarf Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Field Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Flageolet Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "French Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Garden Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Green Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Haricot",
+    "oxalate": "31"
+  },
+  {
+    "food": "Haricot Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Haricot Vert",
+    "oxalate": "31"
+  },
+  {
+    "food": "Kidney Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Navy Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Pop Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Popping Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Snap Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "String Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Wax Bean",
+    "oxalate": "31"
+  },
+  {
+    "food": "Black Currant",
+    "oxalate": "20"
+  },
+  {
+    "food": "Black Gram",
+    "oxalate": "28"
+  },
+  {
+    "food": "Black Pepper",
+    "oxalate": "0"
+  },
+  {
+    "food": "Black Pepper, Pepper, White Pepper",
+    "oxalate": "3400"
+  },
+  {
+    "food": "Black-currants, Cotswold Cross (Raw)",
+    "oxalate": "4"
+  },
+  {
+    "food": "Blackberries",
+    "oxalate": "2"
+  },
+  {
+    "food": "Blueberries",
+    "oxalate": "2"
+  },
+  {
+    "food": "Blueberry Morning",
+    "oxalate": "8"
+  },
+  {
+    "food": "Blueberry Muffins",
+    "oxalate": "9"
+  },
+  {
+    "food": "Bluefish",
+    "oxalate": "1"
+  },
+  {
+    "food": "Bok Choy",
+    "oxalate": "1"
+  },
+  {
+    "food": "Bologna",
+    "oxalate": "0"
+  },
+  {
+    "food": "Bran Flakes with Raisins, Single Brand",
+    "oxalate": "57"
+  },
+  {
+    "food": "Bran Muffin Low fat",
+    "oxalate": "5"
+  },
+  {
+    "food": "Bran Muffins",
+    "oxalate": "5"
+  },
+  {
+    "food": "Bran Muffins (store)",
+    "oxalate": "5"
+  },
+  {
+    "food": "Bran, 100%",
+    "oxalate": "25"
+  },
+  {
+    "food": "Bran, 40%",
+    "oxalate": "36"
+  },
+  {
+    "food": "Bread, Allinson's",
+    "oxalate": "21"
+  },
+  {
+    "food": "Bread, white",
+    "oxalate": "5"
+  },
+  {
+    "food": "Brewer's Yeast",
+    "oxalate": "7"
+  },
+  {
+    "food": "Broadbean, Faba Bean, Habas",
+    "oxalate": "7"
+  },
+  {
+    "food": "Broccoli",
+    "oxalate": "1"
+  },
+  {
+    "food": "Broccoli",
+    "oxalate": "190"
+  },
+  {
+    "food": "Brown Rice Flour",
+    "oxalate": "65"
+  },
+  {
+    "food": "Brown Rice, cooked",
+    "oxalate": "24"
+  },
+  {
+    "food": "Brown Sugar",
+    "oxalate": "1"
+  },
+  {
+    "food": "Brownies",
+    "oxalate": "31"
+  },
+  {
+    "food": "Brussel Sprouts",
+    "oxalate": "2"
+  },
+  {
+    "food": "Brussel sprouts, Cambridge Special (Boiled)",
+    "oxalate": "2"
+  },
+  {
+    "food": "Brussels sprouts",
+    "oxalate": "360"
+  },
+  {
+    "food": "Buckwheat (Leaf)",
+    "oxalate": "11100"
+  },
+  {
+    "food": "Buckwheat Groats",
+    "oxalate": "133"
+  },
+  {
+    "food": "Buffalo",
+    "oxalate": "0"
+  },
+  {
+    "food": "Bulgur, cooked",
+    "oxalate": "86"
+  },
+  {
+    "food": "Bullion Cube",
+    "oxalate": "1"
+  },
+  {
+    "food": "Burritos with beans",
+    "oxalate": "17"
+  },
+  {
+    "food": "Burritos with beans & meat",
+    "oxalate": "16"
+  },
+  {
+    "food": "Butter",
+    "oxalate": "0"
+  },
+  {
+    "food": "Butter, fresh",
+    "oxalate": "0"
+  },
+  {
+    "food": "Butter, Salted",
+    "oxalate": "0"
+  },
+  {
+    "food": "Buttermilk",
+    "oxalate": "1"
+  },
+  {
+    "food": "Cabbage",
+    "oxalate": "1"
+  },
+  {
+    "food": "Cabbage",
+    "oxalate": "100"
+  },
+  {
+    "food": "Cabbage, Red Cabbage, White Cabbage",
+    "oxalate": "35"
+  },
+  {
+    "food": "Cabbage, spring, Durham early (Boiled)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Cabbage, summer, June Giant (Boiled)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Cabbage, winter, January King (Boiled)",
+    "oxalate": "2"
+  },
+  {
+    "food": "Cacao",
+    "oxalate": "500"
+  },
+  {
+    "food": "Cake (homemade)",
+    "oxalate": "16"
+  },
+  {
+    "food": "Cake (Low Fat Only)",
+    "oxalate": "11"
+  },
+  {
+    "food": "Cake (store brand)",
+    "oxalate": "15"
+  },
+  {
+    "food": "Cake, fruit",
+    "oxalate": "12"
+  },
+  {
+    "food": "Cake, sponge",
+    "oxalate": "7"
+  },
+  {
+    "food": "Candies with Nuts (ex Snickers)",
+    "oxalate": "38"
+  },
+  {
+    "food": "Canned Cherries",
+    "oxalate": "7"
+  },
+  {
+    "food": "Canned Peaches",
+    "oxalate": "1"
+  },
+  {
+    "food": "Canned Pears",
+    "oxalate": "1"
+  },
+  {
+    "food": "Canned Pineapple",
+    "oxalate": "24"
+  },
+  {
+    "food": "Cantaloupe",
+    "oxalate": "1"
+  },
+  {
+    "food": "Cap'n Crunch",
+    "oxalate": "0"
+  },
+  {
+    "food": "Carambola, Star Fruit",
+    "oxalate": "9580"
+  },
+  {
+    "food": "Carnation Instant Breakfast",
+    "oxalate": "1"
+  },
+  {
+    "food": "Carrot",
+    "oxalate": "6"
+  },
+  {
+    "food": "Carrot",
+    "oxalate": "500"
+  },
+  {
+    "food": "Carrot Juice",
+    "oxalate": "27"
+  },
+  {
+    "food": "Carrot, raw",
+    "oxalate": "6"
+  },
+  {
+    "food": "Carrots (Canned, Smedley's)",
+    "oxalate": "7"
+  },
+  {
+    "food": "Carrots, Autumn King (Boiled)",
+    "oxalate": "23"
+  },
+  {
+    "food": "Carrots, cooked",
+    "oxalate": "7"
+  },
+  {
+    "food": "Carrots, raw",
+    "oxalate": "10"
+  },
+  {
+    "food": "Cashew",
+    "oxalate": "318"
+  },
+  {
+    "food": "Cashew nuts, raw",
+    "oxalate": "318"
+  },
+  {
+    "food": "Cashews",
+    "oxalate": "49"
+  },
+  {
+    "food": "Cassava",
+    "oxalate": "1260"
+  },
+  {
+    "food": "Cassava, Tapioca, Yuca",
+    "oxalate": "17"
+  },
+  {
+    "food": "Catsup/Ketchup",
+    "oxalate": "1"
+  },
+  {
+    "food": "Cauliflower",
+    "oxalate": "7"
+  },
+  {
+    "food": "Cauliflower",
+    "oxalate": "1"
+  },
+  {
+    "food": "Cauliflower",
+    "oxalate": "150"
+  },
+  {
+    "food": "Cauliflower, Pioneer (Boiled)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Celery",
+    "oxalate": "190"
+  },
+  {
+    "food": "Celery, Cooked ",
+    "oxalate": "10"
+  },
+  {
+    "food": "Celery, raw",
+    "oxalate": "3"
+  },
+  {
+    "food": "Celery, stems (Raw)",
+    "oxalate": "18"
+  },
+  {
+    "food": "Chayote",
+    "oxalate": "34"
+  },
+  {
+    "food": "Cheddar Cheese",
+    "oxalate": "0"
+  },
+  {
+    "food": "Cheerios",
+    "oxalate": "8"
+  },
+  {
+    "food": "Cheese, Cheshire",
+    "oxalate": "0"
+  },
+  {
+    "food": "Cheeseburger with bun",
+    "oxalate": "13"
+  },
+  {
+    "food": "Cherries",
+    "oxalate": "3"
+  },
+  {
+    "food": "Chicken",
+    "oxalate": "0"
+  },
+  {
+    "food": "Chicken (Boiled)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Chicken Dog",
+    "oxalate": "1"
+  },
+  {
+    "food": "Chicken Liver",
+    "oxalate": "0"
+  },
+  {
+    "food": "Chicken Noodle Soup",
+    "oxalate": "3"
+  },
+  {
+    "food": "Chicken Nuggets",
+    "oxalate": "3"
+  },
+  {
+    "food": "Chicken Roll",
+    "oxalate": "1"
+  },
+  {
+    "food": "Chicken Soup, Fray Bentos (Canned)",
+    "oxalate": "3"
+  },
+  {
+    "food": "Chickpea, Garbanzo",
+    "oxalate": "2"
+  },
+  {
+    "food": "Chicory",
+    "oxalate": "210"
+  },
+  {
+    "food": "Chili Powder",
+    "oxalate": "7"
+  },
+  {
+    "food": "Chili with Beans",
+    "oxalate": "24"
+  },
+  {
+    "food": "Chilli (chili), green, stir-fried",
+    "oxalate": "100"
+  },
+  {
+    "food": "Chilli, green, with seeds, raw",
+    "oxalate": "29"
+  },
+  {
+    "food": "Chilli, red, dry",
+    "oxalate": "67"
+  },
+  {
+    "food": "Chinese Parsley, Cilantro, Coriander (Leaf)",
+    "oxalate": "5"
+  },
+  {
+    "food": "Chives",
+    "oxalate": "0"
+  },
+  {
+    "food": "Chives",
+    "oxalate": "1480"
+  },
+  {
+    "food": "Chives (Raw)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Chocolate Chip Cookies (Low Fat Only)",
+    "oxalate": "7"
+  },
+  {
+    "food": "Chocolate Chip Cookies (store brand)",
+    "oxalate": "10"
+  },
+  {
+    "food": "Chocolate Milk",
+    "oxalate": "7"
+  },
+  {
+    "food": "Chocolate Pudding, Instant",
+    "oxalate": "4"
+  },
+  {
+    "food": "Chocolate Syrup",
+    "oxalate": "38"
+  },
+  {
+    "food": "Cinnamon Toast Crunch",
+    "oxalate": "5"
+  },
+  {
+    "food": "Clam Chowder",
+    "oxalate": "13"
+  },
+  {
+    "food": "Clams, raw",
+    "oxalate": "0"
+  },
+  {
+    "food": "Cocoa Krispies",
+    "oxalate": "11"
+  },
+  {
+    "food": "Cocoa Powder",
+    "oxalate": "67"
+  },
+  {
+    "food": "Cocoa Puffs",
+    "oxalate": "3"
+  },
+  {
+    "food": "Cocoa, powder, Rowntree's",
+    "oxalate": "623"
+  },
+  {
+    "food": "Coconut water",
+    "oxalate": "318"
+  },
+  {
+    "food": "Cod Liver Fish Oil",
+    "oxalate": "0"
+  },
+  {
+    "food": "Cod Liver Oil",
+    "oxalate": "0"
+  },
+  {
+    "food": "Cod, pacific",
+    "oxalate": "0"
+  },
+  {
+    "food": "Coffee",
+    "oxalate": "15"
+  },
+  {
+    "food": "Coffee",
+    "oxalate": "1"
+  },
+  {
+    "food": "Coffee Creamer",
+    "oxalate": "0"
+  },
+  {
+    "food": "Coffee Decaff",
+    "oxalate": "2"
+  },
+  {
+    "food": "Coffee, ground, containing 5% chicory, Kardomah (2 g in 100 ml water, infused for 5 min)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Coffee, Nescafe powder",
+    "oxalate": "57"
+  },
+  {
+    "food": "Collards",
+    "oxalate": "10"
+  },
+  {
+    "food": "Collards",
+    "oxalate": "450"
+  },
+  {
+    "food": "Complete Oat Bran Flakes",
+    "oxalate": "5"
+  },
+  {
+    "food": "Complete Wheat Bran",
+    "oxalate": "34"
+  },
+  {
+    "food": "Coriander",
+    "oxalate": "10"
+  },
+  {
+    "food": "Coriander leaves, raw",
+    "oxalate": "47"
+  },
+  {
+    "food": "Corn",
+    "oxalate": "10"
+  },
+  {
+    "food": "Corn",
+    "oxalate": "1"
+  },
+  {
+    "food": "Corn Bran",
+    "oxalate": "0"
+  },
+  {
+    "food": "Corn Bread",
+    "oxalate": "4"
+  },
+  {
+    "food": "Corn Chex",
+    "oxalate": "5"
+  },
+  {
+    "food": "Corn Flakes",
+    "oxalate": "1"
+  },
+  {
+    "food": "Corn Flour",
+    "oxalate": "3"
+  },
+  {
+    "food": "Corn Grits",
+    "oxalate": "97"
+  },
+  {
+    "food": "Corn Pops",
+    "oxalate": "1"
+  },
+  {
+    "food": "Corn Syrup (high Fructose)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Corn Syrup (Light)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Corn, sweet",
+    "oxalate": "10"
+  },
+  {
+    "food": "Cornbread",
+    "oxalate": "4"
+  },
+  {
+    "food": "Cornflakes",
+    "oxalate": "6"
+  },
+  {
+    "food": "Cornmeal",
+    "oxalate": "64"
+  },
+  {
+    "food": "Cornstarch",
+    "oxalate": "3"
+  },
+  {
+    "food": "Cottage Cheese",
+    "oxalate": "0"
+  },
+  {
+    "food": "Cottage Cheese Fat Free",
+    "oxalate": "1"
+  },
+  {
+    "food": "Count Chocula",
+    "oxalate": "5"
+  },
+  {
+    "food": "Couscous",
+    "oxalate": "15"
+  },
+  {
+    "food": "Cracked Wheat Bread",
+    "oxalate": "5"
+  },
+  {
+    "food": "Cracklin' Oat Bran",
+    "oxalate": "15"
+  },
+  {
+    "food": "Cranberry Almond Crunch (Morning Traditions)",
+    "oxalate": "35"
+  },
+  {
+    "food": "Cranberry Sauce",
+    "oxalate": "2"
+  },
+  {
+    "food": "Cream  ",
+    "oxalate": "0"
+  },
+  {
+    "food": "Cream Cheese",
+    "oxalate": "0"
+  },
+  {
+    "food": "Cream Cheese Fat Free",
+    "oxalate": "1"
+  },
+  {
+    "food": "Cream Cheese Low Fat",
+    "oxalate": "1"
+  },
+  {
+    "food": "Cream of Wheat ",
+    "oxalate": "18"
+  },
+  {
+    "food": "Cream Sauce, Homemade",
+    "oxalate": "3"
+  },
+  {
+    "food": "Cream Substitute",
+    "oxalate": "0"
+  },
+  {
+    "food": "Crispix",
+    "oxalate": "1"
+  },
+  {
+    "food": "Cucumber ",
+    "oxalate": "1"
+  },
+  {
+    "food": "Cucumbers",
+    "oxalate": "20"
+  },
+  {
+    "food": "Custard",
+    "oxalate": "1"
+  },
+  {
+    "food": "Custard apple, raw",
+    "oxalate": "30"
+  },
+  {
+    "food": "Danish Pastry Homemade",
+    "oxalate": "14"
+  },
+  {
+    "food": "Danish Pastry, Fruit Filled",
+    "oxalate": "4"
+  },
+  {
+    "food": "Dates",
+    "oxalate": "24"
+  },
+  {
+    "food": "Doughnut",
+    "oxalate": "5"
+  },
+  {
+    "food": "Dried Apples",
+    "oxalate": "2"
+  },
+  {
+    "food": "Dried Apricots",
+    "oxalate": "3"
+  },
+  {
+    "food": "Dried Cranberries",
+    "oxalate": "1"
+  },
+  {
+    "food": "Dried Figs",
+    "oxalate": "24"
+  },
+  {
+    "food": "Dried Pineapples",
+    "oxalate": "30"
+  },
+  {
+    "food": "Dried Prunes",
+    "oxalate": "11"
+  },
+  {
+    "food": "Egg Beaters",
+    "oxalate": "0"
+  },
+  {
+    "food": "Eggbeaters",
+    "oxalate": "0"
+  },
+  {
+    "food": "Eggplant",
+    "oxalate": "190"
+  },
+  {
+    "food": "Eggroll",
+    "oxalate": "5"
+  },
+  {
+    "food": "Eggs",
+    "oxalate": "0"
+  },
+  {
+    "food": "Eggs",
+    "oxalate": "0"
+  },
+  {
+    "food": "Eggs, fresh, whole (Boiled)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Emblic, raw",
+    "oxalate": "296"
+  },
+  {
+    "food": "Enchilada with Cheese & beef",
+    "oxalate": "13"
+  },
+  {
+    "food": "Enchilada with Chicken",
+    "oxalate": "13"
+  },
+  {
+    "food": "Endive",
+    "oxalate": "0"
+  },
+  {
+    "food": "Endive",
+    "oxalate": "110"
+  },
+  {
+    "food": "English Muffin",
+    "oxalate": "8"
+  },
+  {
+    "food": "English Muffin Multi-Grain",
+    "oxalate": "8"
+  },
+  {
+    "food": "English Muffin Wheat",
+    "oxalate": "7"
+  },
+  {
+    "food": "English Muffin Whole Wheat",
+    "oxalate": "12"
+  },
+  {
+    "food": "English Muffins - Multi-Grain",
+    "oxalate": "8"
+  },
+  {
+    "food": "English Muffins - Reg",
+    "oxalate": "8"
+  },
+  {
+    "food": "English Muffins - Wheat",
+    "oxalate": "7"
+  },
+  {
+    "food": "European Grape, Grape, Grapevine, Wine Grape",
+    "oxalate": "3"
+  },
+  {
+    "food": "Farina Cereal",
+    "oxalate": "16"
+  },
+  {
+    "food": "Fat Free Milk",
+    "oxalate": "1"
+  },
+  {
+    "food": "Fava Beans",
+    "oxalate": "20"
+  },
+  {
+    "food": "Fiber One",
+    "oxalate": "13"
+  },
+  {
+    "food": "Fig Bars",
+    "oxalate": "4"
+  },
+  {
+    "food": "Fig, dried",
+    "oxalate": "100"
+  },
+  {
+    "food": "Figs",
+    "oxalate": "9"
+  },
+  {
+    "food": "Flaxseed",
+    "oxalate": "0"
+  },
+  {
+    "food": "Flounder",
+    "oxalate": "0"
+  },
+  {
+    "food": "French Fries",
+    "oxalate": "51"
+  },
+  {
+    "food": "French Fries (homemade or fast food)",
+    "oxalate": "51"
+  },
+  {
+    "food": "French Toast",
+    "oxalate": "13"
+  },
+  {
+    "food": "Froot Loops",
+    "oxalate": "2"
+  },
+  {
+    "food": "Frosted Cheerios",
+    "oxalate": "6"
+  },
+  {
+    "food": "Frosted Flakes",
+    "oxalate": "1"
+  },
+  {
+    "food": "Frosted Mini-Wheats",
+    "oxalate": "28"
+  },
+  {
+    "food": "Frozen Fish Sticks",
+    "oxalate": "3"
+  },
+  {
+    "food": "Frozen Yogurt",
+    "oxalate": "1"
+  },
+  {
+    "food": "Fruit & Fiber Dates, Raisins & Walnuts",
+    "oxalate": "41"
+  },
+  {
+    "food": "Fruit Cocktail",
+    "oxalate": "1"
+  },
+  {
+    "food": "Fruit Roll-Ups",
+    "oxalate": "2"
+  },
+  {
+    "food": "Fruity Pebbles",
+    "oxalate": "2"
+  },
+  {
+    "food": "Fudge Sauce",
+    "oxalate": "28"
+  },
+  {
+    "food": "Garden Sorrel",
+    "oxalate": "300"
+  },
+  {
+    "food": "Garlic",
+    "oxalate": "360"
+  },
+  {
+    "food": "Garlic Powder",
+    "oxalate": "0"
+  },
+  {
+    "food": "Gatorade",
+    "oxalate": "0"
+  },
+  {
+    "food": "Gelatin",
+    "oxalate": "0"
+  },
+  {
+    "food": "Ginger",
+    "oxalate": "500"
+  },
+  {
+    "food": "Ginger, peeled, stir-fried without oil",
+    "oxalate": "100"
+  },
+  {
+    "food": "Golden Grahams",
+    "oxalate": "9"
+  },
+  {
+    "food": "Gooseberries, Keepsake (Stewed)",
+    "oxalate": "3"
+  },
+  {
+    "food": "Graham Crackers",
+    "oxalate": "2"
+  },
+  {
+    "food": "Granola Bars Low Fat",
+    "oxalate": "2"
+  },
+  {
+    "food": "Granola Bars- Hard & Plain",
+    "oxalate": "1"
+  },
+  {
+    "food": "Granola Oats & Honey, 100% Natural",
+    "oxalate": "13"
+  },
+  {
+    "food": "Grape Juice",
+    "oxalate": "1"
+  },
+  {
+    "food": "Grape Nuts",
+    "oxalate": "14"
+  },
+  {
+    "food": "Grape Nuts Flakes",
+    "oxalate": "7"
+  },
+  {
+    "food": "Grapefruit",
+    "oxalate": "12"
+  },
+  {
+    "food": "Grapefruit (Raw)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Grapefruit Juice",
+    "oxalate": "0"
+  },
+  {
+    "food": "Grapes",
+    "oxalate": "1"
+  },
+  {
+    "food": "Gravy",
+    "oxalate": "4"
+  },
+  {
+    "food": "Great Grains Crunch Pecan",
+    "oxalate": "18"
+  },
+  {
+    "food": "Great Grains Raisin, Dates & Pecans",
+    "oxalate": "17"
+  },
+  {
+    "food": "Green Pepper",
+    "oxalate": "1"
+  },
+  {
+    "food": "Grilled Cheese Sandwich",
+    "oxalate": "12"
+  },
+  {
+    "food": "Ground Beef",
+    "oxalate": "0"
+  },
+  {
+    "food": "Guava",
+    "oxalate": "14"
+  },
+  {
+    "food": "Guava, green, raw",
+    "oxalate": "14"
+  },
+  {
+    "food": "Haddock",
+    "oxalate": "0"
+  },
+  {
+    "food": "Haddock (Boiled)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Halibut",
+    "oxalate": "0"
+  },
+  {
+    "food": "Ham",
+    "oxalate": "0"
+  },
+  {
+    "food": "Ham (Boiled)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Harmony",
+    "oxalate": "11"
+  },
+  {
+    "food": "Healthy Choice Multi-Grain Flakes",
+    "oxalate": "7"
+  },
+  {
+    "food": "Healthy Valley Oat Bran Flakes",
+    "oxalate": "0"
+  },
+  {
+    "food": "Herring (Atlantic & Pacific)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Homemade Cream Sauce",
+    "oxalate": "3"
+  },
+  {
+    "food": "Honey",
+    "oxalate": "0"
+  },
+  {
+    "food": "Honey Bunches of Oats Honey Roasted",
+    "oxalate": "3"
+  },
+  {
+    "food": "Honey Bunches of Oats with Almonds",
+    "oxalate": "2"
+  },
+  {
+    "food": "Honey Crunch Corn Flakes",
+    "oxalate": "3"
+  },
+  {
+    "food": "Honey Nut Cheerios",
+    "oxalate": "7"
+  },
+  {
+    "food": "Honey Nut Clusters",
+    "oxalate": "23"
+  },
+  {
+    "food": "Honey Nut Oats",
+    "oxalate": "7"
+  },
+  {
+    "food": "Honeycomb",
+    "oxalate": "1"
+  },
+  {
+    "food": "Honeydew Melon",
+    "oxalate": "1"
+  },
+  {
+    "food": "Horlicks, powder",
+    "oxalate": "4"
+  },
+  {
+    "food": "Horseradish",
+    "oxalate": "0"
+  },
+  {
+    "food": "Hot Chili Peppers",
+    "oxalate": "5"
+  },
+  {
+    "food": "Hot Chocolate (homemade)",
+    "oxalate": "65"
+  },
+  {
+    "food": "Hot Dog with Bun",
+    "oxalate": "9"
+  },
+  {
+    "food": "Hot Dogs",
+    "oxalate": "1"
+  },
+  {
+    "food": "Hummus",
+    "oxalate": "4"
+  },
+  {
+    "food": "Ice Cream (Vanilla)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Ice Cream Light",
+    "oxalate": "0"
+  },
+  {
+    "food": "Iceberg Lettuce",
+    "oxalate": "0"
+  },
+  {
+    "food": "Indian Tamarind, Kilytree, Tamarind",
+    "oxalate": "196"
+  },
+  {
+    "food": "Italian Salad Dressing",
+    "oxalate": "0"
+  },
+  {
+    "food": "Jackfruit, ripe, raw",
+    "oxalate": "10"
+  },
+  {
+    "food": "Jam, red plum",
+    "oxalate": "1"
+  },
+  {
+    "food": "Jam/Jelly",
+    "oxalate": "1"
+  },
+  {
+    "food": "Jambolan, raw",
+    "oxalate": "89"
+  },
+  {
+    "food": "Jello",
+    "oxalate": "1"
+  },
+  {
+    "food": "Just Right Fruit & Nut",
+    "oxalate": "13"
+  },
+  {
+    "food": "Just Right with Crunchy Nuggets",
+    "oxalate": "5"
+  },
+  {
+    "food": "Kale",
+    "oxalate": "2"
+  },
+  {
+    "food": "Kale",
+    "oxalate": "20"
+  },
+  {
+    "food": "Kashi Go Lean",
+    "oxalate": "14"
+  },
+  {
+    "food": "Kashi Go Lean Bar",
+    "oxalate": "3"
+  },
+  {
+    "food": "Kashi Good Friends",
+    "oxalate": "10"
+  },
+  {
+    "food": "Kashi Heart to Heart",
+    "oxalate": "8"
+  },
+  {
+    "food": "Kiwi",
+    "oxalate": "16"
+  },
+  {
+    "food": "Kix",
+    "oxalate": "2"
+  },
+  {
+    "food": "Kool-Aid",
+    "oxalate": "1"
+  },
+  {
+    "food": "Lambsquarter",
+    "oxalate": "30000"
+  },
+  {
+    "food": "Lard",
+    "oxalate": "0"
+  },
+  {
+    "food": "Lasagna",
+    "oxalate": "23"
+  },
+  {
+    "food": "Lasagna with meat",
+    "oxalate": "23"
+  },
+  {
+    "food": "Lean Hamburg (75%)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Lean Hamburg (85%)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Lean Hamburg (90%)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Lemon Juice (canned or bottled)",
+    "oxalate": "4"
+  },
+  {
+    "food": "Lemon Juice Raw (concentrate)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Lemonade (diet)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Lemonade (frozen from concentrate)",
+    "oxalate": "15"
+  },
+  {
+    "food": "Lemons",
+    "oxalate": "1"
+  },
+  {
+    "food": "Lentil",
+    "oxalate": "21"
+  },
+  {
+    "food": "Lentil Soup",
+    "oxalate": "39"
+  },
+  {
+    "food": "Lettuce",
+    "oxalate": "14"
+  },
+  {
+    "food": "Lettuce",
+    "oxalate": "330"
+  },
+  {
+    "food": "Lettuce, Webbs Wonderful (Raw)",
+    "oxalate": "2"
+  },
+  {
+    "food": "Limes",
+    "oxalate": "3"
+  },
+  {
+    "food": "Liquor (80 proof)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Liver",
+    "oxalate": "0"
+  },
+  {
+    "food": "Low Fat 100% Natural Granola with Raisins",
+    "oxalate": "15"
+  },
+  {
+    "food": "Low Fat Cheese",
+    "oxalate": "0"
+  },
+  {
+    "food": "Low Fat Cottage Cheese",
+    "oxalate": "0"
+  },
+  {
+    "food": "Low Fat Cream Cheese",
+    "oxalate": "1"
+  },
+  {
+    "food": "Low Fat Granola with Raisins",
+    "oxalate": "16"
+  },
+  {
+    "food": "Low Fat Muffins",
+    "oxalate": "5"
+  },
+  {
+    "food": "Lowfat Frozen Yogurt",
+    "oxalate": "1"
+  },
+  {
+    "food": "Lucky Charms",
+    "oxalate": "5"
+  },
+  {
+    "food": "Lucozade ",
+    "oxalate": "0"
+  },
+  {
+    "food": "Lychee, raw",
+    "oxalate": "19"
+  },
+  {
+    "food": "Macaroni & Cheese",
+    "oxalate": "4"
+  },
+  {
+    "food": "Mackeral",
+    "oxalate": "0"
+  },
+  {
+    "food": "Maize/corn, yellow, dried, raw",
+    "oxalate": "6"
+  },
+  {
+    "food": "Mango",
+    "oxalate": "1"
+  },
+  {
+    "food": "Mango",
+    "oxalate": "30"
+  },
+  {
+    "food": "Mango Juice",
+    "oxalate": "1"
+  },
+  {
+    "food": "Mango, Fazli, orange flesh, ripe, raw",
+    "oxalate": "3"
+  },
+  {
+    "food": "Mango, Langra, yellow flesh, ripe, raw",
+    "oxalate": "3"
+  },
+  {
+    "food": "Margarine",
+    "oxalate": "0"
+  },
+  {
+    "food": "Marmalade, shredless",
+    "oxalate": "11"
+  },
+  {
+    "food": "Marrow, Mosse Cream (Raw)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Mashed Potatoes",
+    "oxalate": "29"
+  },
+  {
+    "food": "Mayonnaise",
+    "oxalate": "0"
+  },
+  {
+    "food": "Meatballs",
+    "oxalate": "2"
+  },
+  {
+    "food": "Melon, Futi, orange flesh, ripe, raw",
+    "oxalate": "2"
+  },
+  {
+    "food": "Milk Chocolate Candies",
+    "oxalate": "5"
+  },
+  {
+    "food": "Milk, 1%",
+    "oxalate": "1"
+  },
+  {
+    "food": "Milk, 2%",
+    "oxalate": "1"
+  },
+  {
+    "food": "Milk, fresh",
+    "oxalate": "1"
+  },
+  {
+    "food": "Millet, cooked",
+    "oxalate": "62"
+  },
+  {
+    "food": "Miso",
+    "oxalate": "40"
+  },
+  {
+    "food": "Miso Soup",
+    "oxalate": "111"
+  },
+  {
+    "food": "Mixed Nuts (with Peanuts)",
+    "oxalate": "39"
+  },
+  {
+    "food": "Mixed Vegetables, frozen",
+    "oxalate": "5"
+  },
+  {
+    "food": "Molasses",
+    "oxalate": "0"
+  },
+  {
+    "food": "Moose",
+    "oxalate": "0"
+  },
+  {
+    "food": "Mozzarella Cheese",
+    "oxalate": "0"
+  },
+  {
+    "food": "Mueslix  ",
+    "oxalate": "17"
+  },
+  {
+    "food": "Mueslix Apple & Almond Crunch",
+    "oxalate": "20"
+  },
+  {
+    "food": "Muffins Low Fat",
+    "oxalate": "5"
+  },
+  {
+    "food": "Multi-Bran Chex",
+    "oxalate": "36"
+  },
+  {
+    "food": "Mung Beans",
+    "oxalate": "3"
+  },
+  {
+    "food": "Murraya (Fruit)",
+    "oxalate": "524"
+  },
+  {
+    "food": "Mushroom, Agaricus (Cooked)",
+    "oxalate": "73"
+  },
+  {
+    "food": "Mushroom, Agaricus (Raw)",
+    "oxalate": "75"
+  },
+  {
+    "food": "Mushroom, Cep, Porcini, Penny Bun, King Bolete (Cooked)",
+    "oxalate": "33"
+  },
+  {
+    "food": "Mushroom, Cep, Porcini, Penny Bun, King Bolete (Raw)",
+    "oxalate": "44"
+  },
+  {
+    "food": "Mushroom, Chanterelle (Cooked)",
+    "oxalate": "35"
+  },
+  {
+    "food": "Mushroom, Chanterelle (Raw)",
+    "oxalate": "42"
+  },
+  {
+    "food": "Mushroom, Hedgehog, Sweet Tooth (Cooked)",
+    "oxalate": "23"
+  },
+  {
+    "food": "Mushroom, Hedgehog, Sweet Tooth (Raw)",
+    "oxalate": "26"
+  },
+  {
+    "food": "Mushroom, Oyster (Cooked)",
+    "oxalate": "49"
+  },
+  {
+    "food": "Mushroom, Oyster (Raw)",
+    "oxalate": "104"
+  },
+  {
+    "food": "Mushroom, Piopino, Piopparello, Velvet (Cooked)",
+    "oxalate": "59"
+  },
+  {
+    "food": "Mushroom, Piopino, Piopparello, Velvet (Raw)",
+    "oxalate": "80"
+  },
+  {
+    "food": "Mushroom, Shiitake (Cooked)",
+    "oxalate": "125"
+  },
+  {
+    "food": "Mushroom, Shiitake (Raw)",
+    "oxalate": "101"
+  },
+  {
+    "food": "Mushrooms",
+    "oxalate": "0"
+  },
+  {
+    "food": "Muskmelon, Bangee, light orange flesh, ripe, raw",
+    "oxalate": "2"
+  },
+  {
+    "food": "Mustard Greens",
+    "oxalate": "129"
+  },
+  {
+    "food": "Mustard Greens",
+    "oxalate": "4"
+  },
+  {
+    "food": "Mustard, yellow ",
+    "oxalate": "1"
+  },
+  {
+    "food": "Nabisco Honey Nut Shredded Wheat Bite Size",
+    "oxalate": "47"
+  },
+  {
+    "food": "Nabisco Shredded Wheat",
+    "oxalate": "42"
+  },
+  {
+    "food": "Nachos with Cheese",
+    "oxalate": "13"
+  },
+  {
+    "food": "Nance (Bark)",
+    "oxalate": "2730"
+  },
+  {
+    "food": "Nature Valley Cinnimon & Raisins Granola ",
+    "oxalate": "13"
+  },
+  {
+    "food": "Navy Beans",
+    "oxalate": "76"
+  },
+  {
+    "food": "Nectarine",
+    "oxalate": "0"
+  },
+  {
+    "food": "Non Fat Ice Cream",
+    "oxalate": "0"
+  },
+  {
+    "food": "Non Fat Yogurt with Fruit",
+    "oxalate": "1"
+  },
+  {
+    "food": "Non-Dairy Creamer",
+    "oxalate": "0"
+  },
+  {
+    "food": "Nut, almond, with skin",
+    "oxalate": "300"
+  },
+  {
+    "food": "Nut, brazil, raw or blanched",
+    "oxalate": "100"
+  },
+  {
+    "food": "Nut, cashew, roasted, salted",
+    "oxalate": "100"
+  },
+  {
+    "food": "Nut, hazelnut, raw",
+    "oxalate": "100"
+  },
+  {
+    "food": "Nut, pine, raw",
+    "oxalate": "100"
+  },
+  {
+    "food": "Oaker Oat Cinnamon Life",
+    "oxalate": "3"
+  },
+  {
+    "food": "Oat Bran",
+    "oxalate": "10"
+  },
+  {
+    "food": "Oat Bran Bread",
+    "oxalate": "4"
+  },
+  {
+    "food": "Oat Bran Muffin",
+    "oxalate": "4"
+  },
+  {
+    "food": "Oat Bran, raw",
+    "oxalate": "0"
+  },
+  {
+    "food": "Oat Flour",
+    "oxalate": "0"
+  },
+  {
+    "food": "Oatmeal Bread ",
+    "oxalate": "4"
+  },
+  {
+    "food": "Oatmeal Cereal",
+    "oxalate": "0"
+  },
+  {
+    "food": "Oatmeal Cookie (homemade)",
+    "oxalate": "2"
+  },
+  {
+    "food": "Oatmeal Cookies (store)",
+    "oxalate": "4"
+  },
+  {
+    "food": "Oatmeal Crisp with Almonds",
+    "oxalate": "24"
+  },
+  {
+    "food": "Oatmeal porridge",
+    "oxalate": "1"
+  },
+  {
+    "food": "Oatmeal Raisin Crisp",
+    "oxalate": "13"
+  },
+  {
+    "food": "Oatmeal Squares",
+    "oxalate": "5"
+  },
+  {
+    "food": "Oats",
+    "oxalate": "40"
+  },
+  {
+    "food": "Okra",
+    "oxalate": "10"
+  },
+  {
+    "food": "Okra",
+    "oxalate": "57"
+  },
+  {
+    "food": "Okra",
+    "oxalate": "50"
+  },
+  {
+    "food": "Olive Oil & Vinegar",
+    "oxalate": "2"
+  },
+  {
+    "food": "Olives",
+    "oxalate": "18"
+  },
+  {
+    "food": "Onion",
+    "oxalate": "50"
+  },
+  {
+    "food": "Onion Rings",
+    "oxalate": "5"
+  },
+  {
+    "food": "Onion, raw",
+    "oxalate": "3"
+  },
+  {
+    "food": "Onion, Shallot",
+    "oxalate": "1"
+  },
+  {
+    "food": "Onions",
+    "oxalate": "0"
+  },
+  {
+    "food": "Onions, Best of All (Raw)",
+    "oxalate": "3"
+  },
+  {
+    "food": "Orange",
+    "oxalate": "29"
+  },
+  {
+    "food": "Orange",
+    "oxalate": "9"
+  },
+  {
+    "food": "Orange Juice",
+    "oxalate": "2"
+  },
+  {
+    "food": "Orange, raw",
+    "oxalate": "10"
+  },
+  {
+    "food": "Oranges (Raw)",
+    "oxalate": "6"
+  },
+  {
+    "food": "Oriental Vegetables, frozen",
+    "oxalate": "6"
+  },
+  {
+    "food": "Original Shredded Wheat & Bran",
+    "oxalate": "53"
+  },
+  {
+    "food": "Ovaltine, powder",
+    "oxalate": "46"
+  },
+  {
+    "food": "Oxo cubes",
+    "oxalate": "2"
+  },
+  {
+    "food": "Oxtail Soup, Fray Bentos (Canned)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Oysters",
+    "oxalate": "0"
+  },
+  {
+    "food": "Pancake Syrup",
+    "oxalate": "0"
+  },
+  {
+    "food": "Pancakes (dry mix)",
+    "oxalate": "37"
+  },
+  {
+    "food": "Pancakes (Homemade)",
+    "oxalate": "11"
+  },
+  {
+    "food": "Pancakes (Homemade)",
+    "oxalate": "22"
+  },
+  {
+    "food": "Pancakes (mix)",
+    "oxalate": "10"
+  },
+  {
+    "food": "Papaya",
+    "oxalate": "1"
+  },
+  {
+    "food": "Papaya, ripe, raw",
+    "oxalate": "1"
+  },
+  {
+    "food": "Parsley",
+    "oxalate": "1700"
+  },
+  {
+    "food": "Parsley, Moss curled (Raw)",
+    "oxalate": "166"
+  },
+  {
+    "food": "Parsnip",
+    "oxalate": "21"
+  },
+  {
+    "food": "Parsnip",
+    "oxalate": "15"
+  },
+  {
+    "food": "Parsnip",
+    "oxalate": "40"
+  },
+  {
+    "food": "Pea",
+    "oxalate": "6"
+  },
+  {
+    "food": "Pea",
+    "oxalate": "50"
+  },
+  {
+    "food": "Peach",
+    "oxalate": "1"
+  },
+  {
+    "food": "Peaches",
+    "oxalate": "0"
+  },
+  {
+    "food": "Peaches (Canned in syrup)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Peanut Butter",
+    "oxalate": "13"
+  },
+  {
+    "food": "Peanut Butter Reduced Fat",
+    "oxalate": "16"
+  },
+  {
+    "food": "Peanuts",
+    "oxalate": "27"
+  },
+  {
+    "food": "Pear millet, whole-grain, raw",
+    "oxalate": "21"
+  },
+  {
+    "food": "Pears",
+    "oxalate": "2"
+  },
+  {
+    "food": "Pears (Canned in syrup)",
+    "oxalate": "2"
+  },
+  {
+    "food": "Peas",
+    "oxalate": "1"
+  },
+  {
+    "food": "Peas (Canned, Smedley's)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Peas, fresh, Feltham First (Boiled)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Pecans",
+    "oxalate": "10"
+  },
+  {
+    "food": "Pepper",
+    "oxalate": "40"
+  },
+  {
+    "food": "Pickles",
+    "oxalate": "0"
+  },
+  {
+    "food": "Pies (homemade)",
+    "oxalate": "5"
+  },
+  {
+    "food": "Pineapple",
+    "oxalate": "4"
+  },
+  {
+    "food": "Pineapple",
+    "oxalate": "6"
+  },
+  {
+    "food": "Pineapple (Canned in syrup)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Pineapple Juice",
+    "oxalate": "3"
+  },
+  {
+    "food": "Pineapple, Joldugee, ripe, raw",
+    "oxalate": "5"
+  },
+  {
+    "food": "Pineapple, ripe, raw",
+    "oxalate": "5"
+  },
+  {
+    "food": "Pistachios",
+    "oxalate": "14"
+  },
+  {
+    "food": "Pizza with Cheese",
+    "oxalate": "13"
+  },
+  {
+    "food": "Plaice (Boiled)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Plain Yogurt",
+    "oxalate": "2"
+  },
+  {
+    "food": "Plaintain",
+    "oxalate": "1"
+  },
+  {
+    "food": "Plums",
+    "oxalate": "0"
+  },
+  {
+    "food": "Plums, Giant Prune, Victoria (Stewed)",
+    "oxalate": "3"
+  },
+  {
+    "food": "Plums, Jefferson's Golden Gage (Stewed)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Pollock",
+    "oxalate": "0"
+  },
+  {
+    "food": "Pomegranate",
+    "oxalate": "14"
+  },
+  {
+    "food": "Pomegranate, ripe, with seed, raw",
+    "oxalate": "14"
+  },
+  {
+    "food": "Popcorn, air-popped",
+    "oxalate": "4"
+  },
+  {
+    "food": "Popcorn, oil-popped",
+    "oxalate": "5"
+  },
+  {
+    "food": "Poppyseed",
+    "oxalate": "1620"
+  },
+  {
+    "food": "Popsicle ",
+    "oxalate": "0"
+  },
+  {
+    "food": "Poptart ",
+    "oxalate": "7"
+  },
+  {
+    "food": "Pork",
+    "oxalate": "0"
+  },
+  {
+    "food": "Postum (coffee Substitute)",
+    "oxalate": "2"
+  },
+  {
+    "food": "Potato",
+    "oxalate": "15"
+  },
+  {
+    "food": "Potato",
+    "oxalate": "50"
+  },
+  {
+    "food": "Potato Chips",
+    "oxalate": "21"
+  },
+  {
+    "food": "Potato Salad",
+    "oxalate": "17"
+  },
+  {
+    "food": "Potato, Diamond, raw",
+    "oxalate": "12"
+  },
+  {
+    "food": "Potatoes (Boiled)",
+    "oxalate": "2"
+  },
+  {
+    "food": "Powdered Milk",
+    "oxalate": "3"
+  },
+  {
+    "food": "Pretzels, Hard & Salted",
+    "oxalate": "5"
+  },
+  {
+    "food": "Product 19",
+    "oxalate": "1"
+  },
+  {
+    "food": "Prune Juice",
+    "oxalate": "7"
+  },
+  {
+    "food": "Pudding Popsicle",
+    "oxalate": "5"
+  },
+  {
+    "food": "Puffed Kashi",
+    "oxalate": "13"
+  },
+  {
+    "food": "Puffed Rice",
+    "oxalate": "2"
+  },
+  {
+    "food": "Puffed Wheat",
+    "oxalate": "9"
+  },
+  {
+    "food": "Pumpkin (Juice)",
+    "oxalate": "40"
+  },
+  {
+    "food": "Pumpkin Seeds",
+    "oxalate": "17"
+  },
+  {
+    "food": "Purslane",
+    "oxalate": "1310"
+  },
+  {
+    "food": "Purslane, Verdolaga",
+    "oxalate": "1679"
+  },
+  {
+    "food": "Quaker Oat Life",
+    "oxalate": "3"
+  },
+  {
+    "food": "Radish",
+    "oxalate": "9"
+  },
+  {
+    "food": "Radish",
+    "oxalate": "0"
+  },
+  {
+    "food": "Radish",
+    "oxalate": "480"
+  },
+  {
+    "food": "Radishes, French Breakfast (Raw)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Raisin Bran ",
+    "oxalate": "46"
+  },
+  {
+    "food": "Raisin Bran Crunch",
+    "oxalate": "27"
+  },
+  {
+    "food": "Raisin Nut Bran",
+    "oxalate": "24"
+  },
+  {
+    "food": "Raisin Squares Mini-Wheats",
+    "oxalate": "41"
+  },
+  {
+    "food": "Raisins",
+    "oxalate": "3"
+  },
+  {
+    "food": "Raspberries",
+    "oxalate": "48"
+  },
+  {
+    "food": "Raspberries, Malling Exploit (Raw)",
+    "oxalate": "2"
+  },
+  {
+    "food": "Red Kidney Beans",
+    "oxalate": "15"
+  },
+  {
+    "food": "Red River Cereal",
+    "oxalate": "13"
+  },
+  {
+    "food": "Red Wine",
+    "oxalate": "1"
+  },
+  {
+    "food": "Reese's Puffs",
+    "oxalate": "8"
+  },
+  {
+    "food": "Refried Beans",
+    "oxalate": "16"
+  },
+  {
+    "food": "Rhubarb",
+    "oxalate": "541"
+  },
+  {
+    "food": "Rhubarb (Leaf)",
+    "oxalate": "1100"
+  },
+  {
+    "food": "Rhubarb (Plant)",
+    "oxalate": "1336"
+  },
+  {
+    "food": "Rhubarb, Giant Grooveless Crimson, end of season (Stewed)",
+    "oxalate": "460"
+  },
+  {
+    "food": "Rhubarb, stalk, raw",
+    "oxalate": "400"
+  },
+  {
+    "food": "Rhubarb, Victoria, end of season (Stewed)",
+    "oxalate": "620"
+  },
+  {
+    "food": "Rhubarb, Victoria, forced (Stewed)",
+    "oxalate": "260"
+  },
+  {
+    "food": "Rice",
+    "oxalate": "5"
+  },
+  {
+    "food": "Rice Bran",
+    "oxalate": "281"
+  },
+  {
+    "food": "Rice Cake",
+    "oxalate": "4"
+  },
+  {
+    "food": "Rice Chex",
+    "oxalate": "4"
+  },
+  {
+    "food": "Rice Dream ",
+    "oxalate": "13"
+  },
+  {
+    "food": "Rice flaked",
+    "oxalate": "0"
+  },
+  {
+    "food": "Rice Krispies",
+    "oxalate": "4"
+  },
+  {
+    "food": "Rice Krispy Treat",
+    "oxalate": "1"
+  },
+  {
+    "food": "Rice Pudding",
+    "oxalate": "2"
+  },
+  {
+    "food": "Rice Pudding",
+    "oxalate": "0"
+  },
+  {
+    "food": "Rice, BR-28, parboiled, milled, raw",
+    "oxalate": "1"
+  },
+  {
+    "food": "Rice, white, sunned, aromatic, raw",
+    "oxalate": "1"
+  },
+  {
+    "food": "Rice, white, sunned, polished, milled, raw",
+    "oxalate": "1"
+  },
+  {
+    "food": "Ritz Crackers",
+    "oxalate": "3"
+  },
+  {
+    "food": "Romaine Lettuce",
+    "oxalate": "0"
+  },
+  {
+    "food": "Rutabaga",
+    "oxalate": "31"
+  },
+  {
+    "food": "Rutabaga",
+    "oxalate": "30"
+  },
+  {
+    "food": "Rye Bread",
+    "oxalate": "7"
+  },
+  {
+    "food": "Salmon (all types)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Salsa",
+    "oxalate": "1"
+  },
+  {
+    "food": "Salt",
+    "oxalate": "0"
+  },
+  {
+    "food": "Saltines",
+    "oxalate": "1"
+  },
+  {
+    "food": "Sardines",
+    "oxalate": "0"
+  },
+  {
+    "food": "Sauerkraut",
+    "oxalate": "1"
+  },
+  {
+    "food": "Scallions",
+    "oxalate": "1"
+  },
+  {
+    "food": "Sea Vegetables",
+    "oxalate": "3"
+  },
+  {
+    "food": "Sherbert",
+    "oxalate": "0"
+  },
+  {
+    "food": "Shortening",
+    "oxalate": "0"
+  },
+  {
+    "food": "Shrimp",
+    "oxalate": "0"
+  },
+  {
+    "food": "Silverbeet, boiled, drained",
+    "oxalate": "600"
+  },
+  {
+    "food": "Silverbeet, raw",
+    "oxalate": "500"
+  },
+  {
+    "food": "Smacks",
+    "oxalate": "3"
+  },
+  {
+    "food": "Smart Start",
+    "oxalate": "15"
+  },
+  {
+    "food": "Snack Cakes- cr",
+    "oxalate": "3"
+  },
+  {
+    "food": "Snakegourd",
+    "oxalate": "34"
+  },
+  {
+    "food": "Sodas (all types)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Sorghum, raw",
+    "oxalate": "10"
+  },
+  {
+    "food": "Sour Cream",
+    "oxalate": "0"
+  },
+  {
+    "food": "Soy Burger",
+    "oxalate": "12"
+  },
+  {
+    "food": "Soy Flour",
+    "oxalate": "94"
+  },
+  {
+    "food": "Soy Milk",
+    "oxalate": "4"
+  },
+  {
+    "food": "Soy Protein Isolate",
+    "oxalate": "27"
+  },
+  {
+    "food": "Soy Sauce",
+    "oxalate": "3"
+  },
+  {
+    "food": "Soybean",
+    "oxalate": "77"
+  },
+  {
+    "food": "Soybeans",
+    "oxalate": "7"
+  },
+  {
+    "food": "Spaghetti",
+    "oxalate": "11"
+  },
+  {
+    "food": "Spearmint",
+    "oxalate": "4"
+  },
+  {
+    "food": "Spearmint leaves, fresh",
+    "oxalate": "33"
+  },
+  {
+    "food": "Special K",
+    "oxalate": "3"
+  },
+  {
+    "food": "Special K Red Berries",
+    "oxalate": "2"
+  },
+  {
+    "food": "Spinach",
+    "oxalate": "658"
+  },
+  {
+    "food": "Spinach",
+    "oxalate": "970"
+  },
+  {
+    "food": "Spinach beet, Beet Perpetual (Boiled)",
+    "oxalate": "692"
+  },
+  {
+    "food": "Spinach, cooked",
+    "oxalate": "755"
+  },
+  {
+    "food": "Spinach, English, boiled, drained",
+    "oxalate": "400"
+  },
+  {
+    "food": "Spinach, English, raw",
+    "oxalate": "300"
+  },
+  {
+    "food": "Spinach, frozen (Boiled)",
+    "oxalate": "458"
+  },
+  {
+    "food": "Spinach, frozen, boiled, drained",
+    "oxalate": "500"
+  },
+  {
+    "food": "Spinach, Long-standing, round (Boiled)",
+    "oxalate": "780"
+  },
+  {
+    "food": "Spinach, raw",
+    "oxalate": "656"
+  },
+  {
+    "food": "Spoonsize Shredded Wheat",
+    "oxalate": "45"
+  },
+  {
+    "food": "Squash",
+    "oxalate": "20"
+  },
+  {
+    "food": "Strawberries",
+    "oxalate": "2"
+  },
+  {
+    "food": "Strawberries, Huxley (Raw)",
+    "oxalate": "2"
+  },
+  {
+    "food": "String Beans",
+    "oxalate": "9"
+  },
+  {
+    "food": "Stuffing",
+    "oxalate": "36"
+  },
+  {
+    "food": "Sugar",
+    "oxalate": "0"
+  },
+  {
+    "food": "Sunflower Seeds",
+    "oxalate": "12"
+  },
+  {
+    "food": "Sweet Potato",
+    "oxalate": "100"
+  },
+  {
+    "food": "Sweet potato",
+    "oxalate": "240"
+  },
+  {
+    "food": "Sweet Potatoes",
+    "oxalate": "28"
+  },
+  {
+    "food": "Sweet Rolls Low Fat",
+    "oxalate": "13"
+  },
+  {
+    "food": "Sweet Whey Dried",
+    "oxalate": "0"
+  },
+  {
+    "food": "Sweet Whey Fluid",
+    "oxalate": "1"
+  },
+  {
+    "food": "Sweetened Instant Iced Tea",
+    "oxalate": "0"
+  },
+  {
+    "food": "Swordfish",
+    "oxalate": "0"
+  },
+  {
+    "food": "Tacos",
+    "oxalate": "12"
+  },
+  {
+    "food": "Tahini",
+    "oxalate": "16"
+  },
+  {
+    "food": "Tahini, sesame seed pulp",
+    "oxalate": "600"
+  },
+  {
+    "food": "Tangerine",
+    "oxalate": "10"
+  },
+  {
+    "food": "Tapioca Pudding",
+    "oxalate": "0"
+  },
+  {
+    "food": "Taro",
+    "oxalate": "133"
+  },
+  {
+    "food": "Tea",
+    "oxalate": "1000"
+  },
+  {
+    "food": "Tea, Brewed",
+    "oxalate": "14"
+  },
+  {
+    "food": "Tea, Indian, blended, dry leaves",
+    "oxalate": "1450"
+  },
+  {
+    "food": "Tea, Indian, infusion (1 g in 100 ml water, infused for 2 min)",
+    "oxalate": "5"
+  },
+  {
+    "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 10 min)",
+    "oxalate": "12"
+  },
+  {
+    "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 15 min)",
+    "oxalate": "13"
+  },
+  {
+    "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 2 min)",
+    "oxalate": "7"
+  },
+  {
+    "food": "Tea, Indian, infusion (2 g in 100 ml water, infused for 5 min)",
+    "oxalate": "10"
+  },
+  {
+    "food": "Team Cheerios",
+    "oxalate": "6"
+  },
+  {
+    "food": "Toasted Oatmeal ",
+    "oxalate": "6"
+  },
+  {
+    "food": "Tofu",
+    "oxalate": "13"
+  },
+  {
+    "food": "Tomatillo",
+    "oxalate": "54"
+  },
+  {
+    "food": "Tomato",
+    "oxalate": "26"
+  },
+  {
+    "food": "Tomato",
+    "oxalate": "7"
+  },
+  {
+    "food": "Tomato",
+    "oxalate": "50"
+  },
+  {
+    "food": "Tomato Juice",
+    "oxalate": "14"
+  },
+  {
+    "food": "Tomato Sauce",
+    "oxalate": "17"
+  },
+  {
+    "food": "Tomato, red, ripe, raw",
+    "oxalate": "4"
+  },
+  {
+    "food": "Tomatoes (Raw)",
+    "oxalate": "5"
+  },
+  {
+    "food": "Tortilla Corn Chips",
+    "oxalate": "7"
+  },
+  {
+    "food": "Tortillas, Corn",
+    "oxalate": "7"
+  },
+  {
+    "food": "Tortillas, flour",
+    "oxalate": "8"
+  },
+  {
+    "food": "Total Corn Flakes",
+    "oxalate": "5"
+  },
+  {
+    "food": "Total Raisin Bran",
+    "oxalate": "31"
+  },
+  {
+    "food": "Trail Mix",
+    "oxalate": "15"
+  },
+  {
+    "food": "Triscuits",
+    "oxalate": "1"
+  },
+  {
+    "food": "Trix",
+    "oxalate": "0"
+  },
+  {
+    "food": "Tuna Fish (in oil)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Tuna Fish (in water)",
+    "oxalate": "0"
+  },
+  {
+    "food": "Tuna Salad",
+    "oxalate": "6"
+  },
+  {
+    "food": "Turkey",
+    "oxalate": "0"
+  },
+  {
+    "food": "Turkey Dogs",
+    "oxalate": "3"
+  },
+  {
+    "food": "Turnip",
+    "oxalate": "30"
+  },
+  {
+    "food": "Turnip",
+    "oxalate": "210"
+  },
+  {
+    "food": "Turnip greens",
+    "oxalate": "50"
+  },
+  {
+    "food": "Turnip, Early Snowball, white (Boiled)",
+    "oxalate": "1"
+  },
+  {
+    "food": "Uncle Sam",
+    "oxalate": "11"
+  },
+  {
+    "food": "V8 Juice",
+    "oxalate": "18"
+  },
+  {
+    "food": "Vanilla Pudding",
+    "oxalate": "1"
+  },
+  {
+    "food": "Vegetable Beef Soup",
+    "oxalate": "5"
+  },
+  {
+    "food": "Veggie Burger",
+    "oxalate": "24"
+  },
+  {
+    "food": "Venison",
+    "oxalate": "0"
+  },
+  {
+    "food": "Wafflecrisp",
+    "oxalate": "1"
+  },
+  {
+    "food": "Walnuts",
+    "oxalate": "31"
+  },
+  {
+    "food": "Water",
+    "oxalate": "0"
+  },
+  {
+    "food": "Waterchestnuts",
+    "oxalate": "0"
+  },
+  {
+    "food": "Watercress",
+    "oxalate": "310"
+  },
+  {
+    "food": "Watermelon",
+    "oxalate": "1"
+  },
+  {
+    "food": "Watermelon, ripe, raw",
+    "oxalate": "11"
+  },
+  {
+    "food": "Waxgourd",
+    "oxalate": "3"
+  },
+  {
+    "food": "Wheat",
+    "oxalate": "11"
+  },
+  {
+    "food": "Wheat Berries",
+    "oxalate": "98"
+  },
+  {
+    "food": "Wheat Bran Bread",
+    "oxalate": "7"
+  },
+  {
+    "food": "Wheat Chex",
+    "oxalate": "7"
+  },
+  {
+    "food": "Wheat Crackers",
+    "oxalate": "1"
+  },
+  {
+    "food": "Wheat flour, brown, whole grain, raw",
+    "oxalate": "8"
+  },
+  {
+    "food": "Wheat Flour, Whole Grain",
+    "oxalate": "29"
+  },
+  {
+    "food": "Wheat Thins, Reduced Fat",
+    "oxalate": "1"
+  },
+  {
+    "food": "Wheat, whole, raw",
+    "oxalate": "8"
+  },
+  {
+    "food": "Wheaties",
+    "oxalate": "8"
+  },
+  {
+    "food": "Wheaties Raisin Bran",
+    "oxalate": "11"
+  },
+  {
+    "food": "Wheetabix Whole Wheat",
+    "oxalate": "8"
+  },
+  {
+    "food": "Whipped Cream",
+    "oxalate": "0"
+  },
+  {
+    "food": "Whipped Topping",
+    "oxalate": "0"
+  },
+  {
+    "food": "White Bread",
+    "oxalate": "5"
+  },
+  {
+    "food": "White Rice Flour",
+    "oxalate": "11"
+  },
+  {
+    "food": "White Rice, cooked",
+    "oxalate": "4"
+  },
+  {
+    "food": "White Wine",
+    "oxalate": "0"
+  },
+  {
+    "food": "Whiting",
+    "oxalate": "0"
+  },
+  {
+    "food": "Whole Grain Total",
+    "oxalate": "8"
+  },
+  {
+    "food": "Whole Milk",
+    "oxalate": "1"
+  },
+  {
+    "food": "Whole Oat Bread ",
+    "oxalate": "5"
+  },
+  {
+    "food": "Whole Wheat Bread",
+    "oxalate": "6"
+  },
+  {
+    "food": "Wild Game Meat",
+    "oxalate": "1"
+  },
+  {
+    "food": "Yam, tuber, raw",
+    "oxalate": "15"
+  },
+  {
+    "food": "Yams",
+    "oxalate": "40"
+  },
+  {
+    "food": "Yellow Squash",
+    "oxalate": "1"
+  },
+  {
+    "food": "Yogurt with Fruit",
+    "oxalate": "1"
+  },
+  {
+    "food": "Zucchini",
+    "oxalate": "1"
+  }
 ]
