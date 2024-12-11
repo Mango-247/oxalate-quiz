@@ -100,32 +100,33 @@ body {
     border-radius: 5px;
 }
 
-
-
 .add-button, .remove-button {
-    width: 36px; /* Equal width and height for a perfect circle */
+    width: 36px; 
     height: 36px;
     border: none;
-    border-radius: 50%; /* Always circular */
-    font-size: 16px; /* Consistent font size */
+    border-radius: 50%; 
+    font-size: 16px; 
     font-weight: bold;
-    display: flex; /* Flexbox for centering text */
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     background-color: red;
     color: white;
-    margin-left: 5px; /* Maintain spacing */
-    box-sizing: border-box; /* Ensure dimensions include padding and border */
-    text-align: center; /* Explicit text centering */
-    line-height: normal; /* Reset line height to avoid extra spacing */
-    padding: 0; /* Remove any default padding */
+    margin-left: 5px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    line-height: normal; 
+    padding: 0; 
+    cursor: pointer; 
 }
 
+.add-button:hover, .remove-button:hover {
+    background-color: darkred; 
+}
 
 .add-button:hover, .remove-button:hover {
     background-color: darkred;
 }
-
 
 @media (max-width: 768px) {
     .add-button, .remove-button {
@@ -136,11 +137,9 @@ body {
     }
 }
 
-
 .add-button:hover, .remove-button:hover {
     background-color: darkred;
 }
-
 
 .add-button:hover, .remove-button:hover {
     background-color: darkred;
