@@ -125,7 +125,15 @@ function findClosestPlayer() {
     let closestDiff = Infinity;
     let isTie = false;
 
-    console.log("Current Food Oxalate: ", currentFood ? currentFood.oxalate : 'None');
+    // Debug: Check the current food's oxalate value
+    if (!currentFood || typeof currentFood.oxalate !== 'number') {
+        console.error("Error: currentFood is not properly initialized or does not have a valid 'oxalate' property.");
+        closestPlayerDiv.textContent = "Error: No food data available!";
+        return;
+    }
+    console.log("Current Food Oxalate:", currentFood.oxalate);
+
+    // Debug: Log all player inputs and labels
     console.log("Player Inputs and Labels:");
 
     inputs.forEach((input, index) => {
@@ -142,26 +150,27 @@ function findClosestPlayer() {
             } else if (diff === closestDiff) {
                 isTie = true;
             }
+        } else {
+            console.warn(`Invalid guess by Player ${index + 1}:`, input.value);
         }
     });
 
-    if (!currentFood) {
-        closestPlayerDiv.textContent = "No food selected!";
-        console.error("Error: No currentFood available to compare guesses.");
-        return;
-    }
-
-    if (isTie) {
+    // Handle results based on the findings
+    if (!closestPlayer && inputs.length > 0) {
+        closestPlayerDiv.textContent = "No valid guesses made!";
+        console.warn("No valid guesses were submitted.");
+    } else if (isTie) {
         closestPlayerDiv.textContent = "It's a tie!";
         console.log("Result: Tie between players.");
     } else if (closestDiff === 0) {
         closestPlayerDiv.textContent = `${closestPlayer} got it right!`;
         console.log("Result: Exact match by", closestPlayer);
-    } else {
+    } else if (closestPlayer) {
         closestPlayerDiv.textContent = `${closestPlayer} was the closest!`;
         console.log("Result: Closest player is", closestPlayer, "with difference of", closestDiff);
     }
 }
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
