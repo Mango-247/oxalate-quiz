@@ -69,10 +69,6 @@ function addPlayerInput() {
         newInput.placeholder = 'Enter oxalate content (mg)';
         newInput.disabled = inputsDisabled;
 
-        newInput.min = "0"; 
-        newInput.max = "10000"; 
-        newInput.step = "0.1";
-
 
         const addButton = document.createElement('button');
         addButton.classList.add('add-button');
