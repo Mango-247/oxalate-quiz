@@ -103,22 +103,36 @@ body {
 
 
 .add-button, .remove-button {
-    width: 40px; /* Ensure equal width and height */
-    height: 40px; 
+    width: 36px; /* Adjust size for consistency */
+    height: 36px; /* Ensure equal dimensions for a perfect circle */
     border: none;
-    border-radius: 50%; /* Ensure perfect circles */
-    font-size: 16px; /* Adjust size for better legibility */
+    border-radius: 50%; /* Make the buttons circular */
+    font-size: 16px; /* Adjust for readability */
     font-weight: bold;
-    cursor: pointer;
-    display: flex;
+    display: inline-flex; /* Use flex for alignment */
     justify-content: center;
     align-items: center;
     background-color: red;
     color: white;
-    margin-left: 3.75px; 
-    text-align: center; /* Center the text */
-    line-height: 1; /* Prevent extra space affecting alignment */
+    margin-left: 5px; /* Add some spacing */
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in dimensions */
 }
+
+.add-button:hover, .remove-button:hover {
+    background-color: darkred;
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 768px) {
+    .add-button, .remove-button {
+        width: 32px; /* Slightly smaller size for mobile */
+        height: 32px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin-left: 4px;
+    }
+}
+
 
 .add-button:hover, .remove-button:hover {
     background-color: darkred;
