@@ -1,1 +1,7 @@
-
+[
+    {"food": "Spinach", "oxalate": 755},
+    {"food": "Beet Greens", "oxalate": 916},
+    {"food": "Rhubarb", "oxalate": 860},
+    {"food": "Almonds", "oxalate": 469},
+    {"food": "Potatoes", "oxalate": 97}
+]
