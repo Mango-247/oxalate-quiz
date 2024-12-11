@@ -84,6 +84,12 @@ body {
     font-size: 12px; 
     text-align: center;
     flex-grow: 1;
+    outline: 1px solid black;
+}
+
+.guess-input:focus {
+    outline: 2px solid black;
+    outline-offset: 0; 
 }
 
 .add-button, .remove-button {
@@ -104,6 +110,11 @@ body {
 
 .add-button:hover, .remove-button:hover {
     background-color: darkred;
+}
+
+button, input {
+    -webkit-appearance: none; 
+    appearance: none; 
 }
 
 .result, .closest-player {
