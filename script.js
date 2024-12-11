@@ -15,6 +15,8 @@ function getRandomFood() {
 function displayFood(food) {
     const foodNameDiv = document.getElementById('food-name');
     foodNameDiv.textContent = food.food;
+    const quantity = document.getElementById('quantity');
+    foodNameDiv.textContent = food.quantity;
 }
 
 function lockInputs() {
