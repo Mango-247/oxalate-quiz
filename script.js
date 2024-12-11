@@ -100,7 +100,7 @@ function updateButtons() {
     Array.from(playerRows).forEach((row, index) => {
         const addButton = row.querySelector('.add-button');
         const removeButton = row.querySelector('.remove-button');
-
+        console.log(index)
         if (index === playerRows.length - 1) {
             addButton.style.display = playerRows.length < 8 ? 'inline-block' : 'none';
             removeButton.style.display = playerRows.length > 1 ? 'inline-block' : 'none';
