@@ -165,7 +165,8 @@ document.addEventListener('DOMContentLoaded', () => {
             currentFood = getRandomFood();
             displayFood(currentFood);
             unlockInputs();
-            submitButton.disabled = false; 
+            const inputs = document.querySelectorAll('.guess-input');
+            inputs.forEach(input => input.value = '');
         });
 
         submitButton.addEventListener('click', () => {
