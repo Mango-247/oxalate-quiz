@@ -285,11 +285,6 @@
     "oxalate": "117.1 mg"
   },
   {
-    "food": "Ben Nut, Benzolive Tree, Drumstick Tree, Horseradish Tree, Jacinto (Sp.), Moringa, West Indian Ben",
-    "quantity": "100 g",
-    "oxalate": "0-101 mg"
-  },
-  {
     "food": "Berry Bust Cheerios",
     "quantity": "1 cup",
     "oxalate": "7 mg"
@@ -703,11 +698,6 @@
     "food": "Cap'n Crunch",
     "quantity": "3/4 cup",
     "oxalate": "0 mg"
-  },
-  {
-    "food": "Carambola, Star Fruit",
-    "quantity": "100 g",
-    "oxalate": "5000-9580 mg"
   },
   {
     "food": "Carnation Instant Breakfast",
@@ -2225,16 +2215,6 @@
     "oxalate": "524 mg"
   },
   {
-    "food": "Mushroom, Agaricus (Cooked)",
-    "quantity": "100 g dry weight",
-    "oxalate": "48.9-72.8 mg"
-  },
-  {
-    "food": "Mushroom, Agaricus (Raw)",
-    "quantity": "100 g dry weight",
-    "oxalate": "58.9-74.9 mg"
-  },
-  {
     "food": "Mushroom, Cep, Porcini, Penny Bun, King Bolete (Cooked)",
     "quantity": "100 g dry weight",
     "oxalate": "33.1 mg"
@@ -2333,11 +2313,6 @@
     "food": "Nachos with Cheese",
     "quantity": "6-8 chips",
     "oxalate": "13 mg"
-  },
-  {
-    "food": "Nance (Bark)",
-    "quantity": "100 g",
-    "oxalate": "0-2730 mg"
   },
   {
     "food": "Nature Valley Cinnimon & Raisins Granola ",
@@ -3478,11 +3453,6 @@
     "food": "Tea, Brewed",
     "quantity": "1 cup",
     "oxalate": "14 mg"
-  },
-  {
-    "food": "Tea, Indian, blended, dry leaves",
-    "quantity": "100 g fresh weight",
-    "oxalate": "375-1450 mg"
   },
   {
     "food": "Tea, Indian, infusion (1 g in 100 ml water, infused for 2 min)",
