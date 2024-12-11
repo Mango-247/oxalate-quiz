@@ -16,7 +16,7 @@ function displayFood(food) {
     const foodNameDiv = document.getElementById('food-name');
     foodNameDiv.textContent = food.food;
     const quantity = document.getElementById('quantity');
-    foodNameDiv.textContent = `Quantity: ${food.quantity}`;
+    quantity.textContent = `Quantity: ${food.quantity}`;
 }
 
 function lockInputs() {
