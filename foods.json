@@ -280,7 +280,32 @@
     "oxalate": "76 mg"
   },
   {
-    "food": "Bell Pepper, Cherry Pepper, Cone Pepper, Green Pepper, Paprika, Sweet Pepper",
+    "food": "Bell Pepper",
+    "quantity": "100 g",
+    "oxalate": "117.1 mg"
+  },
+  {
+    "food": "Cherry Pepper",
+    "quantity": "100 g",
+    "oxalate": "117.1 mg"
+  },
+  {
+    "food": "Cone Pepper",
+    "quantity": "100 g",
+    "oxalate": "117.1 mg"
+  },
+  {
+    "food": "Green Pepper",
+    "quantity": "100 g",
+    "oxalate": "117.1 mg"
+  },
+  {
+    "food": "Paprika",
+    "quantity": "100 g",
+    "oxalate": "117.1 mg"
+  },
+  {
+    "food": "Sweet Pepper",
     "quantity": "100 g",
     "oxalate": "117.1 mg"
   },
