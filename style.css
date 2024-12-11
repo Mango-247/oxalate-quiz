@@ -84,11 +84,16 @@ body {
     font-size: 12px; 
     text-align: center;
     flex-grow: 1;
+    border: 1px solid black; /* Ensure a consistent black border */
+    border-radius: 5px; /* Rounded corners */
 }
 
 .guess-input:focus {
-    border: 1px solid red;
+    outline: none; /* Remove focus outline */
+    border: 1px solid black; /* Keep border black when focused */
+    border-radius: 5px; /* Retain rounded corners */
 }
+
 
 
 .add-button, .remove-button {
