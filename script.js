@@ -173,7 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
             lockInputs();
             resultDiv.textContent = `Actual content: ${currentFood.oxalate} mg`;
             findClosestPlayer();
+            submitButton.disabled = true; // Disable the submit button when the answer is shown
         });
+
 
         input.addEventListener('input', updateSubmitButtonState);
 
