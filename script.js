@@ -75,6 +75,7 @@ function addPlayerInput() {
             newRow.remove();
             updateButtons();
             updateSubmitButtonState();
+            syncLeaderboardWithPlayers();
         });
 
         newInput.addEventListener('input', updateSubmitButtonState);
