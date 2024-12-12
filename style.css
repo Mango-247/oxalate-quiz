@@ -187,6 +187,7 @@ button.disabled {
     text-align: left;
     font-weight: bold;
     flex: 1;
+    border-bottom: 1px solid #ddd;
 }
 
 #leaderboard div div:last-child {
