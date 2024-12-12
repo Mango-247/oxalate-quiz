@@ -243,9 +243,8 @@ function awardPoints() {
     const inputs = document.querySelectorAll('.guess-input');
     const playerLabels = document.querySelectorAll('.player-label');
 
-    let closestPlayer = null;
+    let closestPlayers = [];
     let closestDiff = Infinity;
-    let isTie = false;
 
     const cleanOxalate = parseFloat(String(currentFood.oxalate).replace(/[^\d.-]/g, ''));
 
@@ -253,25 +252,33 @@ function awardPoints() {
         const guess = parseFloat(input.value);
         if (!isNaN(guess)) {
             const diff = Math.abs(cleanOxalate - guess);
+
             if (diff < closestDiff) {
-                closestPlayer = playerLabels[index].textContent.trim();
+                // New closest guess
+                closestPlayers = [playerLabels[index].textContent.trim()];
                 closestDiff = diff;
-                isTie = false;
             } else if (diff === closestDiff) {
-                isTie = true;
+                // Tie for closest guess
+                closestPlayers.push(playerLabels[index].textContent.trim());
             }
         }
     });
 
     if (closestDiff === 0) {
-        // Exact match
-        playerScores[closestPlayer] += 2;
-    } else if (!isTie) {
-        // Closest match
-        playerScores[closestPlayer] += 1;
+        // Exact match: add 2 points to all tied players
+        closestPlayers.forEach(player => {
+            playerScores[player] = (playerScores[player] || 0) + 2;
+        });
+    } else {
+        // Closest match: add 1 point to all tied players
+        closestPlayers.forEach(player => {
+            playerScores[player] = (playerScores[player] || 0) + 1;
+        });
     }
+
     updateLeaderboard();
 }
+
 
 function syncLeaderboardWithPlayers() {
     const playerRows = document.querySelectorAll('.player-row');
