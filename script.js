@@ -1,4 +1,5 @@
 let foods = [];
+let playerData = {}; 
 let currentFood = null;
 let inputsDisabled = false;
 
