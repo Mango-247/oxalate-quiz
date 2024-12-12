@@ -37,17 +37,12 @@ function loadFromLocalStorage() {
     return 0;
 }
 
-function updateLabel(newLabel, classList) {
-    newLabel.classList.add('player-label');
-    newLabel.contentEditable = "true";
-    newLabel.textContent = storedData.name;
-    newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
-    newLabel.addEventListener('input', event => handleNameChange(event, playerId));
-}
 
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
-    updateLabel(document.getElementById('player-label'), classList);
+    FirstplayerInput = document.getElementById('player-label');
+    FirstplayerInput.addEventListener('keydown', event => enforceCharacterLimit(event));
+    FirstplayerInput.addEventListener('input', event => handleNameChange(event, playerId));
     for (let i = 2; i <= playerCount; i++) {
         const playerId = `player${i}`;
         const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
@@ -58,7 +53,11 @@ function initializePlayersFromLocalStorage(playerCount) {
         newRow.style.alignItems = 'center';
 
         const newLabel = document.createElement('div');
-        updateLabel(newLabel, classList)
+        newLabel.classList.add('player-label');
+        newLabel.contentEditable = "true";
+        newLabel.textContent = storedData.name;
+        newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
+        newLabel.addEventListener('input', event => handleNameChange(event, playerId));
 
         const newInput = document.createElement('input');
         newInput.type = 'number';
