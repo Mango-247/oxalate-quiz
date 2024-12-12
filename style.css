@@ -176,3 +176,35 @@ button.disabled {
     color: #333;
 }
 
+/* Style for leaderboard container */
+#leaderboard {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 300px;
+    margin: 20px auto;
+}
+
+/* Flexbox styling for each leaderboard entry */
+#leaderboard div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+}
+
+/* Styling for the player names and scores */
+#leaderboard div div:first-child {
+    text-align: left;
+    font-weight: bold;
+    flex: 1;
+}
+
+#leaderboard div div:last-child {
+    text-align: right;
+    color: #555;
+}
+
+
