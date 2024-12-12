@@ -212,10 +212,22 @@ function updateLeaderboard() {
         .sort(([, a], [, b]) => b - a) // Sort by scores, descending
         .forEach(([player, score]) => {
             const entry = document.createElement('div');
-            entry.textContent = `${player}: ${score} points`;
+            entry.style.display = 'flex';
+            entry.style.justifyContent = 'space-between';
+            entry.style.padding = '5px 10px';
+
+            const nameDiv = document.createElement('div');
+            nameDiv.textContent = player;
+
+            const scoreDiv = document.createElement('div');
+            scoreDiv.textContent = `${score} ${score === 1 ? 'point' : 'points'}`;
+
+            entry.appendChild(nameDiv);
+            entry.appendChild(scoreDiv);
             leaderboardDiv.appendChild(entry);
         });
 }
+
 
 function awardPoints() {
     const inputs = document.querySelectorAll('.guess-input');
@@ -253,19 +265,27 @@ function awardPoints() {
 
 function syncLeaderboardWithPlayers() {
     const playerRows = document.querySelectorAll('.player-row');
-    playerScores = {};
+    const updatedPlayerScores = {}; // Temporary object to store updated scores
 
     playerRows.forEach((row, index) => {
         const playerId = `player${index + 1}`;
         const playerName = row.querySelector('.player-label').textContent.trim();
-        const score = playerData[playerId]?.score || 0;
 
-        playerScores[playerName] = score;
-        playerData[playerId] = { name: playerName, score: score };
+        if (!playerData[playerId]) {
+            // Use previous data if available, else initialize with 0
+            const previousData = Object.values(playerData).find(data => data.name === playerName);
+            const score = previousData ? previousData.score : 0;
+            playerData[playerId] = { name: playerName, score: score };
+        }
+
+        const score = playerData[playerId].score;
+        updatedPlayerScores[playerName] = score; // Update the temporary scores
     });
 
+    playerScores = updatedPlayerScores; // Replace old scores with updated scores
     updateLeaderboard();
 }
+
 
 
 
