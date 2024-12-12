@@ -3,6 +3,76 @@ let playerData = {};
 let currentFood = null;
 let inputsDisabled = false;
 
+function saveToLocalStorage() {
+    const dataToSave = {
+        playerData,
+        playerCount: Object.keys(playerData).length
+    };
+    localStorage.setItem('gameData', JSON.stringify(dataToSave));
+}
+
+function loadFromLocalStorage() {
+    const savedData = localStorage.getItem('gameData');
+    if (savedData) {
+        const { playerData: loadedPlayerData, playerCount } = JSON.parse(savedData);
+        playerData = loadedPlayerData;
+        return playerCount;
+    }
+    return 0;
+}
+
+function initializePlayersFromLocalStorage(playerCount) {
+    const container = document.getElementById('players-container');
+
+    for (let i = 1; i <= playerCount; i++) {
+        const playerId = `player${i}`;
+        const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
+
+        const newRow = document.createElement('div');
+        newRow.classList.add('player-row');
+        newRow.style.display = 'flex';
+        newRow.style.alignItems = 'center';
+
+        const newLabel = document.createElement('div');
+        newLabel.classList.add('player-label');
+        newLabel.contentEditable = "true";
+        newLabel.textContent = storedData.name;
+        newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
+        newLabel.addEventListener('input', event => handleNameChange(event, playerId));
+
+        const newInput = document.createElement('input');
+        newInput.type = 'number';
+        newInput.classList.add('guess-input');
+        newInput.placeholder = 'Enter guess (mg)';
+        newInput.disabled = inputsDisabled;
+
+        const addButton = createButton('+', 'add-button', addPlayerInput);
+        const removeButton = createButton('-', 'remove-button', () => {
+            newRow.remove();
+            updateButtons();
+            updateSubmitButtonState();
+            syncLeaderboardWithPlayers();
+            saveToLocalStorage(); // Save changes
+        });
+
+        newInput.addEventListener('input', updateSubmitButtonState);
+
+        newRow.appendChild(newLabel);
+        newRow.appendChild(newInput);
+        newRow.appendChild(addButton);
+        newRow.appendChild(removeButton);
+        container.appendChild(newRow);
+
+        playerData[playerId] = storedData;
+        playerScores[storedData.name] = storedData.score; // Retain score in playerScores
+    }
+
+    updateButtons();
+    updateLeaderboard();
+}
+
+
+
 async function fetchFoods() {
     const response = await fetch('foods.json');
     foods = await response.json();
@@ -114,6 +184,7 @@ function addPlayerInput() {
 
         updateButtons();
         syncLeaderboardWithPlayers();
+        saveToLocalStorage();
     }
 }
 
@@ -298,6 +369,7 @@ function syncLeaderboardWithPlayers() {
 
     playerScores = updatedPlayerScores; // Replace old scores with updated scores
     updateLeaderboard();
+    saveToLocalStorage();
 }
 
 
@@ -314,9 +386,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentFood = getRandomFood();
         displayFood(currentFood);
-        initializeLeaderboard();
 
-        firstPlayerLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
+        // Load saved player data from local storage
+        const savedPlayerCount = loadFromLocalStorage();
+        if (savedPlayerCount > 0) {
+            initializePlayersFromLocalStorage(savedPlayerCount);
+        } else {
+            addPlayerInput(); // Add a default player if no data exists
+        }
+
+        initializeLeaderboard();
 
         rerollButton.addEventListener('click', () => {
             resultDiv.textContent = '';
@@ -334,6 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
             findClosestPlayer();
             awardPoints();
             submitButton.disabled = true;
+            saveToLocalStorage(); // Save scores after submitting
         });
 
         input.addEventListener('input', updateSubmitButtonState);
@@ -341,8 +421,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.add-button').addEventListener('click', () => {
             addPlayerInput();
             syncLeaderboardWithPlayers();
+            saveToLocalStorage(); // Save changes when a new player is added
         });
 
         updateSubmitButtonState();
     });
 });
+
