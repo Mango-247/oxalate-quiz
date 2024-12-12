@@ -32,12 +32,12 @@ body {
     width: 150px; 
 }
 
-.reroll-button:hover, .submit-button:hover {
+.reroll-button:hover, .submit-button:hover, .reset-button:hover  {
     background-color: darkred;
 }
 
 @media (hover: none) and (pointer: coarse) {
-    .reroll-button:hover, .submit-button:hover {
+    .reroll-button:hover, .submit-button:hover, .reset-button:hover {
         background-color: red;
     }
 }
