@@ -270,7 +270,7 @@ function syncLeaderboardWithPlayers() {
     playerRows.forEach((row, index) => {
         const playerId = `player${index + 1}`;
         const playerName = row.querySelector('.player-label').textContent.trim();
-
+        console.log(playerData)
         if (!playerData[playerId]) {
             // Use previous data if available, else initialize with 0
             const previousData = Object.values(playerData).find(data => data.name === playerName);
