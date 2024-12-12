@@ -141,6 +141,7 @@ function handleNameChange(event, playerId) {
         playerInfo.name = newName;
         playerScores[newName] = playerInfo.score;
         updateLeaderboard();
+        saveToLocalStorage();
     }
 }
 
