@@ -42,6 +42,7 @@ function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
     for (let i = 0; i <= playerCount; i++) {
         const playerId = `player${i}`;
+        console.log(`Current id: ${playerId}`)
         const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
 
         const newRow = document.createElement('div');
