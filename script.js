@@ -71,7 +71,16 @@ function addPlayerInput() {
         newRow.style.alignItems = 'center';
 
         const playerId = `player${currentPlayers + 1}`;
-        const storedData = playerData[playerId] || { name: `Player ${currentPlayers + 1}`, score: 0 };
+        let storedData = playerData[playerId];
+
+        // If no existing playerData, use default values
+        if (!storedData) {
+            const defaultName = `Player ${currentPlayers + 1}`;
+            const existingData = Object.values(playerData).find(data => data.name === defaultName);
+
+            // Retain score for existing names, otherwise initialize
+            storedData = existingData || { name: defaultName, score: 0 };
+        }
 
         const newLabel = document.createElement('div');
         newLabel.classList.add('player-label');
@@ -102,12 +111,13 @@ function addPlayerInput() {
         newRow.appendChild(removeButton);
         container.appendChild(newRow);
 
-        playerData[playerId] = storedData;
+        playerData[playerId] = storedData; // Update playerData only when necessary
 
         updateButtons();
         syncLeaderboardWithPlayers();
     }
 }
+
 
 
 function createButton(text, className, onClick) {
