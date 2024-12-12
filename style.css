@@ -164,18 +164,6 @@ button.disabled {
 }
 
 
-.leaderboard {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: left;
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-}
-
 /* Style for leaderboard container */
 #leaderboard {
     font-family: Arial, sans-serif;
@@ -206,5 +194,6 @@ button.disabled {
     text-align: right;
     color: #555;
 }
+
 
 
