@@ -8,7 +8,7 @@ function saveToLocalStorage() {
     const playerCount = container.children.length;
 
     Array.from(container.children).forEach((row, index) => {
-        const playerId = `player${index + 1}`;
+        const playerId = `player${index}`;
         const name = row.querySelector('.player-label').textContent.trim();
         const score = playerScores[name] || 0;
 
