@@ -5,44 +5,46 @@ let inputsDisabled = false;
 
 function saveToLocalStorage() {
     const container = document.getElementById('players-container');
-    const activePlayers = Array.from(container.children).map((row, index) => {
+    const playerCount = container.children.length;
+
+    Array.from(container.children).forEach((row, index) => {
         const playerId = `player${index + 1}`;
         const name = row.querySelector('.player-label').textContent.trim();
         const score = playerScores[name] || 0;
 
         // Update playerData with only active players
         playerData[playerId] = { name, score };
-        return playerId; // Collect active player IDs
     });
 
     const dataToSave = {
-        activePlayerIds: activePlayers,
+        playerCount,
         playerData
     };
 
     localStorage.setItem('https://mango-247.github.io/oxalate-quiz/GameData', JSON.stringify(dataToSave));
-    console.log(`Saved data: ${JSON.stringify(dataToSave)}`)
+    console.log(`Saved data: ${JSON.stringify(dataToSave)}`);
 }
+
 
 
 function loadFromLocalStorage() {
     const savedData = localStorage.getItem('https://mango-247.github.io/oxalate-quiz/GameData');
     if (savedData) {
-        console.log(`Loaded data: ${JSON.stringify(savedData)}`)
-        const { activePlayerIds, playerData: loadedPlayerData } = JSON.parse(savedData);
+        console.log(`Loaded data: ${savedData}`);
+        const { playerCount, playerData: loadedPlayerData } = JSON.parse(savedData);
         playerData = loadedPlayerData;
-        return activePlayerIds;
+        return playerCount;
     }
-    return [];
+    return 0;
 }
 
 
-
-function initializePlayersFromLocalStorage(activePlayerIds) {
+function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
 
-    activePlayerIds.forEach(playerId => {
-        const storedData = playerData[playerId] || { name: `Unknown`, score: 0 };
+    for (let i = 1; i <= playerCount; i++) {
+        const playerId = `player${i}`;
+        const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
 
         const newRow = document.createElement('div');
         newRow.classList.add('player-row');
@@ -80,14 +82,11 @@ function initializePlayersFromLocalStorage(activePlayerIds) {
         container.appendChild(newRow);
 
         playerScores[storedData.name] = storedData.score; // Retain score in playerScores
-    });
+    }
 
     updateButtons();
     updateLeaderboard();
 }
-
-
-
 
 
 async function fetchFoods() {
