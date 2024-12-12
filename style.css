@@ -18,7 +18,7 @@ body {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
 }
 
-.reroll-button, .submit-button {
+.reroll-button, .submit-button, .reset-button {
     background-color: red;
     color: white;
     padding: 7.5px 15px; 
