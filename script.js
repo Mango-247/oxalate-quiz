@@ -40,7 +40,7 @@ function loadFromLocalStorage() {
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
 
-    for (let i = 1; i <= playerCount; i++) {
+    for (let i = 1; i <= playerCount-1; i++) {
         const playerId = `player${i}`;
         const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
 
