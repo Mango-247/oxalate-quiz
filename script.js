@@ -41,7 +41,6 @@ function loadFromLocalStorage() {
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
     FirstplayerInput = document.getElementById('player-label');
-    FirstplayerInput.addEventListener('keydown', event => enforceCharacterLimit(event));
     FirstplayerInput.addEventListener('input', event => handleNameChange(event, playerId));
     for (let i = 2; i <= playerCount; i++) {
         const playerId = `player${i}`;
