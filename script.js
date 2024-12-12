@@ -89,6 +89,7 @@ function initializePlayersFromLocalStorage(activePlayerIds) {
 
 
 
+
 async function fetchFoods() {
     const response = await fetch('foods.json');
     foods = await response.json();
@@ -398,15 +399,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const submitButton = document.getElementById('submit');
         const resultDiv = document.getElementById('result');
         const input = document.querySelector('.guess-input');
-        const firstPlayerLabel = document.querySelector('.player-label');
 
         currentFood = getRandomFood();
         displayFood(currentFood);
 
-        // Load saved player data from local storage
-        const savedPlayerCount = loadFromLocalStorage();
-        if (savedPlayerCount > 0) {
-            initializePlayersFromLocalStorage(savedPlayerCount);
+        const activePlayerIds = loadFromLocalStorage(); // Load actual active player IDs
+        if (activePlayerIds.length > 0) {
+            initializePlayersFromLocalStorage(activePlayerIds);
         } else {
             addPlayerInput(); // Add a default player if no data exists
         }
@@ -443,4 +442,5 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSubmitButtonState();
     });
 });
+
 
