@@ -4,25 +4,36 @@ let currentFood = null;
 let inputsDisabled = false;
 
 function saveToLocalStorage() {
-    localStorage.removeItem('gameData');
+    const container = document.getElementById('players-container');
+    const activePlayers = Array.from(container.children).map((row, index) => {
+        const playerId = `player${index + 1}`;
+        const name = row.querySelector('.player-label').textContent.trim();
+        const score = playerScores[name] || 0;
+
+        // Update playerData with only active players
+        playerData[playerId] = { name, score };
+        return playerId; // Collect active player IDs
+    });
+
     const dataToSave = {
-        playerData,
-        playerCount: Object.keys(playerData).length
+        activePlayerIds: activePlayers,
+        playerData
     };
+
     localStorage.setItem('gameData', JSON.stringify(dataToSave));
-    console.log(`saved data: ${JSON.stringify(dataToSave)}`)
 }
+
 
 function loadFromLocalStorage() {
     const savedData = localStorage.getItem('gameData');
     if (savedData) {
-        const { playerData: loadedPlayerData, playerCount } = JSON.parse(savedData);
+        const { activePlayerIds, playerData: loadedPlayerData } = JSON.parse(savedData);
         playerData = loadedPlayerData;
-        return playerCount;
+        return activePlayerIds;
     }
-    console.log(`Loaded data: ${JSON.stringify(savedData)}`)
-    return 0;
+    return [];
 }
+
 
 
 function initializePlayersFromLocalStorage(playerCount) {
