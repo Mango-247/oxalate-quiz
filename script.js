@@ -86,7 +86,7 @@ function addPlayerInput() {
         container.appendChild(newRow);
 
         updateButtons();
-        //syncLeaderboardWithPlayers(); // Sync leaderboard after adding a player
+        syncLeaderboardWithPlayers(); // Sync leaderboard after adding a player
     }
 }
 
@@ -286,4 +286,3 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSubmitButtonState();
     });
 });
-
