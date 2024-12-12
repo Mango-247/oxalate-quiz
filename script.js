@@ -55,14 +55,20 @@ function addPlayerInput() {
     if (currentPlayers < 8) {
         const newRow = document.createElement('div');
         newRow.classList.add('player-row');
-        newRow.style.display = 'flex'; 
-        newRow.style.alignItems = 'center'; 
+        newRow.style.display = 'flex';
+        newRow.style.alignItems = 'center';
+
+        const playerId = `player${currentPlayers + 1}`;
+        const storedData = playerData[playerId] || { name: `Player ${currentPlayers + 1}`, score: 0 };
 
         const newLabel = document.createElement('div');
         newLabel.classList.add('player-label');
         newLabel.contentEditable = "true";
-        newLabel.textContent = `Player ${currentPlayers + 1}`;
+        newLabel.textContent = storedData.name;
         newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
+        newLabel.addEventListener('input', () => {
+            playerData[playerId].name = newLabel.textContent.trim();
+        });
 
         const newInput = document.createElement('input');
         newInput.type = 'number';
@@ -75,7 +81,7 @@ function addPlayerInput() {
             newRow.remove();
             updateButtons();
             updateSubmitButtonState();
-            syncLeaderboardWithPlayers(); // Keep leaderboard in sync after removal
+            syncLeaderboardWithPlayers();
         });
 
         newInput.addEventListener('input', updateSubmitButtonState);
@@ -86,8 +92,10 @@ function addPlayerInput() {
         newRow.appendChild(removeButton);
         container.appendChild(newRow);
 
+        playerData[playerId] = storedData; // Save the data back
+
         updateButtons();
-        syncLeaderboardWithPlayers(); // Sync leaderboard after addition
+        syncLeaderboardWithPlayers();
     }
 }
 
@@ -235,14 +243,15 @@ function awardPoints() {
 
 function syncLeaderboardWithPlayers() {
     const playerRows = document.querySelectorAll('.player-row');
-    const updatedScores = {};
+    playerScores = {}; // Reset the scores
 
-    playerRows.forEach(row => {
+    playerRows.forEach((row, index) => {
+        const playerId = `player${index + 1}`;
         const playerName = row.querySelector('.player-label').textContent.trim();
-        updatedScores[playerName] = playerScores[playerName] || 0; // Retain existing scores or initialize to 0
+        playerScores[playerName] = playerData[playerId]?.score || 0;
+        playerData[playerId] = { name: playerName, score: playerScores[playerName] };
     });
 
-    playerScores = updatedScores; // Replace the old scores with the updated ones
     updateLeaderboard();
 }
 
