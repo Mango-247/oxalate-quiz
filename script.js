@@ -38,12 +38,11 @@ function loadFromLocalStorage() {
 
 
 
-function initializePlayersFromLocalStorage(playerCount) {
+function initializePlayersFromLocalStorage(activePlayerIds) {
     const container = document.getElementById('players-container');
 
-    for (let i = 1; i <= playerCount; i++) {
-        const playerId = `player${i}`;
-        const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
+    activePlayerIds.forEach(playerId => {
+        const storedData = playerData[playerId] || { name: `Unknown`, score: 0 };
 
         const newRow = document.createElement('div');
         newRow.classList.add('player-row');
@@ -69,7 +68,7 @@ function initializePlayersFromLocalStorage(playerCount) {
             updateButtons();
             updateSubmitButtonState();
             syncLeaderboardWithPlayers();
-            saveToLocalStorage(); // Save changes
+            saveToLocalStorage(); // Save changes dynamically
         });
 
         newInput.addEventListener('input', updateSubmitButtonState);
@@ -80,13 +79,13 @@ function initializePlayersFromLocalStorage(playerCount) {
         newRow.appendChild(removeButton);
         container.appendChild(newRow);
 
-        playerData[playerId] = storedData;
         playerScores[storedData.name] = storedData.score; // Retain score in playerScores
-    }
+    });
 
     updateButtons();
     updateLeaderboard();
 }
+
 
 
 
