@@ -10,6 +10,7 @@ function saveToLocalStorage() {
         playerCount: Object.keys(playerData).length
     };
     localStorage.setItem('gameData', JSON.stringify(dataToSave));
+    console.log(`saved data: ${dataToSave}`)
 }
 
 
