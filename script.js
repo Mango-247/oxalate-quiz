@@ -90,6 +90,7 @@ function initializePlayersFromLocalStorage(activePlayerIds) {
 
 
 
+
 async function fetchFoods() {
     const response = await fetch('foods.json');
     foods = await response.json();
@@ -442,5 +443,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSubmitButtonState();
     });
 });
+
 
 
