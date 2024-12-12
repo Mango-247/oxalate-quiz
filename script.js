@@ -73,13 +73,16 @@ function addPlayerInput() {
         const playerId = `player${currentPlayers + 1}`;
         let storedData = playerData[playerId];
 
-        // If no existing playerData, use default values
+        // If no existing playerData, initialize with default or retain score
         if (!storedData) {
             const defaultName = `Player ${currentPlayers + 1}`;
-            const existingData = Object.values(playerData).find(data => data.name === defaultName);
+            storedData = { name: defaultName, score: 0 };
 
-            // Retain score for existing names, otherwise initialize
-            storedData = existingData || { name: defaultName, score: 0 };
+            // If a player with the default name exists, retain their score
+            const existingPlayer = Object.values(playerData).find(data => data.name === defaultName);
+            if (existingPlayer) {
+                storedData.score = existingPlayer.score;
+            }
         }
 
         const newLabel = document.createElement('div');
@@ -111,12 +114,14 @@ function addPlayerInput() {
         newRow.appendChild(removeButton);
         container.appendChild(newRow);
 
-        playerData[playerId] = storedData; // Update playerData only when necessary
+        // Save or update playerData
+        playerData[playerId] = storedData;
 
         updateButtons();
         syncLeaderboardWithPlayers();
     }
 }
+
 
 
 
@@ -280,21 +285,25 @@ function syncLeaderboardWithPlayers() {
     playerRows.forEach((row, index) => {
         const playerId = `player${index + 1}`;
         const playerName = row.querySelector('.player-label').textContent.trim();
-        console.log(playerData)
-        if (!playerData[playerId]) {
-            // Use previous data if available, else initialize with 0
-            const previousData = Object.values(playerData).find(data => data.name === playerName);
-            const score = previousData ? previousData.score : 0;
-            playerData[playerId] = { name: playerName, score: score };
+
+        // Retain existing score if the player already exists
+        let score = 0;
+        if (playerData[playerId] && playerData[playerId].name === playerName) {
+            score = playerData[playerId].score;
+        } else {
+            const existingData = Object.values(playerData).find(data => data.name === playerName);
+            score = existingData ? existingData.score : 0;
         }
 
-        const score = playerData[playerId].score;
-        updatedPlayerScores[playerName] = score; // Update the temporary scores
+        // Update playerData and scores
+        playerData[playerId] = { name: playerName, score: score };
+        updatedPlayerScores[playerName] = score;
     });
 
     playerScores = updatedPlayerScores; // Replace old scores with updated scores
     updateLeaderboard();
 }
+
 
 
 
