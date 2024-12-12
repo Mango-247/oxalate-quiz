@@ -13,6 +13,17 @@ function saveToLocalStorage() {
     console.log(`saved data: ${dataToSave}`)
 }
 
+function loadFromLocalStorage() {
+    const savedData = localStorage.getItem('gameData');
+    if (savedData) {
+        const { playerData: loadedPlayerData, playerCount } = JSON.parse(savedData);
+        playerData = loadedPlayerData;
+        return playerCount;
+    }
+    console.log(`Loaded data: ${savedData}`)
+    return 0;
+}
+
 
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
