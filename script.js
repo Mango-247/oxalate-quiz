@@ -389,6 +389,11 @@ function syncLeaderboardWithPlayers() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    const player1Label = document.querySelector('.player-label');
+    const player1Id = 'player1';
+    player1Label.addEventListener('keydown', event => enforceCharacterLimit(event));
+    player1Label.addEventListener('input', event => handleNameChange(event, player1Id));
+    
     fetchFoods().then(() => {
         const rerollButton = document.getElementById('reroll');
         const submitButton = document.getElementById('submit');
