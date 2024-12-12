@@ -4,6 +4,7 @@ let currentFood = null;
 let inputsDisabled = false;
 
 function saveToLocalStorage() {
+    localStorage.removeItem('gameData');
     const dataToSave = {
         playerData,
         playerCount: Object.keys(playerData).length
@@ -11,15 +12,6 @@ function saveToLocalStorage() {
     localStorage.setItem('gameData', JSON.stringify(dataToSave));
 }
 
-function loadFromLocalStorage() {
-    const savedData = localStorage.getItem('gameData');
-    if (savedData) {
-        const { playerData: loadedPlayerData, playerCount } = JSON.parse(savedData);
-        playerData = loadedPlayerData;
-        return playerCount;
-    }
-    return 0;
-}
 
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
