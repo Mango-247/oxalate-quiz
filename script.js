@@ -86,6 +86,7 @@ function addPlayerInput() {
         container.appendChild(newRow);
 
         updateButtons();
+        syncLeaderboardWithPlayers();
     }
 }
 
