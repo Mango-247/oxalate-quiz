@@ -20,7 +20,7 @@ function loadFromLocalStorage() {
         playerData = loadedPlayerData;
         return playerCount;
     }
-    console.log(`Loaded data: ${savedData}`)
+    console.log(`Loaded data: ${JSON.stringify(savedData)}`)
     return 0;
 }
 
