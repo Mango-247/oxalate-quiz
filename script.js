@@ -49,6 +49,17 @@ function enforceCharacterLimit(event, maxLength = 8) {
     }
 }
 
+function handleNameChange(event, playerId) {
+    const newName = event.target.textContent.trim();
+    const playerInfo = playerData[playerId];
+    if (playerInfo) {
+        delete playerScores[playerInfo.name];
+        playerInfo.name = newName;
+        playerScores[newName] = playerInfo.score;
+        updateLeaderboard();
+    }
+}
+
 function addPlayerInput() {
     const container = document.getElementById('players-container');
     const currentPlayers = container.children.length;
@@ -67,9 +78,7 @@ function addPlayerInput() {
         newLabel.contentEditable = "true";
         newLabel.textContent = storedData.name;
         newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
-        newLabel.addEventListener('input', () => {
-            playerData[playerId].name = newLabel.textContent.trim();
-        });
+        newLabel.addEventListener('input', event => handleNameChange(event, playerId));
 
         const newInput = document.createElement('input');
         newInput.type = 'number';
@@ -93,7 +102,7 @@ function addPlayerInput() {
         newRow.appendChild(removeButton);
         container.appendChild(newRow);
 
-        playerData[playerId] = storedData; // Save the data back
+        playerData[playerId] = storedData;
 
         updateButtons();
         syncLeaderboardWithPlayers();
@@ -244,13 +253,15 @@ function awardPoints() {
 
 function syncLeaderboardWithPlayers() {
     const playerRows = document.querySelectorAll('.player-row');
-    playerScores = {}; // Reset the scores
+    playerScores = {};
 
     playerRows.forEach((row, index) => {
         const playerId = `player${index + 1}`;
         const playerName = row.querySelector('.player-label').textContent.trim();
-        playerScores[playerName] = playerData[playerId]?.score || 0;
-        playerData[playerId] = { name: playerName, score: playerScores[playerName] };
+        const score = playerData[playerId]?.score || 0;
+
+        playerScores[playerName] = score;
+        playerData[playerId] = { name: playerName, score: score };
     });
 
     updateLeaderboard();
