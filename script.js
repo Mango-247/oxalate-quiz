@@ -40,8 +40,6 @@ function loadFromLocalStorage() {
 
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
-    FirstplayerInput = document.getElementById('player-label');
-    FirstplayerInput.addEventListener('input', event => handleNameChange(event, playerId));
     for (let i = 2; i <= playerCount; i++) {
         const playerId = `player${i}`;
         const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
