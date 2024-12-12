@@ -73,7 +73,7 @@ function addPlayerInput() {
         const addButton = createButton('+', 'add-button', addPlayerInput);
         const removeButton = createButton('-', 'remove-button', () => {
             newRow.remove();
-            updateButtons();
+            syncLeaderboardWithPlayers(); // Sync leaderboard after removing a player
             updateSubmitButtonState();
         });
 
@@ -86,6 +86,7 @@ function addPlayerInput() {
         container.appendChild(newRow);
 
         updateButtons();
+        syncLeaderboardWithPlayers(); // Sync leaderboard after adding a player
     }
 }
 
@@ -230,6 +231,18 @@ function awardPoints() {
     updateLeaderboard();
 }
 
+function syncLeaderboardWithPlayers() {
+    const playerRows = document.querySelectorAll('.player-row');
+    playerScores = {}; // Reset the scores
+
+    playerRows.forEach(row => {
+        const playerName = row.querySelector('.player-label').textContent.trim();
+        playerScores[playerName] = playerScores[playerName] || 0; // Initialize new players with 0
+    });
+
+    updateLeaderboard();
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchFoods().then(() => {
@@ -267,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector('.add-button').addEventListener('click', () => {
             addPlayerInput();
-            initializeLeaderboard();
+            syncLeaderboardWithPlayers();
         });
 
         updateSubmitButtonState();
