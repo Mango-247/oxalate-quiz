@@ -37,7 +37,7 @@ function loadFromLocalStorage() {
     return 0;
 }
 
-function updateLabel(newLabel) {
+function updateLabel(newLabel, classList) {
     newLabel.classList.add('player-label');
     newLabel.contentEditable = "true";
     newLabel.textContent = storedData.name;
@@ -47,7 +47,7 @@ function updateLabel(newLabel) {
 
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
-    updateLabel(document.getElementById('player-label'));
+    updateLabel(document.getElementById('player-label'), classList);
     for (let i = 2; i <= playerCount; i++) {
         const playerId = `player${i}`;
         const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
@@ -58,7 +58,7 @@ function initializePlayersFromLocalStorage(playerCount) {
         newRow.style.alignItems = 'center';
 
         const newLabel = document.createElement('div');
-        updateLabel(newLabel)
+        updateLabel(newLabel, classList)
 
         const newInput = document.createElement('input');
         newInput.type = 'number';
