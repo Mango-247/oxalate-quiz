@@ -21,14 +21,14 @@ function saveToLocalStorage() {
     };
 
     localStorage.setItem('https://mango-247.github.io/oxalate-quiz/GameData', JSON.stringify(dataToSave));
-    console.log(`Saved data: ${dataToSave}`)
+    console.log(`Saved data: ${JSON.stringify(dataToSave)}`)
 }
 
 
 function loadFromLocalStorage() {
     const savedData = localStorage.getItem('https://mango-247.github.io/oxalate-quiz/GameData');
     if (savedData) {
-        console.log(`Loaded data: ${SavedData}`)
+        console.log(`Loaded data: ${JSON.stringify(SavedData)}`)
         const { activePlayerIds, playerData: loadedPlayerData } = JSON.parse(savedData);
         playerData = loadedPlayerData;
         return activePlayerIds;
