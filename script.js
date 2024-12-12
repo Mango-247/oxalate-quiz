@@ -3,6 +3,83 @@ let playerData = {};
 let currentFood = null;
 let inputsDisabled = false;
 
+// Save data to local storage
+function saveToLocalStorage() {
+    const playerRows = document.querySelectorAll('.player-row');
+    const savedPlayerData = [];
+
+    playerRows.forEach(row => {
+        const playerName = row.querySelector('.player-label').textContent.trim();
+        const score = playerScores[playerName] || 0;
+        savedPlayerData.push({ name: playerName, score });
+    });
+
+    const dataToSave = {
+        players: savedPlayerData,
+        numberOfPlayers: playerRows.length
+    };
+
+    localStorage.setItem('playerData', JSON.stringify(dataToSave));
+}
+
+// Load data from local storage
+function loadFromLocalStorage() {
+    const savedData = JSON.parse(localStorage.getItem('playerData'));
+
+    if (savedData && Array.isArray(savedData.players)) {
+        const container = document.getElementById('players-container');
+
+        // Clear existing rows
+        container.innerHTML = '';
+        playerData = {};
+        playerScores = {};
+
+        // Restore players
+        savedData.players.forEach((player, index) => {
+            const playerId = `player${index + 1}`;
+            const newRow = document.createElement('div');
+            newRow.classList.add('player-row');
+            newRow.style.display = 'flex';
+            newRow.style.alignItems = 'center';
+
+            const newLabel = document.createElement('div');
+            newLabel.classList.add('player-label');
+            newLabel.contentEditable = "true";
+            newLabel.textContent = player.name;
+            newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
+            newLabel.addEventListener('input', event => handleNameChange(event, playerId));
+
+            const newInput = document.createElement('input');
+            newInput.type = 'number';
+            newInput.classList.add('guess-input');
+            newInput.placeholder = 'Enter guess (mg)';
+            newInput.disabled = inputsDisabled;
+
+            const addButton = createButton('+', 'add-button', addPlayerInput);
+            const removeButton = createButton('-', 'remove-button', () => {
+                newRow.remove();
+                updateButtons();
+                updateSubmitButtonState();
+                syncLeaderboardWithPlayers();
+                saveToLocalStorage();
+            });
+
+            newRow.appendChild(newLabel);
+            newRow.appendChild(newInput);
+            newRow.appendChild(addButton);
+            newRow.appendChild(removeButton);
+            container.appendChild(newRow);
+
+            playerData[playerId] = { name: player.name, score: player.score };
+            playerScores[player.name] = player.score;
+        });
+
+        updateButtons();
+        updateLeaderboard();
+    }
+}
+
+
 async function fetchFoods() {
     const response = await fetch('foods.json');
     foods = await response.json();
@@ -73,10 +150,12 @@ function addPlayerInput() {
         const playerId = `player${currentPlayers + 1}`;
         let storedData = playerData[playerId];
 
-        // If no existing playerData, initialize with default or retain score
         if (!storedData) {
             const defaultName = `Player ${currentPlayers + 1}`;
-            storedData = { name: defaultName, score: playerScores[defaultName] || 0 };
+            storedData = { 
+                name: defaultName, 
+                score: playerScores[defaultName] || 0 
+            };
         }
 
         const newLabel = document.createElement('div');
@@ -94,10 +173,12 @@ function addPlayerInput() {
 
         const addButton = createButton('+', 'add-button', addPlayerInput);
         const removeButton = createButton('-', 'remove-button', () => {
+            delete playerScores[storedData.name];
             newRow.remove();
             updateButtons();
             updateSubmitButtonState();
             syncLeaderboardWithPlayers();
+            saveToLocalStorage(); // Save state after removal
         });
 
         newInput.addEventListener('input', updateSubmitButtonState);
@@ -108,15 +189,14 @@ function addPlayerInput() {
         newRow.appendChild(removeButton);
         container.appendChild(newRow);
 
-        // Save or update playerData
         playerData[playerId] = storedData;
-        playerScores[storedData.name] = storedData.score; // Retain score in playerScores
+        playerScores[storedData.name] = storedData.score;
 
         updateButtons();
         syncLeaderboardWithPlayers();
+        saveToLocalStorage(); // Save state after addition
     }
 }
-
 
 
 
@@ -282,41 +362,36 @@ function awardPoints() {
 
 function syncLeaderboardWithPlayers() {
     const playerRows = document.querySelectorAll('.player-row');
-    const updatedPlayerScores = {}; // Temporary object to store updated scores
+    const updatedPlayerScores = {};
 
     playerRows.forEach((row, index) => {
         const playerId = `player${index + 1}`;
         const playerName = row.querySelector('.player-label').textContent.trim();
 
-        // Retain existing score if the player already exists
         let score = playerScores[playerName] || 0;
 
-        // Update playerData and scores
         playerData[playerId] = { name: playerName, score: score };
         updatedPlayerScores[playerName] = score;
     });
 
-    playerScores = updatedPlayerScores; // Replace old scores with updated scores
+    playerScores = updatedPlayerScores;
     updateLeaderboard();
+    saveToLocalStorage(); // Save state after sync
 }
-
 
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchFoods().then(() => {
+        currentFood = getRandomFood();
+        displayFood(currentFood);
+
+        loadFromLocalStorage(); // Load saved data
+
         const rerollButton = document.getElementById('reroll');
         const submitButton = document.getElementById('submit');
         const resultDiv = document.getElementById('result');
-        const input = document.querySelector('.guess-input');
-        const firstPlayerLabel = document.querySelector('.player-label');
-
-        currentFood = getRandomFood();
-        displayFood(currentFood);
-        initializeLeaderboard();
-
-        firstPlayerLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
 
         rerollButton.addEventListener('click', () => {
             resultDiv.textContent = '';
@@ -334,15 +409,10 @@ document.addEventListener('DOMContentLoaded', () => {
             findClosestPlayer();
             awardPoints();
             submitButton.disabled = true;
-        });
-
-        input.addEventListener('input', updateSubmitButtonState);
-
-        document.querySelector('.add-button').addEventListener('click', () => {
-            addPlayerInput();
-            syncLeaderboardWithPlayers();
+            saveToLocalStorage(); // Save state after scoring
         });
 
         updateSubmitButtonState();
     });
 });
+
