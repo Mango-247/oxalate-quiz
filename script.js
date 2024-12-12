@@ -75,7 +75,7 @@ function addPlayerInput() {
             newRow.remove();
             updateButtons();
             updateSubmitButtonState();
-            syncLeaderboardWithPlayers();
+            syncLeaderboardWithPlayers(); // Keep leaderboard in sync after removal
         });
 
         newInput.addEventListener('input', updateSubmitButtonState);
@@ -87,9 +87,10 @@ function addPlayerInput() {
         container.appendChild(newRow);
 
         updateButtons();
-        syncLeaderboardWithPlayers();
+        syncLeaderboardWithPlayers(); // Sync leaderboard after addition
     }
 }
+
 
 function createButton(text, className, onClick) {
     const button = document.createElement('button');
@@ -234,15 +235,17 @@ function awardPoints() {
 
 function syncLeaderboardWithPlayers() {
     const playerRows = document.querySelectorAll('.player-row');
-    playerScores = {}; // Reset the scores
+    const updatedScores = {};
 
     playerRows.forEach(row => {
         const playerName = row.querySelector('.player-label').textContent.trim();
-        playerScores[playerName] = playerScores[playerName] || 0; // Initialize new players with 0
+        updatedScores[playerName] = playerScores[playerName] || 0; // Retain existing scores or initialize to 0
     });
 
+    playerScores = updatedScores; // Replace the old scores with the updated ones
     updateLeaderboard();
 }
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
