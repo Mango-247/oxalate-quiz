@@ -171,6 +171,66 @@ function findClosestPlayer() {
     }
 }
 
+let playerScores = {}; // Track player scores by name
+
+function initializeLeaderboard() {
+    const leaderboardDiv = document.getElementById('leaderboard');
+    const playerLabels = document.querySelectorAll('.player-label');
+    playerLabels.forEach(playerLabel => {
+        const playerName = playerLabel.textContent.trim();
+        playerScores[playerName] = 0; // Initialize all players with 0 points
+    });
+    updateLeaderboard();
+}
+
+function updateLeaderboard() {
+    const leaderboardDiv = document.getElementById('leaderboard');
+    leaderboardDiv.innerHTML = ''; // Clear current leaderboard
+
+    Object.entries(playerScores)
+        .sort(([, a], [, b]) => b - a) // Sort by scores, descending
+        .forEach(([player, score]) => {
+            const entry = document.createElement('div');
+            entry.textContent = `${player}: ${score} points`;
+            leaderboardDiv.appendChild(entry);
+        });
+}
+
+function awardPoints() {
+    const inputs = document.querySelectorAll('.guess-input');
+    const playerLabels = document.querySelectorAll('.player-label');
+
+    let closestPlayer = null;
+    let closestDiff = Infinity;
+    let isTie = false;
+
+    const cleanOxalate = parseFloat(String(currentFood.oxalate).replace(/[^\d.-]/g, ''));
+
+    inputs.forEach((input, index) => {
+        const guess = parseFloat(input.value);
+        if (!isNaN(guess)) {
+            const diff = Math.abs(cleanOxalate - guess);
+            if (diff < closestDiff) {
+                closestPlayer = playerLabels[index].textContent.trim();
+                closestDiff = diff;
+                isTie = false;
+            } else if (diff === closestDiff) {
+                isTie = true;
+            }
+        }
+    });
+
+    if (closestDiff === 0) {
+        // Exact match
+        playerScores[closestPlayer] += 2;
+    } else if (!isTie) {
+        // Closest match
+        playerScores[closestPlayer] += 1;
+    }
+    updateLeaderboard();
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
     fetchFoods().then(() => {
         const rerollButton = document.getElementById('reroll');
@@ -181,6 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentFood = getRandomFood();
         displayFood(currentFood);
+        initializeLeaderboard();
 
         firstPlayerLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
 
@@ -198,13 +259,18 @@ document.addEventListener('DOMContentLoaded', () => {
             lockInputs();
             resultDiv.textContent = `Actual content: ${currentFood.oxalate}`;
             findClosestPlayer();
-            submitButton.disabled = true; 
+            awardPoints();
+            submitButton.disabled = true;
         });
 
         input.addEventListener('input', updateSubmitButtonState);
 
-        document.querySelector('.add-button').addEventListener('click', addPlayerInput);
+        document.querySelector('.add-button').addEventListener('click', () => {
+            addPlayerInput();
+            initializeLeaderboard();
+        });
 
         updateSubmitButtonState();
     });
 });
+
