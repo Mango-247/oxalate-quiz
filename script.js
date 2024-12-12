@@ -26,7 +26,6 @@ function saveToLocalStorage() {
 }
 
 
-
 function loadFromLocalStorage() {
     const savedData = localStorage.getItem('https://mango-247.github.io/oxalate-quiz/GameData');
     if (savedData) {
@@ -37,7 +36,6 @@ function loadFromLocalStorage() {
     }
     return 0;
 }
-
 
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
@@ -389,9 +387,6 @@ function syncLeaderboardWithPlayers() {
 }
 
 
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     fetchFoods().then(() => {
         const rerollButton = document.getElementById('reroll');
@@ -402,9 +397,9 @@ document.addEventListener('DOMContentLoaded', () => {
         currentFood = getRandomFood();
         displayFood(currentFood);
 
-        const activePlayerIds = loadFromLocalStorage(); // Load actual active player IDs
-        if (activePlayerIds.length > 0) {
-            initializePlayersFromLocalStorage(activePlayerIds);
+        const playerCount = loadFromLocalStorage(); // Load player count
+        if (playerCount > 0) {
+            initializePlayersFromLocalStorage(playerCount);
         } else {
             addPlayerInput(); // Add a default player if no data exists
         }
@@ -441,3 +436,4 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSubmitButtonState();
     });
 });
+
