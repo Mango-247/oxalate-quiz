@@ -205,9 +205,6 @@ function addPlayerInput() {
 }
 
 
-
-
-
 function createButton(text, className, onClick) {
     const button = document.createElement('button');
     button.classList.add(className);
