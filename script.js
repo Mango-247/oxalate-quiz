@@ -221,7 +221,7 @@ function handleNameChange(event, playerId) {
 }
 
 function addPlayerInput() {
-   // logToScreen("Adding player input");
+   logToScreen("Adding player input");
     logToScreen("a")
     try {
         logToScreen("a")
@@ -236,7 +236,9 @@ function addPlayerInput() {
             newRow.style.alignItems = 'center';
             logToScreen("d")
             const playerId = `player${currentPlayers + 1}`;
+            logToScreen("z")
             const existingData = playerData[playerId];
+            logToScreen("t")
             const storedData = existingData || { name: defaultName, score: 0 };
             logToScreen("e")
             const newLabel = document.createElement('div');
