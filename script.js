@@ -3,27 +3,33 @@ let playerData = {};
 let currentFood = null;
 let inputsDisabled = false;
 
-function saveToLocalStorage() {
+function updatePlayerData() {
     const container = document.getElementById('players-container');
-    const playerCount = container.children.length;
+    const updatedPlayerData = {}; // Temporary dictionary for the corrected data
+    const playerRows = Array.from(container.children); // Ensure correct order of players
 
-    Array.from(container.children).forEach((row, index) => {
-        const playerId = `player${index-1}`;
-        const name = row.querySelector('.player-label').textContent.trim();
-        const score = playerScores[name] || 0;
+    playerRows.forEach((row, index) => {
+        const playerId = `player${index + 1}`; // Assign IDs starting from player1
+        const playerLabel = row.querySelector('.player-label').textContent.trim();
+        const score = playerScores[playerLabel] || 0; // Retain score if it exists, else default to 0
 
-        // Update playerData with only active players
-        playerData[playerId] = { name, score };
+        updatedPlayerData[playerId] = { name: playerLabel, score }; // Update playerData
     });
 
-    const dataToSave = {
-        playerCount,
-        playerData
-    };
+    playerData = updatedPlayerData; // Replace old playerData with the corrected one
+    saveToLocalStorage(); // Save the updated playerData
+}
+
+
+function saveToLocalStorage() {
+    updatePlayerData(); // Ensure playerData is up-to-date before saving
+    const playerCount = Object.keys(playerData).length;
+    const dataToSave = { playerCount, playerData };
 
     localStorage.setItem('https://mango-247.github.io/oxalate-quiz/GameData', JSON.stringify(dataToSave));
     console.log(`Saved data: ${JSON.stringify(dataToSave)}`);
 }
+
 
 
 function loadFromLocalStorage() {
