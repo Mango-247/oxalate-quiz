@@ -221,6 +221,7 @@ function handleNameChange(event, playerId) {
 }
 
 function addPlayerInput() {
+    logToScreen("Adding player input");
     try {
         const container = document.getElementById('players-container');
         const currentPlayers = container.children.length;
