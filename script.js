@@ -130,6 +130,21 @@ function updateSubmitButtonState() {
     submitButton.disabled = !allFilled;
 }
 
+function resetLeaderboard() {
+    if (confirm("Are you sure you want to reset the leaderboard?")) {
+        Object.keys(playerScores).forEach(player => {
+            playerScores[player] = 0; // Reset score to 0
+        });
+        Object.keys(playerData).forEach(playerId => {
+            playerData[playerId].score = 0; 
+        });
+        updateLeaderboard();
+        saveToLocalStorage();
+        console.log("Leaderboard has been reset.");
+    }
+}
+
+
 function enforceCharacterLimit(event, maxLength = 12) {
     const element = event.target;
     const value = element.textContent;
