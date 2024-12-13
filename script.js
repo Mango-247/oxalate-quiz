@@ -7,13 +7,13 @@ function saveToLocalStorage() {
     const container = document.getElementById('players-container');
     const playerCount = container.children.length;
 
-    playerData = {}; // Reset playerData to ensure clean storage
+    playerData = {}; 
     Array.from(container.children).forEach((row, index) => {
-        const playerId = `player${index + 1}`; // Sequential IDs starting from player1
+        const playerId = `player${index + 1}`; 
         const name = row.querySelector('.player-label').textContent.trim();
         const score = playerScores[name] || 0;
 
-        playerData[playerId] = { name, score }; // Update playerData with correct ID and data
+        playerData[playerId] = { name, score }; 
     });
 
     const dataToSave = {
@@ -24,8 +24,6 @@ function saveToLocalStorage() {
     localStorage.setItem('https://mango-247.github.io/oxalate-quiz/GameData', JSON.stringify(dataToSave));
     console.log(`Saved data: ${JSON.stringify(dataToSave)}`);
 }
-
-
 
 function loadFromLocalStorage() {
     const savedData = localStorage.getItem('https://mango-247.github.io/oxalate-quiz/GameData');
@@ -40,7 +38,7 @@ function loadFromLocalStorage() {
 
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
-    container.innerHTML = ''; // Clear existing UI to prevent duplicates
+    container.innerHTML = ''; 
 
     for (let i = 1; i <= playerCount; i++) {
         const playerId = `player${i}`;
@@ -80,14 +78,11 @@ function initializePlayersFromLocalStorage(playerCount) {
         newRow.appendChild(removeButton);
         container.appendChild(newRow);
 
-        playerScores[storedData.name] = storedData.score; // Retain and apply scores
+        playerScores[storedData.name] = storedData.score; 
     }
 
     updateButtons();
 }
-
-
-
 
 function applyListenersToLabel(label, playerId) {
     label.addEventListener('keydown', event => enforceCharacterLimit(event));
@@ -133,7 +128,7 @@ function updateSubmitButtonState() {
 function resetLeaderboard() {
     if (confirm("Are you sure you want to reset the leaderboard?")) {
         Object.keys(playerScores).forEach(player => {
-            playerScores[player] = 0; // Reset score to 0
+            playerScores[player] = 0; 
         });
         Object.keys(playerData).forEach(playerId => {
             playerData[playerId].score = 0; 
@@ -143,7 +138,6 @@ function resetLeaderboard() {
         console.log("Leaderboard has been reset.");
     }
 }
-
 
 function enforceCharacterLimit(event, maxLength = 12) {
     const element = event.target;
@@ -218,7 +212,6 @@ function addPlayerInput() {
         saveToLocalStorage();
     }
 }
-
 
 function createButton(text, className, onClick) {
     const button = document.createElement('button');
@@ -302,14 +295,14 @@ function findClosestPlayer() {
     }
 }
 
-let playerScores = {}; // Track player scores by name
+let playerScores = {}; 
 
 function initializeLeaderboard() {
     const leaderboardDiv = document.getElementById('leaderboard');
     const playerLabels = document.querySelectorAll('.player-label');
     playerLabels.forEach(playerLabel => {
         const playerName = playerLabel.textContent.trim();
-        playerScores[playerName] = 0; // Initialize all players with 0 points
+        playerScores[playerName] = 0; 
     });
     updateLeaderboard();
 }
@@ -317,20 +310,18 @@ function initializeLeaderboard() {
 function updateLeaderboard() {
     const leaderboardDiv = document.getElementById('leaderboard');
     const container = document.getElementById('players-container');
-    const playerCount = container.children.length; // Get the number of players
+    const playerCount = container.children.length; 
 
-    leaderboardDiv.innerHTML = ''; // Clear current leaderboard
+    leaderboardDiv.innerHTML = ''; 
 
-    // Update playerScores with playerData
     Object.keys(playerData).forEach(playerId => {
         const playerInfo = playerData[playerId];
-        playerScores[playerInfo.name] = playerInfo.score; // Sync playerScores with playerData
+        playerScores[playerInfo.name] = playerInfo.score; 
     });
 
-    // Render leaderboard sorted by scores, limited to playerCount
     Object.entries(playerScores)
-        .sort(([, a], [, b]) => b - a) // Sort by scores, descending
-        .slice(0, playerCount) // Limit to the number of players
+        .sort(([, a], [, b]) => b - a) 
+        .slice(0, playerCount) 
         .forEach(([player, score]) => {
             const entry = document.createElement('div');
             entry.style.display = 'flex';
@@ -351,7 +342,6 @@ function updateLeaderboard() {
     console.log(`Leaderboard updated with top ${playerCount} players: ${JSON.stringify(playerScores)}`);
 }
 
-
 function awardPoints() {
     const inputs = document.querySelectorAll('.guess-input');
     const playerLabels = document.querySelectorAll('.player-label');
@@ -367,23 +357,22 @@ function awardPoints() {
             const diff = Math.abs(cleanOxalate - guess);
 
             if (diff < closestDiff) {
-                // New closest guess
+
                 closestPlayers = [playerLabels[index].textContent.trim()];
                 closestDiff = diff;
             } else if (diff === closestDiff) {
-                // Tie for closest guess
+
                 closestPlayers.push(playerLabels[index].textContent.trim());
             }
         }
     });
 
     if (closestDiff === 0) {
-        // Exact match: add 2 points to all tied players
+
         closestPlayers.forEach(player => {
             console.log("Adding 2 points to", player);
             playerScores[player] = (playerScores[player] || 0) + 2;
 
-            // Sync with playerData
             for (const playerId in playerData) {
                 if (playerData[playerId].name === player) {
                     playerData[playerId].score = playerScores[player];
@@ -392,12 +381,11 @@ function awardPoints() {
             }
         });
     } else {
-        // Closest match: add 1 point to all tied players
+
         closestPlayers.forEach(player => {
             console.log("Adding 1 point to", player);
             playerScores[player] = (playerScores[player] || 0) + 1;
 
-            // Sync with playerData
             for (const playerId in playerData) {
                 if (playerData[playerId].name === player) {
                     playerData[playerId].score = playerScores[player];
@@ -408,39 +396,34 @@ function awardPoints() {
     }
 
     updateLeaderboard();
-    saveToLocalStorage(); // Persist data after updating scores
+    saveToLocalStorage(); 
 }
-
-
 
 function syncLeaderboardWithPlayers() {
     const playerRows = document.querySelectorAll('.player-row');
-    const updatedPlayerScores = {}; // Temporary object to store updated scores
+    const updatedPlayerScores = {}; 
 
     playerRows.forEach((row, index) => {
         const playerId = `player${index + 1}`;
         const playerName = row.querySelector('.player-label').textContent.trim();
 
-        // Retain existing score if the player already exists
         let score = playerScores[playerName] || 0;
 
-        // Update playerData and scores
         playerData[playerId] = { name: playerName, score: score };
         updatedPlayerScores[playerName] = score;
     });
 
-    playerScores = updatedPlayerScores; // Replace old scores with updated scores
+    playerScores = updatedPlayerScores; 
     updateLeaderboard();
     saveToLocalStorage();
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const player1Label = document.querySelector('.player-label');
     const player1Id = 'player1';
     player1Label.addEventListener('keydown', event => enforceCharacterLimit(event));
     player1Label.addEventListener('input', event => handleNameChange(event, player1Id));
-    
+
     fetchFoods().then(() => {
         const rerollButton = document.getElementById('reroll');
         const submitButton = document.getElementById('submit');
@@ -451,11 +434,11 @@ document.addEventListener('DOMContentLoaded', () => {
         currentFood = getRandomFood();
         displayFood(currentFood);
 
-        const playerCount = loadFromLocalStorage(); // Load player count
+        const playerCount = loadFromLocalStorage(); 
         if (playerCount > 0) {
             initializePlayersFromLocalStorage(playerCount);
         } else {
-            addPlayerInput(); // Add a default player if no data exists
+            addPlayerInput(); 
         }
 
         initializeLeaderboard();
@@ -476,7 +459,7 @@ document.addEventListener('DOMContentLoaded', () => {
             findClosestPlayer();
             awardPoints();
             submitButton.disabled = true;
-            saveToLocalStorage(); // Save scores after submitting
+            saveToLocalStorage(); 
         });
 
         resetButton.addEventListener('click', () => {
@@ -487,7 +470,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector('.add-button').addEventListener('click', () => {
             syncLeaderboardWithPlayers();
-            saveToLocalStorage(); // Save changes when a new player is added
+            saveToLocalStorage(); 
         });
 
         updateSubmitButtonState();
