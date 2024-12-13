@@ -438,6 +438,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         updateSubmitButtonState();
-        setInterval(updateLeaderboard, 1000);
+        delete playerScores[playerInfo.name];
+        playerInfo.name = newName;
+        playerScores[newName] = playerInfo.score;
+        updateLeaderboard();
     });
 });
