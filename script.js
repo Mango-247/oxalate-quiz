@@ -3,6 +3,15 @@ let playerData = {};
 let currentFood = null;
 let inputsDisabled = false;
 
+function logToScreen(message) {
+    const consoleDiv = document.getElementById('debug-console');
+    if (consoleDiv) {
+        const logEntry = document.createElement('div');
+        logEntry.textContent = message;
+        consoleDiv.appendChild(logEntry);
+        consoleDiv.scrollTop = consoleDiv.scrollHeight;
+    }
+}
 
 function saveToLocalStorage() {
     try {
@@ -263,7 +272,7 @@ function addPlayerInput() {
             saveToLocalStorage();
         }
     } catch (error) {
-        console.log("Error in addPlayerInput:", error);
+        logToScreen("Error in addPlayerInput:", error);
     }
 }
 
