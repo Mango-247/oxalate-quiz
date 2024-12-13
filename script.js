@@ -43,8 +43,6 @@ function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
     container.innerHTML = ''; // Clear existing UI to prevent duplicates
 
-    playerScores = {}; // Reset scores
-
     for (let i = 1; i <= playerCount; i++) {
         const playerId = `player${i}`;
         const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
@@ -83,8 +81,7 @@ function initializePlayersFromLocalStorage(playerCount) {
         newRow.appendChild(removeButton);
         container.appendChild(newRow);
 
-        // Correctly populate playerScores
-        playerScores[storedData.name] = storedData.score;
+        playerScores[storedData.name] = storedData.score; // Retain score in playerScores
     }
 
     updateButtons();
@@ -159,54 +156,56 @@ function addPlayerInput() {
     const container = document.getElementById('players-container');
     const currentPlayers = container.children.length;
 
-    // Prevent duplicate players from being added
-    if (currentPlayers >= 8) return; 
+    if (currentPlayers < 8) {
+        const newRow = document.createElement('div');
+        newRow.classList.add('player-row');
+        newRow.style.display = 'flex';
+        newRow.style.alignItems = 'center';
 
-    const newRow = document.createElement('div');
-    newRow.classList.add('player-row');
-    newRow.style.display = 'flex';
-    newRow.style.alignItems = 'center';
+        const playerId = `player${currentPlayers + 1}`;
+        const defaultName = `Player ${currentPlayers + 1}`;
+        const storedData = { name: defaultName, score: 0 };
 
-    const playerId = `player${currentPlayers + 1}`;
-    const defaultName = `Player ${currentPlayers + 1}`;
-    const storedData = { name: defaultName, score: 0 };
+        const newLabel = document.createElement('div');
+        newLabel.classList.add('player-label');
+        newLabel.contentEditable = "true";
+        newLabel.textContent = storedData.name;
+        applyListenersToLabel(newLabel, playerId);
 
-    const newLabel = document.createElement('div');
-    newLabel.classList.add('player-label');
-    newLabel.contentEditable = "true";
-    newLabel.textContent = storedData.name;
-    applyListenersToLabel(newLabel, playerId);
+        const newInput = document.createElement('input');
+        newInput.type = 'number';
+        newInput.classList.add('guess-input');
+        newInput.placeholder = 'Enter guess (mg)';
+        newInput.disabled = inputsDisabled;
 
-    const newInput = document.createElement('input');
-    newInput.type = 'number';
-    newInput.classList.add('guess-input');
-    newInput.placeholder = 'Enter guess (mg)';
-    newInput.disabled = inputsDisabled;
+        const addButton = createButton('+', 'add-button', addPlayerInput);
+        const removeButton = createButton('-', 'remove-button', () => {
+            newRow.remove();
+            updateButtons();
+            updateSubmitButtonState();
+            syncLeaderboardWithPlayers();
+            saveToLocalStorage();
+        });
 
-    const addButton = createButton('+', 'add-button', addPlayerInput);
-    const removeButton = createButton('-', 'remove-button', () => {
-        newRow.remove();
+        newInput.addEventListener('input', updateSubmitButtonState);
+
+        newRow.appendChild(newLabel);
+        newRow.appendChild(newInput);
+        newRow.appendChild(addButton);
+        newRow.appendChild(removeButton);
+        container.appendChild(newRow);
+
+        playerData[playerId] = storedData;
+        playerScores[storedData.name] = storedData.score;
+
         updateButtons();
-        updateSubmitButtonState();
         syncLeaderboardWithPlayers();
         saveToLocalStorage();
-    });
-
-    newInput.addEventListener('input', updateSubmitButtonState);
-
-    newRow.appendChild(newLabel);
-    newRow.appendChild(newInput);
-    newRow.appendChild(addButton);
-    newRow.appendChild(removeButton);
-    container.appendChild(newRow);
-
-    playerData[playerId] = storedData;
-    playerScores[storedData.name] = storedData.score;
-
-    updateButtons();
-    syncLeaderboardWithPlayers();
-    saveToLocalStorage();
+    }
 }
+
+
+
 
 
 function createButton(text, className, onClick) {
@@ -326,7 +325,6 @@ function updateLeaderboard() {
             leaderboardDiv.appendChild(entry);
         });
 }
-
 
 
 function awardPoints() {
