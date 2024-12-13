@@ -415,8 +415,6 @@ function syncLeaderboardWithPlayers() {
     });
 
     playerScores = updatedPlayerScores; 
-    console.log(`Updating scores to ${JSON.stringify(updatedPlayerScores)}`)
-    console.log(`Playerdata is now: ${playerData}`)
     updateLeaderboard();
     saveToLocalStorage();
 }
