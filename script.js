@@ -218,7 +218,7 @@ function addPlayerInput() {
         const container = document.getElementById('players-container');
         const currentPlayers = container.children.length;
         
-        if (currentPlayers < 8) {
+        if (currentPlayers < 5) {
             
             const newRow = document.createElement('div');
             newRow.classList.add('player-row');
