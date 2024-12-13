@@ -303,7 +303,7 @@ function initializeLeaderboard() {
 function updateLeaderboard() {
     const leaderboardDiv = document.getElementById('leaderboard');
     leaderboardDiv.innerHTML = ''; // Clear current leaderboard
-
+    console.log(`Updating leaderboard with scores ${playerScores}`)
     Object.entries(playerScores)
         .sort(([, a], [, b]) => b - a) // Sort by scores, descending
         .forEach(([player, score]) => {
@@ -439,6 +439,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         updateSubmitButtonState();
-        updateLeaderboard();
     });
 });
