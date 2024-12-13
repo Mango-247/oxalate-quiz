@@ -208,7 +208,7 @@ function addPlayerInput() {
         playerScores[storedData.name] = storedData.score;
 
         console.log(`Stored data: ${JSON.stringify(storedData)}`)
-        console.log(`Set name to: ${playerScores[storedData.name]}`)
+        console.log(`Set name to: ${storedData.score}`)
 
         updateButtons();
         syncLeaderboardWithPlayers();
