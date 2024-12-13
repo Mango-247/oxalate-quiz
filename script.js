@@ -365,11 +365,13 @@ function awardPoints() {
     if (closestDiff === 0) {
         // Exact match: add 2 points to all tied players
         closestPlayers.forEach(player => {
+            console.log("Adding points!")
             playerScores[player] = (playerScores[player] || 0) + 2;
         });
     } else {
         // Closest match: add 1 point to all tied players
         closestPlayers.forEach(player => {
+            console.log("Adding points!")
             playerScores[player] = (playerScores[player] || 0) + 1;
         });
     }
