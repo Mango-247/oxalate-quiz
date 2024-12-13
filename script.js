@@ -221,7 +221,7 @@ function handleNameChange(event, playerId) {
 }
 
 function addPlayerInput() {
-    logToScreen("Adding player input");
+   // logToScreen("Adding player input");
     logToScreen("a")
     try {
         logToScreen("a")
