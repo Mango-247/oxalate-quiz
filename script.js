@@ -37,7 +37,7 @@ function saveToLocalStorage() {
     };
 
     localStorage.setItem('https://mango-247.github.io/oxalate-quiz/GameData', JSON.stringify(dataToSave));
-
+    logToScreen("Done")
 }
 
 function loadFromLocalStorage() {
@@ -47,11 +47,13 @@ function loadFromLocalStorage() {
         if (savedData) {
             const { playerCount, playerData: loadedPlayerData } = JSON.parse(savedData);
             playerData = loadedPlayerData;
+            logToScreen("Done")
             return playerCount;
         }
     } catch (error) {
         console.error("Failed to load data from localStorage", error);
     }
+    logToScreen("Done")
     return 0;
 }
 
@@ -101,52 +103,68 @@ function initializePlayersFromLocalStorage(playerCount) {
 
         playerScores[storedData.name] = storedData.score; 
     }
-
+    
     updateButtons();
+    logToScreen("Done")
 }
 
 function applyListenersToLabel(label, playerId) {
+    logToScreen("Apply listeners")
     label.addEventListener('keydown', event => enforceCharacterLimit(event));
     label.addEventListener('input', event => handleNameChange(event, playerId));
+    logToScreen("Done")
 }
 
 async function fetchFoods() {
+    logToScreen("fetch food")
     const response = await fetch('foods.json');
     foods = await response.json();
+    logToScreen("Done")
 }
 
 function getRandomFood() {
+    logToScreen("get r food")
     const randomIndex = Math.floor(Math.random() * foods.length);
     return foods[randomIndex];
+    logToScreen("Done")
 }
 
 function displayFood(food) {
+    logToScreen("diplay food")
     const foodNameDiv = document.getElementById('food-name');
     foodNameDiv.textContent = food.food;
     const quantity = document.getElementById('quantity');
     quantity.textContent = `Quantity: ${food.quantity}`;
+    logToScreen("Done")
 }
 
 function lockInputs() {
+    logToScreen("lock input")
     const inputs = document.querySelectorAll('.guess-input');
     inputs.forEach(input => input.disabled = true);
     inputsDisabled = true;
+    logToScreen("Done")
 }
 
 function unlockInputs() {
+    logToScreen("unlock input")
     const inputs = document.querySelectorAll('.guess-input');
     inputs.forEach(input => input.disabled = false);
     inputsDisabled = false;
+    logToScreen("Done")
 }
 
 function updateSubmitButtonState() {
+    logToScreen("Update submit btn state")
     const inputs = document.querySelectorAll('.guess-input');
     const submitButton = document.getElementById('submit');
     const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
     submitButton.disabled = !allFilled;
+    logToScreen("Done")
 }
 
 function resetLeaderboard() {
+    logToScreen("reset leaderboard")
     if (confirm("Are you sure you want to reset the leaderboard?")) {
         Object.keys(playerScores).forEach(player => {
             playerScores[player] = 0; 
@@ -158,9 +176,11 @@ function resetLeaderboard() {
         saveToLocalStorage();
         console.log("Leaderboard has been reset.");
     }
+    logToScreen("Done")
 }
 
 function enforceCharacterLimit(event, maxLength = 12) {
+    logToScreen("enforce char limti")
     const element = event.target;
     const value = element.textContent;
     const key = event.key;
@@ -168,9 +188,11 @@ function enforceCharacterLimit(event, maxLength = 12) {
     if (value.length >= maxLength && !['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight'].includes(key)) {
         event.preventDefault();
     }
+    logToScreen("Done")
 }
 
 function handleNameChange(event, playerId) {
+    logToScreen("handle name")
     const newName = event.target.textContent.trim();
     const playerInfo = playerData[playerId];
     if (playerInfo) {
@@ -180,9 +202,11 @@ function handleNameChange(event, playerId) {
         updateLeaderboard();
         saveToLocalStorage();
     }
+    logToScreen("Done")
 }
 
 function addPlayerInput() {
+    logToScreen("add plr input")
     const container = document.getElementById('players-container');
     const currentPlayers = container.children.length;
 
@@ -235,9 +259,11 @@ function addPlayerInput() {
         syncLeaderboardWithPlayers();
         saveToLocalStorage();
     }
+    logToScreen("Done")
 }
 
 function createButton(text, className, onClick) {
+    logToScreen("create btn")
     const button = document.createElement('button');
     button.classList.add(className);
     button.textContent = text;
@@ -257,10 +283,12 @@ function createButton(text, className, onClick) {
     button.style.boxSizing = 'border-box';
     button.style.cursor = 'pointer'; 
     button.addEventListener('click', onClick);
+    logToScreen("Done")
     return button;
 }
 
 function updateButtons() {
+    logToScreen("update btns")
     const container = document.getElementById('players-container');
     const playerRows = container.children;
 
@@ -283,9 +311,11 @@ function updateButtons() {
             }
         }
     });
+    logToScreen("Done")
 }
 
 function findClosestPlayer() {
+    logToScreen("find closest plr")
     const inputs = document.querySelectorAll('.guess-input');
     const playerLabels = document.querySelectorAll('.player-label');
     const closestPlayerDiv = document.getElementById('closest-player');
@@ -317,11 +347,13 @@ function findClosestPlayer() {
     } else {
         closestPlayerDiv.textContent = `${closestPlayer} was the closest!`;
     }
+    logToScreen("Done")
 }
 
 let playerScores = {}; 
 
 function initializeLeaderboard() {
+    logToScreen("init leaderboard")
     const leaderboardDiv = document.getElementById('leaderboard');
     const playerLabels = document.querySelectorAll('.player-label');
     playerLabels.forEach(playerLabel => {
@@ -329,9 +361,11 @@ function initializeLeaderboard() {
         playerScores[playerName] = 0; 
     });
     updateLeaderboard();
+    logToScreen("Done")
 }
 
 function updateLeaderboard() {
+    logToScreen("update leaderboard")
     const leaderboardDiv = document.getElementById('leaderboard');
     const container = document.getElementById('players-container');
     const playerCount = container.children.length; 
@@ -362,10 +396,11 @@ function updateLeaderboard() {
             entry.appendChild(scoreDiv);
             leaderboardDiv.appendChild(entry);
         });
-
+    logToScreen("Done")
 }
 
 function awardPoints() {
+    logToScreen("award pts")
     const inputs = document.querySelectorAll('.guess-input');
     const playerLabels = document.querySelectorAll('.player-label');
 
@@ -420,9 +455,11 @@ function awardPoints() {
 
     updateLeaderboard();
     saveToLocalStorage(); 
+    logToScreen("Done")
 }
 
 function syncLeaderboardWithPlayers() {
+    logToScreen("sync leader with plrs")
     const playerRows = document.querySelectorAll('.player-row');
     const updatedPlayerScores = {}; 
 
@@ -439,9 +476,11 @@ function syncLeaderboardWithPlayers() {
     playerScores = updatedPlayerScores; 
     updateLeaderboard();
     saveToLocalStorage();
+    logToScreen("Done")
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    logToScreen("dom loaded")
     const player1Label = document.querySelector('.player-label');
     const player1Id = 'player1';
     player1Label.addEventListener('keydown', event => enforceCharacterLimit(event));
