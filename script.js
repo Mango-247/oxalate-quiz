@@ -223,31 +223,33 @@ function handleNameChange(event, playerId) {
 function addPlayerInput() {
     logToScreen("Adding player input");
     try {
+        logToScreen("a")
         const container = document.getElementById('players-container');
         const currentPlayers = container.children.length;
-
+        logToScreen("b")
         if (currentPlayers < 8) {
+            logToScreen("c")
             const newRow = document.createElement('div');
             newRow.classList.add('player-row');
             newRow.style.display = 'flex';
             newRow.style.alignItems = 'center';
-
+            logToScreen("d")
             const playerId = `player${currentPlayers + 1}`;
             const existingData = playerData[playerId];
             const storedData = existingData || { name: defaultName, score: 0 };
-
+            logToScreen("e")
             const newLabel = document.createElement('div');
             newLabel.classList.add('player-label');
             newLabel.contentEditable = "true";
             newLabel.textContent = storedData.name;
             applyListenersToLabel(newLabel, playerId);
-
+            logToScreen("f")
             const newInput = document.createElement('input');
             newInput.type = 'number';
             newInput.classList.add('guess-input');
             newInput.placeholder = 'Enter guess (mg)';
             newInput.disabled = inputsDisabled;
-
+            logToScreen("g")
             const addButton = createButton('+', 'add-button', addPlayerInput);
             const removeButton = createButton('-', 'remove-button', () => {
                 newRow.remove();
@@ -256,7 +258,7 @@ function addPlayerInput() {
                 syncLeaderboardWithPlayers();
                 saveToLocalStorage();
             });
-
+            logToScreen("h")
             newInput.addEventListener('input', updateSubmitButtonState);
 
             newRow.appendChild(newLabel);
@@ -264,7 +266,7 @@ function addPlayerInput() {
             newRow.appendChild(addButton);
             newRow.appendChild(removeButton);
             container.appendChild(newRow);
-
+            logToScreen("i")
             playerData[playerId] = storedData;
             playerScores[storedData.name] = storedData.score;
 
