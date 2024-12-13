@@ -7,7 +7,6 @@ function saveToLocalStorage() {
     const container = document.getElementById('players-container');
     const playerCount = container.children.length;
 
-    playerData = {}; 
     Array.from(container.children).forEach((row, index) => {
         const playerId = `player${index + 1}`; 
         const name = row.querySelector('.player-label').textContent.trim();
