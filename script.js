@@ -35,7 +35,7 @@ function loadFromLocalStorage() {
     } catch (error) {
         console.error("Failed to load data from localStorage", error);
     }
-    return {};
+    return 0;
 }
 
 
