@@ -130,7 +130,7 @@ function updateSubmitButtonState() {
     submitButton.disabled = !allFilled;
 }
 
-function enforceCharacterLimit(event, maxLength = 8) {
+function enforceCharacterLimit(event, maxLength = 12) {
     const element = event.target;
     const value = element.textContent;
     const key = event.key;
