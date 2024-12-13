@@ -163,8 +163,6 @@ button.disabled {
     cursor: default;
 }
 
-
-/* Style for leaderboard container */
 #leaderboard {
     font-family: Arial, sans-serif;
     border: 1px solid #ddd;
@@ -174,7 +172,6 @@ button.disabled {
     margin: 20px auto;
 }
 
-
 #leaderboard div {
     display: flex;
     justify-content: space-between;
@@ -182,7 +179,6 @@ button.disabled {
     padding: 5px 0;
     border-bottom: 1px solid #ddd;
 }
-
 
 #leaderboard div div:first-child {
     text-align: left;
@@ -196,7 +192,3 @@ button.disabled {
     color: #555;
     border-bottom: none;
 }
-
-
-
-
