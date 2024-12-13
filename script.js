@@ -206,7 +206,7 @@ function addPlayerInput() {
 
         playerData[playerId] = storedData;
         playerScores[storedData.name] = storedData.score;
-        console.log(`All player data: ${playerData}`)
+        console.log(`All player data: ${JSON.stringify(playerData)}`)
         console.log(`Stored data: ${JSON.stringify(storedData)}`)
         console.log(`Set name to: ${storedData.score}`)
 
