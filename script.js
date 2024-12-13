@@ -236,6 +236,7 @@ function addPlayerInput() {
             newRow.style.alignItems = 'center';
             logToScreen("f")
             const playerId = `player${currentPlayers + 1}`;
+            const defaultName = `player ${currentPlayers + 1}`;
             logToScreen("z")
             const existingData = playerData[playerId];
             logToScreen("t")
