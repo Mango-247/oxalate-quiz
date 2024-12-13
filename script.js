@@ -433,7 +433,6 @@ document.addEventListener('DOMContentLoaded', () => {
         input.addEventListener('input', updateSubmitButtonState);
 
         document.querySelector('.add-button').addEventListener('click', () => {
-            addPlayerInput();
             syncLeaderboardWithPlayers();
             saveToLocalStorage(); // Save changes when a new player is added
         });
