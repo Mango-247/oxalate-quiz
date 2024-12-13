@@ -84,7 +84,6 @@ function initializePlayersFromLocalStorage(playerCount) {
     }
 
     updateButtons();
-    updateLeaderboard();
 }
 
 
@@ -439,5 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         updateSubmitButtonState();
+        updateLeaderboard();
+        saveToLocalStorage();
     });
 });
