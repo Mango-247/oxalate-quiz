@@ -3,7 +3,23 @@ let playerData = {};
 let currentFood = null;
 let inputsDisabled = false;
 
+function logToScreen(message) {
+    const consoleDiv = document.getElementById('debug-console');
+    if (consoleDiv) {
+        const logEntry = document.createElement('div');
+        logEntry.textContent = message;
+        consoleDiv.appendChild(logEntry);
+
+        // Auto-scroll to the bottom for new messages
+        consoleDiv.scrollTop = consoleDiv.scrollHeight;
+    }
+}
+
+logToScreen("In script")
+
+
 function saveToLocalStorage() {
+    logToScreen("Saving to localstorage")
     const container = document.getElementById('players-container');
     const playerCount = container.children.length;
 
@@ -25,6 +41,7 @@ function saveToLocalStorage() {
 }
 
 function loadFromLocalStorage() {
+    logToScreen("Loading from localstorage")
     try {
         const savedData = localStorage.getItem('https://mango-247.github.io/oxalate-quiz/GameData');
         if (savedData) {
@@ -40,6 +57,7 @@ function loadFromLocalStorage() {
 
 
 function initializePlayersFromLocalStorage(playerCount) {
+    logToScreen("Init players")
     const container = document.getElementById('players-container');
     container.innerHTML = ''; 
 
