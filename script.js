@@ -9,11 +9,11 @@ function saveToLocalStorage() {
         const playerCount = container.children.length;
 
         Array.from(container.children).forEach((row, index) => {
-            const playerId = `player${index + 1}`;
+            const playerId = `player${index + 1}`; 
             const name = row.querySelector('.player-label').textContent.trim();
             const score = playerScores[name] || 0;
 
-            playerData[playerId] = { name, score };
+            playerData[playerId] = { name, score }; 
         });
 
         const dataToSave = {
@@ -44,7 +44,7 @@ function loadFromLocalStorage() {
 function initializePlayersFromLocalStorage(playerCount) {
     try {
         const container = document.getElementById('players-container');
-        container.innerHTML = '';
+        container.innerHTML = ''; 
 
         for (let i = 1; i <= playerCount; i++) {
             const playerId = `player${i}`;
@@ -84,7 +84,7 @@ function initializePlayersFromLocalStorage(playerCount) {
             newRow.appendChild(removeButton);
             container.appendChild(newRow);
 
-            playerScores[storedData.name] = storedData.score;
+            playerScores[storedData.name] = storedData.score; 
         }
 
         updateButtons();
@@ -166,10 +166,10 @@ function resetLeaderboard() {
     try {
         if (confirm("Are you sure you want to reset the leaderboard?")) {
             Object.keys(playerScores).forEach(player => {
-                playerScores[player] = 0;
+                playerScores[player] = 0; 
             });
             Object.keys(playerData).forEach(playerId => {
-                playerData[playerId].score = 0;
+                playerData[playerId].score = 0; 
             });
             updateLeaderboard();
             saveToLocalStorage();
@@ -223,7 +223,7 @@ function addPlayerInput() {
 
             const playerId = `player${currentPlayers + 1}`;
             const existingData = playerData[playerId];
-            const storedData = existingData || { name: `Player ${currentPlayers + 1}`, score: 0 };
+            const storedData = existingData || { name: defaultName, score: 0 };
 
             const newLabel = document.createElement('div');
             newLabel.classList.add('player-label');
@@ -256,6 +256,7 @@ function addPlayerInput() {
 
             playerData[playerId] = storedData;
             playerScores[storedData.name] = storedData.score;
+
             updateButtons();
             syncLeaderboardWithPlayers();
             saveToLocalStorage();
@@ -270,21 +271,21 @@ function createButton(text, className, onClick) {
         const button = document.createElement('button');
         button.classList.add(className);
         button.textContent = text;
-        button.style.width = '36px';
-        button.style.height = '36px';
+        button.style.width = '36px'; 
+        button.style.height = '36px'; 
         button.style.display = 'flex';
         button.style.justifyContent = 'center';
         button.style.alignItems = 'center';
-        button.style.fontSize = '16px';
+        button.style.fontSize = '16px'; 
         button.style.fontWeight = 'bold';
         button.style.border = 'none';
-        button.style.borderRadius = '50%';
+        button.style.borderRadius = '50%'; 
         button.style.backgroundColor = 'red';
         button.style.color = 'white';
-        button.style.padding = '0';
+        button.style.padding = '0'; 
         button.style.textAlign = 'center';
         button.style.boxSizing = 'border-box';
-        button.style.cursor = 'pointer';
+        button.style.cursor = 'pointer'; 
         button.addEventListener('click', onClick);
         return button;
     } catch (error) {
@@ -308,8 +309,11 @@ function updateButtons() {
                     removeButton.style.display = playerRows.length > 1 ? 'inline-block' : 'none';
                 }
             } else {
-                if (addButton) addButton.style.display = 'none';
-                if (removeButton) removeButton.style.display = 'none';
+
+                addButton.style.display = 'none';
+                if (removeButton) {
+                    removeButton.style.display = 'none';
+                }
             }
         });
     } catch (error) {
@@ -355,12 +359,15 @@ function findClosestPlayer() {
     }
 }
 
+let playerScores = {}; 
+
 function initializeLeaderboard() {
     try {
+        const leaderboardDiv = document.getElementById('leaderboard');
         const playerLabels = document.querySelectorAll('.player-label');
         playerLabels.forEach(playerLabel => {
             const playerName = playerLabel.textContent.trim();
-            playerScores[playerName] = 0;
+            playerScores[playerName] = 0; 
         });
         updateLeaderboard();
     } catch (error) {
@@ -372,18 +379,18 @@ function updateLeaderboard() {
     try {
         const leaderboardDiv = document.getElementById('leaderboard');
         const container = document.getElementById('players-container');
-        const playerCount = container.children.length;
+        const playerCount = container.children.length; 
 
-        leaderboardDiv.innerHTML = '';
+        leaderboardDiv.innerHTML = ''; 
 
         Object.keys(playerData).forEach(playerId => {
             const playerInfo = playerData[playerId];
-            playerScores[playerInfo.name] = playerInfo.score;
+            playerScores[playerInfo.name] = playerInfo.score; 
         });
 
         Object.entries(playerScores)
-            .sort(([, a], [, b]) => b - a)
-            .slice(0, playerCount)
+            .sort(([, a], [, b]) => b - a) 
+            .slice(0, playerCount) 
             .forEach(([player, score]) => {
                 const entry = document.createElement('div');
                 entry.style.display = 'flex';
@@ -421,15 +428,18 @@ function awardPoints() {
                 const diff = Math.abs(cleanOxalate - guess);
 
                 if (diff < closestDiff) {
+
                     closestPlayers = [playerLabels[index].textContent.trim()];
                     closestDiff = diff;
                 } else if (diff === closestDiff) {
+
                     closestPlayers.push(playerLabels[index].textContent.trim());
                 }
             }
         });
 
         if (closestDiff === 0) {
+
             closestPlayers.forEach(player => {
                 playerScores[player] = (playerScores[player] || 0) + 2;
 
@@ -441,6 +451,7 @@ function awardPoints() {
                 }
             });
         } else {
+
             closestPlayers.forEach(player => {
                 playerScores[player] = (playerScores[player] || 0) + 1;
 
@@ -454,7 +465,7 @@ function awardPoints() {
         }
 
         updateLeaderboard();
-        saveToLocalStorage();
+        saveToLocalStorage(); 
     } catch (error) {
         console.error("Error in awardPoints:", error);
     }
@@ -463,7 +474,7 @@ function awardPoints() {
 function syncLeaderboardWithPlayers() {
     try {
         const playerRows = document.querySelectorAll('.player-row');
-        const updatedPlayerScores = {};
+        const updatedPlayerScores = {}; 
 
         playerRows.forEach((row, index) => {
             const playerId = `player${index + 1}`;
@@ -475,14 +486,13 @@ function syncLeaderboardWithPlayers() {
             updatedPlayerScores[playerName] = score;
         });
 
-        playerScores = updatedPlayerScores;
+        playerScores = updatedPlayerScores; 
         updateLeaderboard();
         saveToLocalStorage();
     } catch (error) {
         console.error("Error in syncLeaderboardWithPlayers:", error);
     }
 }
-
 
 
     logToScreen("dom loaded")
