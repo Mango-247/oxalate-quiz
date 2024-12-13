@@ -96,7 +96,10 @@ function initializePlayersFromLocalStorage(playerCount) {
     updateLeaderboard();
 }
 
-
+function applyListenersToLabel(label, playerId) {
+    label.addEventListener('keydown', event => enforceCharacterLimit(event));
+    label.addEventListener('input', event => handleNameChange(event, playerId));
+}
 
 async function fetchFoods() {
     const response = await fetch('foods.json');
