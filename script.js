@@ -25,15 +25,19 @@ function saveToLocalStorage() {
 }
 
 function loadFromLocalStorage() {
-    const savedData = localStorage.getItem('https://mango-247.github.io/oxalate-quiz/GameData');
-    if (savedData) {
-
-        const { playerCount, playerData: loadedPlayerData } = JSON.parse(savedData);
-        playerData = loadedPlayerData;
-        return playerCount;
+    try {
+        const savedData = localStorage.getItem('https://mango-247.github.io/oxalate-quiz/GameData');
+        if (savedData) {
+            const { playerCount, playerData: loadedPlayerData } = JSON.parse(savedData);
+            playerData = loadedPlayerData;
+            return playerCount;
+        }
+    } catch (error) {
+        console.error("Failed to load data from localStorage", error);
     }
-    return 0;
+    return {};
 }
+
 
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
