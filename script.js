@@ -438,6 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         updateSubmitButtonState();
+        const playerInfo = playerData[playerId];
         delete playerScores[playerInfo.name];
         playerInfo.name = newName;
         playerScores[newName] = playerInfo.score;
