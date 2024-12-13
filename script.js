@@ -3,18 +3,6 @@ let playerData = {};
 let currentFood = null;
 let inputsDisabled = false;
 
-function console.log(message) {
-    const consoleDiv = document.getElementById('debug-console');
-    if (consoleDiv) {
-        const logEntry = document.createElement('div');
-        logEntry.textContent = message;
-        consoleDiv.appendChild(logEntry);
-
-        // Auto-scroll to the bottom for new messages
-        consoleDiv.scrollTop = consoleDiv.scrollHeight;
-    }
-}
-
 
 function saveToLocalStorage() {
     try {
