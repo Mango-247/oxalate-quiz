@@ -40,9 +40,7 @@ function loadFromLocalStorage() {
 
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
-    const leaderboardDiv = document.getElementById('leaderboard'); // Get the leaderboard
     container.innerHTML = ''; // Clear existing UI to prevent duplicates
-    leaderboardDiv.innerHTML = ''; // Clear leaderboard UI to prevent duplicates
 
     for (let i = 1; i <= playerCount; i++) {
         const playerId = `player${i}`;
@@ -82,27 +80,12 @@ function initializePlayersFromLocalStorage(playerCount) {
         newRow.appendChild(removeButton);
         container.appendChild(newRow);
 
-        // Update playerScores and leaderboard
-        playerScores[storedData.name] = storedData.score;
-        const leaderboardEntry = document.createElement('div');
-        leaderboardEntry.style.display = 'flex';
-        leaderboardEntry.style.justifyContent = 'space-between';
-        leaderboardEntry.style.padding = '5px 10px';
-
-        const nameDiv = document.createElement('div');
-        nameDiv.textContent = storedData.name;
-
-        const scoreDiv = document.createElement('div');
-        scoreDiv.textContent = `${storedData.score} ${storedData.score === 1 ? 'point' : 'points'}`;
-
-        leaderboardEntry.appendChild(nameDiv);
-        leaderboardEntry.appendChild(scoreDiv);
-        leaderboardDiv.appendChild(leaderboardEntry);
+        playerScores[storedData.name] = storedData.score; // Retain and apply scores
     }
 
     updateButtons();
+    updateLeaderboard();
 }
-
 
 
 
@@ -456,5 +439,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         updateSubmitButtonState();
+        updateLeaderboard();
     });
 });
