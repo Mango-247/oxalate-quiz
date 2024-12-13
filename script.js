@@ -38,7 +38,6 @@ function loadFromLocalStorage() {
     return 0;
 }
 
-
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
     container.innerHTML = ''; // Clear existing UI to prevent duplicates
@@ -81,12 +80,13 @@ function initializePlayersFromLocalStorage(playerCount) {
         newRow.appendChild(removeButton);
         container.appendChild(newRow);
 
-        playerScores[storedData.name] = storedData.score; // Retain score in playerScores
+        playerScores[storedData.name] = storedData.score; // Retain and apply scores
     }
 
     updateButtons();
     updateLeaderboard();
 }
+
 
 
 function applyListenersToLabel(label, playerId) {
