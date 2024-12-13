@@ -414,7 +414,8 @@ function syncLeaderboardWithPlayers() {
         updatedPlayerScores[playerName] = score;
     });
 
-    //playerScores = updatedPlayerScores; 
+    playerScores = updatedPlayerScores; 
+    console.log(`Updating scores to ${JSON.stringify(updatedPlayerScores)}`)
     updateLeaderboard();
     saveToLocalStorage();
 }
