@@ -365,19 +365,37 @@ function awardPoints() {
     if (closestDiff === 0) {
         // Exact match: add 2 points to all tied players
         closestPlayers.forEach(player => {
-            console.log("Adding points!")
+            console.log("Adding 2 points to", player);
             playerScores[player] = (playerScores[player] || 0) + 2;
+
+            // Sync with playerData
+            for (const playerId in playerData) {
+                if (playerData[playerId].name === player) {
+                    playerData[playerId].score = playerScores[player];
+                    break;
+                }
+            }
         });
     } else {
         // Closest match: add 1 point to all tied players
         closestPlayers.forEach(player => {
-            console.log("Adding points!")
+            console.log("Adding 1 point to", player);
             playerScores[player] = (playerScores[player] || 0) + 1;
+
+            // Sync with playerData
+            for (const playerId in playerData) {
+                if (playerData[playerId].name === player) {
+                    playerData[playerId].score = playerScores[player];
+                    break;
+                }
+            }
         });
     }
 
     updateLeaderboard();
+    saveToLocalStorage(); // Persist data after updating scores
 }
+
 
 
 function syncLeaderboardWithPlayers() {
