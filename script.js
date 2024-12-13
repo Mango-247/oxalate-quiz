@@ -234,7 +234,7 @@ function addPlayerInput() {
             newRow.classList.add('player-row');
             newRow.style.display = 'flex';
             newRow.style.alignItems = 'center';
-            logToScreen("d")
+            logToScreen("f")
             const playerId = `player${currentPlayers + 1}`;
             logToScreen("z")
             const existingData = playerData[playerId];
