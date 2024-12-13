@@ -414,7 +414,7 @@ function syncLeaderboardWithPlayers() {
         updatedPlayerScores[playerName] = score;
     });
 
-    playerScores = updatedPlayerScores; 
+    //playerScores = updatedPlayerScores; 
     updateLeaderboard();
     saveToLocalStorage();
 }
