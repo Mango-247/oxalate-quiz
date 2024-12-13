@@ -187,14 +187,17 @@ button.disabled {
     text-align: left;
     font-weight: bold;
     flex: 1;
-    border-bottom: 1px solid #ddd;
 }
 
 #leaderboard div div:last-child {
     text-align: right;
     color: #555;
+}
+
+#leaderboard div div:nth-child(2) {
     border-bottom: 1px solid #ddd;
 }
+
 
 
 
