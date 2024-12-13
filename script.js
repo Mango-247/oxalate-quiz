@@ -7,23 +7,24 @@ function saveToLocalStorage() {
     const container = document.getElementById('players-container');
     const playerCount = container.children.length;
 
+    playerData = {}; // Reset playerData to ensure clean storage
     Array.from(container.children).forEach((row, index) => {
-        const playerId = `player${index-1}`;
+        const playerId = `player${index + 1}`; // Sequential IDs starting from player1
         const name = row.querySelector('.player-label').textContent.trim();
         const score = playerScores[name] || 0;
 
-        // Update playerData with only active players
-        playerData[playerId] = { name, score };
+        playerData[playerId] = { name, score }; // Update playerData with correct ID and data
     });
 
     const dataToSave = {
         playerCount,
-        playerData
+        playerData,
     };
 
     localStorage.setItem('https://mango-247.github.io/oxalate-quiz/GameData', JSON.stringify(dataToSave));
     console.log(`Saved data: ${JSON.stringify(dataToSave)}`);
 }
+
 
 
 function loadFromLocalStorage() {
@@ -40,18 +41,9 @@ function loadFromLocalStorage() {
 
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
+    container.innerHTML = ''; // Clear existing UI to prevent duplicates
 
-    // Update the existing Player 1
-    const player1Label = container.querySelector('.player-label');
-    const player1Id = 'player1';
-    const storedData = playerData[player1Id] || { name: 'Player 1', score: 0 };
-
-    player1Label.textContent = storedData.name; // Rename Player 1 to stored name
-    playerScores[storedData.name] = storedData.score; // Retain score in playerScores
-    applyListenersToLabel(player1Label, player1Id);
-
-    // Add additional players starting from Player 2
-    for (let i = 2; i <= playerCount; i++) {
+    for (let i = 1; i <= playerCount; i++) {
         const playerId = `player${i}`;
         const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
 
@@ -95,6 +87,7 @@ function initializePlayersFromLocalStorage(playerCount) {
     updateButtons();
     updateLeaderboard();
 }
+
 
 function applyListenersToLabel(label, playerId) {
     label.addEventListener('keydown', event => enforceCharacterLimit(event));
@@ -170,20 +163,14 @@ function addPlayerInput() {
         newRow.style.alignItems = 'center';
 
         const playerId = `player${currentPlayers + 1}`;
-        let storedData = playerData[playerId];
-
-        // If no existing playerData, initialize with default or retain score
-        if (!storedData) {
-            const defaultName = `Player ${currentPlayers + 1}`;
-            storedData = { name: defaultName, score: playerScores[defaultName] || 0 };
-        }
+        const defaultName = `Player ${currentPlayers + 1}`;
+        const storedData = { name: defaultName, score: 0 };
 
         const newLabel = document.createElement('div');
         newLabel.classList.add('player-label');
         newLabel.contentEditable = "true";
         newLabel.textContent = storedData.name;
-        newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
-        newLabel.addEventListener('input', event => handleNameChange(event, playerId));
+        applyListenersToLabel(newLabel, playerId);
 
         const newInput = document.createElement('input');
         newInput.type = 'number';
@@ -197,6 +184,7 @@ function addPlayerInput() {
             updateButtons();
             updateSubmitButtonState();
             syncLeaderboardWithPlayers();
+            saveToLocalStorage();
         });
 
         newInput.addEventListener('input', updateSubmitButtonState);
@@ -207,15 +195,15 @@ function addPlayerInput() {
         newRow.appendChild(removeButton);
         container.appendChild(newRow);
 
-        // Save or update playerData
         playerData[playerId] = storedData;
-        playerScores[storedData.name] = storedData.score; // Retain score in playerScores
+        playerScores[storedData.name] = storedData.score;
 
         updateButtons();
         syncLeaderboardWithPlayers();
         saveToLocalStorage();
     }
 }
+
 
 
 
