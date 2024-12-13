@@ -21,13 +21,13 @@ function saveToLocalStorage() {
     };
 
     localStorage.setItem('https://mango-247.github.io/oxalate-quiz/GameData', JSON.stringify(dataToSave));
-    //console.log(`Saved data: ${JSON.stringify(dataToSave)}`);
+
 }
 
 function loadFromLocalStorage() {
     const savedData = localStorage.getItem('https://mango-247.github.io/oxalate-quiz/GameData');
     if (savedData) {
-       // console.log(`Loaded data: ${savedData}`);
+
         const { playerCount, playerData: loadedPlayerData } = JSON.parse(savedData);
         playerData = loadedPlayerData;
         return playerCount;
@@ -173,7 +173,6 @@ function addPlayerInput() {
         const playerId = `player${currentPlayers + 1}`;
         const existingData = playerData[playerId];
         const storedData = existingData || { name: defaultName, score: 0 };
-
 
         const newLabel = document.createElement('div');
         newLabel.classList.add('player-label');
