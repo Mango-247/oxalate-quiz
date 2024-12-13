@@ -63,6 +63,9 @@ function initializePlayersFromLocalStorage(playerCount) {
         newInput.placeholder = 'Enter guess (mg)';
         newInput.disabled = inputsDisabled;
 
+        // Set input value to the stored score
+        newInput.value = storedData.score;
+
         const addButton = createButton('+', 'add-button', addPlayerInput);
         const removeButton = createButton('-', 'remove-button', () => {
             newRow.remove();
@@ -86,6 +89,7 @@ function initializePlayersFromLocalStorage(playerCount) {
     updateButtons();
     updateLeaderboard();
 }
+
 
 
 
