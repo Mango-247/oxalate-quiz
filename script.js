@@ -1,483 +1,488 @@
 let foods = [];
-let playerData = {}; 
+let playerData = {};
 let currentFood = null;
 let inputsDisabled = false;
 
-function logToScreen(message) {
-    const consoleDiv = document.getElementById('debug-console');
-    if (consoleDiv) {
-        const logEntry = document.createElement('div');
-        logEntry.textContent = message;
-        consoleDiv.appendChild(logEntry);
+function saveToLocalStorage() {
+    try {
+        const container = document.getElementById('players-container');
+        const playerCount = container.children.length;
 
-        // Auto-scroll to the bottom for new messages
-        consoleDiv.scrollTop = consoleDiv.scrollHeight;
+        Array.from(container.children).forEach((row, index) => {
+            const playerId = `player${index + 1}`;
+            const name = row.querySelector('.player-label').textContent.trim();
+            const score = playerScores[name] || 0;
+
+            playerData[playerId] = { name, score };
+        });
+
+        const dataToSave = {
+            playerCount,
+            playerData,
+        };
+
+        localStorage.setItem('https://mango-247.github.io/oxalate-quiz/GameData', JSON.stringify(dataToSave));
+    } catch (error) {
+        console.error("Error in saveToLocalStorage:", error);
     }
 }
 
-logToScreen("In script")
-
-
-function saveToLocalStorage() {
-    logToScreen("Saving to localstorage")
-    const container = document.getElementById('players-container');
-    const playerCount = container.children.length;
-
-    Array.from(container.children).forEach((row, index) => {
-        const playerId = `player${index + 1}`; 
-        const name = row.querySelector('.player-label').textContent.trim();
-        const score = playerScores[name] || 0;
-
-        playerData[playerId] = { name, score }; 
-    });
-
-    const dataToSave = {
-        playerCount,
-        playerData,
-    };
-
-    localStorage.setItem('https://mango-247.github.io/oxalate-quiz/GameData', JSON.stringify(dataToSave));
-    logToScreen("Done")
-}
-
 function loadFromLocalStorage() {
-    logToScreen("Loading from localstorage")
     try {
         const savedData = localStorage.getItem('https://mango-247.github.io/oxalate-quiz/GameData');
         if (savedData) {
             const { playerCount, playerData: loadedPlayerData } = JSON.parse(savedData);
             playerData = loadedPlayerData;
-            logToScreen("Done")
             return playerCount;
         }
     } catch (error) {
-        console.error("Failed to load data from localStorage", error);
+        console.error("Error in loadFromLocalStorage:", error);
     }
-    logToScreen("Done")
     return 0;
 }
 
-
 function initializePlayersFromLocalStorage(playerCount) {
-    logToScreen("Init players")
-    const container = document.getElementById('players-container');
-    container.innerHTML = ''; 
+    try {
+        const container = document.getElementById('players-container');
+        container.innerHTML = '';
 
-    for (let i = 1; i <= playerCount; i++) {
-        const playerId = `player${i}`;
-        const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
+        for (let i = 1; i <= playerCount; i++) {
+            const playerId = `player${i}`;
+            const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
 
-        const newRow = document.createElement('div');
-        newRow.classList.add('player-row');
-        newRow.style.display = 'flex';
-        newRow.style.alignItems = 'center';
+            const newRow = document.createElement('div');
+            newRow.classList.add('player-row');
+            newRow.style.display = 'flex';
+            newRow.style.alignItems = 'center';
 
-        const newLabel = document.createElement('div');
-        newLabel.classList.add('player-label');
-        newLabel.contentEditable = "true";
-        newLabel.textContent = storedData.name;
-        applyListenersToLabel(newLabel, playerId);
+            const newLabel = document.createElement('div');
+            newLabel.classList.add('player-label');
+            newLabel.contentEditable = "true";
+            newLabel.textContent = storedData.name;
+            applyListenersToLabel(newLabel, playerId);
 
-        const newInput = document.createElement('input');
-        newInput.type = 'number';
-        newInput.classList.add('guess-input');
-        newInput.placeholder = 'Enter guess (mg)';
-        newInput.disabled = inputsDisabled;
+            const newInput = document.createElement('input');
+            newInput.type = 'number';
+            newInput.classList.add('guess-input');
+            newInput.placeholder = 'Enter guess (mg)';
+            newInput.disabled = inputsDisabled;
 
-        const addButton = createButton('+', 'add-button', addPlayerInput);
-        const removeButton = createButton('-', 'remove-button', () => {
-            newRow.remove();
-            updateButtons();
-            updateSubmitButtonState();
-            syncLeaderboardWithPlayers();
-            saveToLocalStorage();
-        });
+            const addButton = createButton('+', 'add-button', addPlayerInput);
+            const removeButton = createButton('-', 'remove-button', () => {
+                newRow.remove();
+                updateButtons();
+                updateSubmitButtonState();
+                syncLeaderboardWithPlayers();
+                saveToLocalStorage();
+            });
 
-        newInput.addEventListener('input', updateSubmitButtonState);
+            newInput.addEventListener('input', updateSubmitButtonState);
 
-        newRow.appendChild(newLabel);
-        newRow.appendChild(newInput);
-        newRow.appendChild(addButton);
-        newRow.appendChild(removeButton);
-        container.appendChild(newRow);
+            newRow.appendChild(newLabel);
+            newRow.appendChild(newInput);
+            newRow.appendChild(addButton);
+            newRow.appendChild(removeButton);
+            container.appendChild(newRow);
 
-        playerScores[storedData.name] = storedData.score; 
+            playerScores[storedData.name] = storedData.score;
+        }
+
+        updateButtons();
+    } catch (error) {
+        console.error("Error in initializePlayersFromLocalStorage:", error);
     }
-    
-    updateButtons();
-    logToScreen("Done")
 }
 
 function applyListenersToLabel(label, playerId) {
-    logToScreen("Apply listeners")
-    label.addEventListener('keydown', event => enforceCharacterLimit(event));
-    label.addEventListener('input', event => handleNameChange(event, playerId));
-    logToScreen("Done")
+    try {
+        label.addEventListener('keydown', event => enforceCharacterLimit(event));
+        label.addEventListener('input', event => handleNameChange(event, playerId));
+    } catch (error) {
+        console.error("Error in applyListenersToLabel:", error);
+    }
 }
 
 async function fetchFoods() {
-    logToScreen("fetch food")
-    const response = await fetch('foods.json');
-    foods = await response.json();
-    logToScreen("Done")
+    try {
+        const response = await fetch('foods.json');
+        foods = await response.json();
+    } catch (error) {
+        console.error("Error in fetchFoods:", error);
+    }
 }
 
 function getRandomFood() {
-    logToScreen("get r food")
-    const randomIndex = Math.floor(Math.random() * foods.length);
-    return foods[randomIndex];
-    logToScreen("Done")
+    try {
+        const randomIndex = Math.floor(Math.random() * foods.length);
+        return foods[randomIndex];
+    } catch (error) {
+        console.error("Error in getRandomFood:", error);
+    }
 }
 
 function displayFood(food) {
-    logToScreen("diplay food")
-    const foodNameDiv = document.getElementById('food-name');
-    foodNameDiv.textContent = food.food;
-    const quantity = document.getElementById('quantity');
-    quantity.textContent = `Quantity: ${food.quantity}`;
-    logToScreen("Done")
+    try {
+        const foodNameDiv = document.getElementById('food-name');
+        foodNameDiv.textContent = food.food;
+        const quantity = document.getElementById('quantity');
+        quantity.textContent = `Quantity: ${food.quantity}`;
+    } catch (error) {
+        console.error("Error in displayFood:", error);
+    }
 }
 
 function lockInputs() {
-    logToScreen("lock input")
-    const inputs = document.querySelectorAll('.guess-input');
-    inputs.forEach(input => input.disabled = true);
-    inputsDisabled = true;
-    logToScreen("Done")
+    try {
+        const inputs = document.querySelectorAll('.guess-input');
+        inputs.forEach(input => input.disabled = true);
+        inputsDisabled = true;
+    } catch (error) {
+        console.error("Error in lockInputs:", error);
+    }
 }
 
 function unlockInputs() {
-    logToScreen("unlock input")
-    const inputs = document.querySelectorAll('.guess-input');
-    inputs.forEach(input => input.disabled = false);
-    inputsDisabled = false;
-    logToScreen("Done")
+    try {
+        const inputs = document.querySelectorAll('.guess-input');
+        inputs.forEach(input => input.disabled = false);
+        inputsDisabled = false;
+    } catch (error) {
+        console.error("Error in unlockInputs:", error);
+    }
 }
 
 function updateSubmitButtonState() {
-    logToScreen("Update submit btn state")
-    const inputs = document.querySelectorAll('.guess-input');
-    const submitButton = document.getElementById('submit');
-    const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
-    submitButton.disabled = !allFilled;
-    logToScreen("Done")
+    try {
+        const inputs = document.querySelectorAll('.guess-input');
+        const submitButton = document.getElementById('submit');
+        const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
+        submitButton.disabled = !allFilled;
+    } catch (error) {
+        console.error("Error in updateSubmitButtonState:", error);
+    }
 }
 
 function resetLeaderboard() {
-    logToScreen("reset leaderboard")
-    if (confirm("Are you sure you want to reset the leaderboard?")) {
-        Object.keys(playerScores).forEach(player => {
-            playerScores[player] = 0; 
-        });
-        Object.keys(playerData).forEach(playerId => {
-            playerData[playerId].score = 0; 
-        });
-        updateLeaderboard();
-        saveToLocalStorage();
-        console.log("Leaderboard has been reset.");
+    try {
+        if (confirm("Are you sure you want to reset the leaderboard?")) {
+            Object.keys(playerScores).forEach(player => {
+                playerScores[player] = 0;
+            });
+            Object.keys(playerData).forEach(playerId => {
+                playerData[playerId].score = 0;
+            });
+            updateLeaderboard();
+            saveToLocalStorage();
+            console.log("Leaderboard has been reset.");
+        }
+    } catch (error) {
+        console.error("Error in resetLeaderboard:", error);
     }
-    logToScreen("Done")
 }
 
 function enforceCharacterLimit(event, maxLength = 12) {
-    logToScreen("enforce char limti")
-    const element = event.target;
-    const value = element.textContent;
-    const key = event.key;
+    try {
+        const element = event.target;
+        const value = element.textContent;
+        const key = event.key;
 
-    if (value.length >= maxLength && !['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight'].includes(key)) {
-        event.preventDefault();
+        if (value.length >= maxLength && !['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight'].includes(key)) {
+            event.preventDefault();
+        }
+    } catch (error) {
+        console.error("Error in enforceCharacterLimit:", error);
     }
-    logToScreen("Done")
 }
 
 function handleNameChange(event, playerId) {
-    logToScreen("handle name")
-    const newName = event.target.textContent.trim();
-    const playerInfo = playerData[playerId];
-    if (playerInfo) {
-        delete playerScores[playerInfo.name];
-        playerInfo.name = newName
-        playerScores[newName] = playerInfo.score;
-        updateLeaderboard();
-        saveToLocalStorage();
+    try {
+        const newName = event.target.textContent.trim();
+        const playerInfo = playerData[playerId];
+        if (playerInfo) {
+            delete playerScores[playerInfo.name];
+            playerInfo.name = newName;
+            playerScores[newName] = playerInfo.score;
+            updateLeaderboard();
+            saveToLocalStorage();
+        }
+    } catch (error) {
+        console.error("Error in handleNameChange:", error);
     }
-    logToScreen("Done")
 }
 
 function addPlayerInput() {
-    logToScreen("add plr input")
-    const container = document.getElementById('players-container');
-    const currentPlayers = container.children.length;
+    try {
+        const container = document.getElementById('players-container');
+        const currentPlayers = container.children.length;
 
-    if (currentPlayers < 8) {
-        const newRow = document.createElement('div');
-        newRow.classList.add('player-row');
-        newRow.style.display = 'flex';
-        newRow.style.alignItems = 'center';
+        if (currentPlayers < 8) {
+            const newRow = document.createElement('div');
+            newRow.classList.add('player-row');
+            newRow.style.display = 'flex';
+            newRow.style.alignItems = 'center';
 
-        const playerId = `player${currentPlayers + 1}`;
-        const existingData = playerData[playerId];
-        const storedData = existingData || { name: defaultName, score: 0 };
+            const playerId = `player${currentPlayers + 1}`;
+            const existingData = playerData[playerId];
+            const storedData = existingData || { name: `Player ${currentPlayers + 1}`, score: 0 };
 
-        const newLabel = document.createElement('div');
-        newLabel.classList.add('player-label');
-        newLabel.contentEditable = "true";
-        newLabel.textContent = storedData.name;
-        applyListenersToLabel(newLabel, playerId);
+            const newLabel = document.createElement('div');
+            newLabel.classList.add('player-label');
+            newLabel.contentEditable = "true";
+            newLabel.textContent = storedData.name;
+            applyListenersToLabel(newLabel, playerId);
 
-        const newInput = document.createElement('input');
-        newInput.type = 'number';
-        newInput.classList.add('guess-input');
-        newInput.placeholder = 'Enter guess (mg)';
-        newInput.disabled = inputsDisabled;
+            const newInput = document.createElement('input');
+            newInput.type = 'number';
+            newInput.classList.add('guess-input');
+            newInput.placeholder = 'Enter guess (mg)';
+            newInput.disabled = inputsDisabled;
 
-        const addButton = createButton('+', 'add-button', addPlayerInput);
-        const removeButton = createButton('-', 'remove-button', () => {
-            newRow.remove();
+            const addButton = createButton('+', 'add-button', addPlayerInput);
+            const removeButton = createButton('-', 'remove-button', () => {
+                newRow.remove();
+                updateButtons();
+                updateSubmitButtonState();
+                syncLeaderboardWithPlayers();
+                saveToLocalStorage();
+            });
+
+            newInput.addEventListener('input', updateSubmitButtonState);
+
+            newRow.appendChild(newLabel);
+            newRow.appendChild(newInput);
+            newRow.appendChild(addButton);
+            newRow.appendChild(removeButton);
+            container.appendChild(newRow);
+
+            playerData[playerId] = storedData;
+            playerScores[storedData.name] = storedData.score;
             updateButtons();
-            updateSubmitButtonState();
             syncLeaderboardWithPlayers();
             saveToLocalStorage();
-        });
-
-        newInput.addEventListener('input', updateSubmitButtonState);
-
-        newRow.appendChild(newLabel);
-        newRow.appendChild(newInput);
-        newRow.appendChild(addButton);
-        newRow.appendChild(removeButton);
-        container.appendChild(newRow);
-
-        playerData[playerId] = storedData;
-        playerScores[storedData.name] = storedData.score;
-        console.log(`All player data: ${JSON.stringify(playerData)}`)
-        console.log(`Stored data: ${JSON.stringify(storedData)}`)
-        console.log(`Set name to: ${storedData.score}`)
-
-        updateButtons();
-        syncLeaderboardWithPlayers();
-        saveToLocalStorage();
+        }
+    } catch (error) {
+        console.error("Error in addPlayerInput:", error);
     }
-    logToScreen("Done")
 }
 
 function createButton(text, className, onClick) {
-    logToScreen("create btn")
-    const button = document.createElement('button');
-    button.classList.add(className);
-    button.textContent = text;
-    button.style.width = '36px'; 
-    button.style.height = '36px'; 
-    button.style.display = 'flex';
-    button.style.justifyContent = 'center';
-    button.style.alignItems = 'center';
-    button.style.fontSize = '16px'; 
-    button.style.fontWeight = 'bold';
-    button.style.border = 'none';
-    button.style.borderRadius = '50%'; 
-    button.style.backgroundColor = 'red';
-    button.style.color = 'white';
-    button.style.padding = '0'; 
-    button.style.textAlign = 'center';
-    button.style.boxSizing = 'border-box';
-    button.style.cursor = 'pointer'; 
-    button.addEventListener('click', onClick);
-    logToScreen("Done")
-    return button;
+    try {
+        const button = document.createElement('button');
+        button.classList.add(className);
+        button.textContent = text;
+        button.style.width = '36px';
+        button.style.height = '36px';
+        button.style.display = 'flex';
+        button.style.justifyContent = 'center';
+        button.style.alignItems = 'center';
+        button.style.fontSize = '16px';
+        button.style.fontWeight = 'bold';
+        button.style.border = 'none';
+        button.style.borderRadius = '50%';
+        button.style.backgroundColor = 'red';
+        button.style.color = 'white';
+        button.style.padding = '0';
+        button.style.textAlign = 'center';
+        button.style.boxSizing = 'border-box';
+        button.style.cursor = 'pointer';
+        button.addEventListener('click', onClick);
+        return button;
+    } catch (error) {
+        console.error("Error in createButton:", error);
+    }
 }
 
 function updateButtons() {
-    logToScreen("update btns")
-    const container = document.getElementById('players-container');
-    const playerRows = container.children;
+    try {
+        const container = document.getElementById('players-container');
+        const playerRows = container.children;
 
-    Array.from(playerRows).forEach((row, index) => {
-        const addButton = row.querySelector('.add-button');
-        const removeButton = row.querySelector('.remove-button');
-        console.log(index)
-        if (index === playerRows.length - 1) {
-            if (addButton) {
-                addButton.style.display = playerRows.length < 8 ? 'inline-block' : 'none';
+        Array.from(playerRows).forEach((row, index) => {
+            const addButton = row.querySelector('.add-button');
+            const removeButton = row.querySelector('.remove-button');
+            if (index === playerRows.length - 1) {
+                if (addButton) {
+                    addButton.style.display = playerRows.length < 8 ? 'inline-block' : 'none';
+                }
+                if (removeButton) {
+                    removeButton.style.display = playerRows.length > 1 ? 'inline-block' : 'none';
+                }
+            } else {
+                if (addButton) addButton.style.display = 'none';
+                if (removeButton) removeButton.style.display = 'none';
             }
-            if (removeButton) {
-                removeButton.style.display = playerRows.length > 1 ? 'inline-block' : 'none';
-            }
-        } else {
-
-            addButton.style.display = 'none';
-            if (removeButton) {
-                removeButton.style.display = 'none';
-            }
-        }
-    });
-    logToScreen("Done")
+        });
+    } catch (error) {
+        console.error("Error in updateButtons:", error);
+    }
 }
 
 function findClosestPlayer() {
-    logToScreen("find closest plr")
-    const inputs = document.querySelectorAll('.guess-input');
-    const playerLabels = document.querySelectorAll('.player-label');
-    const closestPlayerDiv = document.getElementById('closest-player');
+    try {
+        const inputs = document.querySelectorAll('.guess-input');
+        const playerLabels = document.querySelectorAll('.player-label');
+        const closestPlayerDiv = document.getElementById('closest-player');
 
-    let closestPlayer = null;
-    let closestDiff = Infinity;
-    let isTie = false;
+        let closestPlayer = null;
+        let closestDiff = Infinity;
+        let isTie = false;
 
-    const cleanOxalate = parseFloat(String(currentFood.oxalate).replace(/[^\d.-]/g, ''));
+        const cleanOxalate = parseFloat(String(currentFood.oxalate).replace(/[^\d.-]/g, ''));
 
-    inputs.forEach((input, index) => {
-        const guess = parseFloat(input.value);
-        if (!isNaN(guess)) {
-            const diff = Math.abs(cleanOxalate - guess);
-            if (diff < closestDiff) {
-                closestPlayer = playerLabels[index].textContent;
-                closestDiff = diff;
-                isTie = false;
-            } else if (diff === closestDiff) {
-                isTie = true;
+        inputs.forEach((input, index) => {
+            const guess = parseFloat(input.value);
+            if (!isNaN(guess)) {
+                const diff = Math.abs(cleanOxalate - guess);
+                if (diff < closestDiff) {
+                    closestPlayer = playerLabels[index].textContent;
+                    closestDiff = diff;
+                    isTie = false;
+                } else if (diff === closestDiff) {
+                    isTie = true;
+                }
             }
-        }
-    });
+        });
 
-    if (isTie) {
-        closestPlayerDiv.textContent = "It's a tie!";
-    } else if (closestDiff === 0) {
-        closestPlayerDiv.textContent = `${closestPlayer} got it right!`;
-    } else {
-        closestPlayerDiv.textContent = `${closestPlayer} was the closest!`;
+        if (isTie) {
+            closestPlayerDiv.textContent = "It's a tie!";
+        } else if (closestDiff === 0) {
+            closestPlayerDiv.textContent = `${closestPlayer} got it right!`;
+        } else {
+            closestPlayerDiv.textContent = `${closestPlayer} was the closest!`;
+        }
+    } catch (error) {
+        console.error("Error in findClosestPlayer:", error);
     }
-    logToScreen("Done")
 }
 
-let playerScores = {}; 
-
 function initializeLeaderboard() {
-    logToScreen("init leaderboard")
-    const leaderboardDiv = document.getElementById('leaderboard');
-    const playerLabels = document.querySelectorAll('.player-label');
-    playerLabels.forEach(playerLabel => {
-        const playerName = playerLabel.textContent.trim();
-        playerScores[playerName] = 0; 
-    });
-    updateLeaderboard();
-    logToScreen("Done")
+    try {
+        const playerLabels = document.querySelectorAll('.player-label');
+        playerLabels.forEach(playerLabel => {
+            const playerName = playerLabel.textContent.trim();
+            playerScores[playerName] = 0;
+        });
+        updateLeaderboard();
+    } catch (error) {
+        console.error("Error in initializeLeaderboard:", error);
+    }
 }
 
 function updateLeaderboard() {
-    logToScreen("update leaderboard")
-    const leaderboardDiv = document.getElementById('leaderboard');
-    const container = document.getElementById('players-container');
-    const playerCount = container.children.length; 
+    try {
+        const leaderboardDiv = document.getElementById('leaderboard');
+        const container = document.getElementById('players-container');
+        const playerCount = container.children.length;
 
-    leaderboardDiv.innerHTML = ''; 
+        leaderboardDiv.innerHTML = '';
 
-    Object.keys(playerData).forEach(playerId => {
-        const playerInfo = playerData[playerId];
-        playerScores[playerInfo.name] = playerInfo.score; 
-    });
-
-    Object.entries(playerScores)
-        .sort(([, a], [, b]) => b - a) 
-        .slice(0, playerCount) 
-        .forEach(([player, score]) => {
-            const entry = document.createElement('div');
-            entry.style.display = 'flex';
-            entry.style.justifyContent = 'space-between';
-            entry.style.padding = '5px 10px';
-
-            const nameDiv = document.createElement('div');
-            nameDiv.textContent = player;
-
-            const scoreDiv = document.createElement('div');
-            scoreDiv.textContent = `${score} ${score === 1 ? 'point' : 'points'}`;
-
-            entry.appendChild(nameDiv);
-            entry.appendChild(scoreDiv);
-            leaderboardDiv.appendChild(entry);
+        Object.keys(playerData).forEach(playerId => {
+            const playerInfo = playerData[playerId];
+            playerScores[playerInfo.name] = playerInfo.score;
         });
-    logToScreen("Done")
+
+        Object.entries(playerScores)
+            .sort(([, a], [, b]) => b - a)
+            .slice(0, playerCount)
+            .forEach(([player, score]) => {
+                const entry = document.createElement('div');
+                entry.style.display = 'flex';
+                entry.style.justifyContent = 'space-between';
+                entry.style.padding = '5px 10px';
+
+                const nameDiv = document.createElement('div');
+                nameDiv.textContent = player;
+
+                const scoreDiv = document.createElement('div');
+                scoreDiv.textContent = `${score} ${score === 1 ? 'point' : 'points'}`;
+
+                entry.appendChild(nameDiv);
+                entry.appendChild(scoreDiv);
+                leaderboardDiv.appendChild(entry);
+            });
+    } catch (error) {
+        console.error("Error in updateLeaderboard:", error);
+    }
 }
 
 function awardPoints() {
-    logToScreen("award pts")
-    const inputs = document.querySelectorAll('.guess-input');
-    const playerLabels = document.querySelectorAll('.player-label');
+    try {
+        const inputs = document.querySelectorAll('.guess-input');
+        const playerLabels = document.querySelectorAll('.player-label');
 
-    let closestPlayers = [];
-    let closestDiff = Infinity;
+        let closestPlayers = [];
+        let closestDiff = Infinity;
 
-    const cleanOxalate = parseFloat(String(currentFood.oxalate).replace(/[^\d.-]/g, ''));
+        const cleanOxalate = parseFloat(String(currentFood.oxalate).replace(/[^\d.-]/g, ''));
 
-    inputs.forEach((input, index) => {
-        const guess = parseFloat(input.value);
-        if (!isNaN(guess)) {
-            const diff = Math.abs(cleanOxalate - guess);
+        inputs.forEach((input, index) => {
+            const guess = parseFloat(input.value);
+            if (!isNaN(guess)) {
+                const diff = Math.abs(cleanOxalate - guess);
 
-            if (diff < closestDiff) {
-
-                closestPlayers = [playerLabels[index].textContent.trim()];
-                closestDiff = diff;
-            } else if (diff === closestDiff) {
-
-                closestPlayers.push(playerLabels[index].textContent.trim());
+                if (diff < closestDiff) {
+                    closestPlayers = [playerLabels[index].textContent.trim()];
+                    closestDiff = diff;
+                } else if (diff === closestDiff) {
+                    closestPlayers.push(playerLabels[index].textContent.trim());
+                }
             }
+        });
+
+        if (closestDiff === 0) {
+            closestPlayers.forEach(player => {
+                playerScores[player] = (playerScores[player] || 0) + 2;
+
+                for (const playerId in playerData) {
+                    if (playerData[playerId].name === player) {
+                        playerData[playerId].score = playerScores[player];
+                        break;
+                    }
+                }
+            });
+        } else {
+            closestPlayers.forEach(player => {
+                playerScores[player] = (playerScores[player] || 0) + 1;
+
+                for (const playerId in playerData) {
+                    if (playerData[playerId].name === player) {
+                        playerData[playerId].score = playerScores[player];
+                        break;
+                    }
+                }
+            });
         }
-    });
 
-    if (closestDiff === 0) {
-
-        closestPlayers.forEach(player => {
-            console.log("Adding 2 points to", player);
-            playerScores[player] = (playerScores[player] || 0) + 2;
-
-            for (const playerId in playerData) {
-                if (playerData[playerId].name === player) {
-                    playerData[playerId].score = playerScores[player];
-                    break;
-                }
-            }
-        });
-    } else {
-
-        closestPlayers.forEach(player => {
-            console.log("Adding 1 point to", player);
-            playerScores[player] = (playerScores[player] || 0) + 1;
-
-            for (const playerId in playerData) {
-                if (playerData[playerId].name === player) {
-                    playerData[playerId].score = playerScores[player];
-                    break;
-                }
-            }
-        });
+        updateLeaderboard();
+        saveToLocalStorage();
+    } catch (error) {
+        console.error("Error in awardPoints:", error);
     }
-
-    updateLeaderboard();
-    saveToLocalStorage(); 
-    logToScreen("Done")
 }
 
 function syncLeaderboardWithPlayers() {
-    logToScreen("sync leader with plrs")
-    const playerRows = document.querySelectorAll('.player-row');
-    const updatedPlayerScores = {}; 
+    try {
+        const playerRows = document.querySelectorAll('.player-row');
+        const updatedPlayerScores = {};
 
-    playerRows.forEach((row, index) => {
-        const playerId = `player${index + 1}`;
-        const playerName = row.querySelector('.player-label').textContent.trim();
+        playerRows.forEach((row, index) => {
+            const playerId = `player${index + 1}`;
+            const playerName = row.querySelector('.player-label').textContent.trim();
 
-        let score = playerScores[playerName] || 0;
+            let score = playerScores[playerName] || 0;
 
-        playerData[playerId] = { name: playerName, score: score };
-        updatedPlayerScores[playerName] = score;
-    });
+            playerData[playerId] = { name: playerName, score: score };
+            updatedPlayerScores[playerName] = score;
+        });
 
-    playerScores = updatedPlayerScores; 
-    updateLeaderboard();
-    saveToLocalStorage();
-    logToScreen("Done")
+        playerScores = updatedPlayerScores;
+        updateLeaderboard();
+        saveToLocalStorage();
+    } catch (error) {
+        console.error("Error in syncLeaderboardWithPlayers:", error);
+    }
 }
+
 
 
     logToScreen("dom loaded")
