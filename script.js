@@ -40,9 +40,19 @@ function loadFromLocalStorage() {
 
 function initializePlayersFromLocalStorage(playerCount) {
     const container = document.getElementById('players-container');
-    for (let i = 1; i <= playerCount; i++) {
+
+    // Update the existing Player 1
+    const player1Label = container.querySelector('.player-label');
+    const player1Id = 'player1';
+    const storedData = playerData[player1Id] || { name: 'Player 1', score: 0 };
+
+    player1Label.textContent = storedData.name; // Rename Player 1 to stored name
+    playerScores[storedData.name] = storedData.score; // Retain score in playerScores
+    applyListenersToLabel(player1Label, player1Id);
+
+    // Add additional players starting from Player 2
+    for (let i = 2; i <= playerCount; i++) {
         const playerId = `player${i}`;
-        console.log(`Current id: ${playerId}`)
         const storedData = playerData[playerId] || { name: `Player ${i}`, score: 0 };
 
         const newRow = document.createElement('div');
@@ -54,8 +64,7 @@ function initializePlayersFromLocalStorage(playerCount) {
         newLabel.classList.add('player-label');
         newLabel.contentEditable = "true";
         newLabel.textContent = storedData.name;
-        newLabel.addEventListener('keydown', event => enforceCharacterLimit(event));
-        newLabel.addEventListener('input', event => handleNameChange(event, playerId));
+        applyListenersToLabel(newLabel, playerId);
 
         const newInput = document.createElement('input');
         newInput.type = 'number';
@@ -69,7 +78,7 @@ function initializePlayersFromLocalStorage(playerCount) {
             updateButtons();
             updateSubmitButtonState();
             syncLeaderboardWithPlayers();
-            saveToLocalStorage(); // Save changes dynamically
+            saveToLocalStorage();
         });
 
         newInput.addEventListener('input', updateSubmitButtonState);
@@ -86,6 +95,7 @@ function initializePlayersFromLocalStorage(playerCount) {
     updateButtons();
     updateLeaderboard();
 }
+
 
 
 async function fetchFoods() {
