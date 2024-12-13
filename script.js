@@ -302,7 +302,14 @@ function initializeLeaderboard() {
 function updateLeaderboard() {
     const leaderboardDiv = document.getElementById('leaderboard');
     leaderboardDiv.innerHTML = ''; // Clear current leaderboard
-    console.log(`Updating leaderboard with scores ${playerScores}`)
+
+    // Update playerScores with playerData
+    Object.keys(playerData).forEach(playerId => {
+        const playerInfo = playerData[playerId];
+        playerScores[playerInfo.name] = playerInfo.score; // Sync playerScores with playerData
+    });
+
+    // Render leaderboard sorted by scores
     Object.entries(playerScores)
         .sort(([, a], [, b]) => b - a) // Sort by scores, descending
         .forEach(([player, score]) => {
@@ -321,7 +328,10 @@ function updateLeaderboard() {
             entry.appendChild(scoreDiv);
             leaderboardDiv.appendChild(entry);
         });
+
+    console.log(`Leaderboard updated: ${JSON.stringify(playerScores)}`);
 }
+
 
 
 function awardPoints() {
@@ -438,10 +448,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         updateSubmitButtonState();
-        const playerInfo = playerData[playerId];
-        delete playerScores[playerInfo.name];
-        playerInfo.name = newName;
-        playerScores[newName] = playerInfo.score;
         updateLeaderboard();
     });
 });
