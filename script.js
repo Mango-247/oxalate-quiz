@@ -301,6 +301,9 @@ function initializeLeaderboard() {
 
 function updateLeaderboard() {
     const leaderboardDiv = document.getElementById('leaderboard');
+    const container = document.getElementById('players-container');
+    const playerCount = container.children.length; // Get the number of players
+
     leaderboardDiv.innerHTML = ''; // Clear current leaderboard
 
     // Update playerScores with playerData
@@ -309,9 +312,10 @@ function updateLeaderboard() {
         playerScores[playerInfo.name] = playerInfo.score; // Sync playerScores with playerData
     });
 
-    // Render leaderboard sorted by scores
+    // Render leaderboard sorted by scores, limited to playerCount
     Object.entries(playerScores)
         .sort(([, a], [, b]) => b - a) // Sort by scores, descending
+        .slice(0, playerCount) // Limit to the number of players
         .forEach(([player, score]) => {
             const entry = document.createElement('div');
             entry.style.display = 'flex';
@@ -329,9 +333,8 @@ function updateLeaderboard() {
             leaderboardDiv.appendChild(entry);
         });
 
-    console.log(`Leaderboard updated: ${JSON.stringify(playerScores)}`);
+    console.log(`Leaderboard updated with top ${playerCount} players: ${JSON.stringify(playerScores)}`);
 }
-
 
 
 function awardPoints() {
