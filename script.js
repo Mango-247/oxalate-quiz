@@ -145,7 +145,7 @@ function handleNameChange(event, playerId) {
     const playerInfo = playerData[playerId];
     if (playerInfo) {
         delete playerScores[playerInfo.name];
-        playerInfo.name = newName;
+        playerInfo.name = newName || " ";
         playerScores[newName] = playerInfo.score;
         updateLeaderboard();
         saveToLocalStorage();
