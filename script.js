@@ -438,7 +438,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         updateSubmitButtonState();
-        updateLeaderboard();
-        saveToLocalStorage();
+        setInterval(updateLeaderboard, 1000);
     });
 });
