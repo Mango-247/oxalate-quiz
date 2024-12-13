@@ -171,8 +171,9 @@ function addPlayerInput() {
         newRow.style.alignItems = 'center';
 
         const playerId = `player${currentPlayers + 1}`;
-        const defaultName = `Player ${currentPlayers + 1}`;
-        const storedData = { name: defaultName, score: 0 };
+        const existingData = playerData[playerId];
+        const storedData = existingData || { name: defaultName, score: 0 };
+
 
         const newLabel = document.createElement('div');
         newLabel.classList.add('player-label');
