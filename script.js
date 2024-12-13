@@ -444,6 +444,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchFoods().then(() => {
         const rerollButton = document.getElementById('reroll');
         const submitButton = document.getElementById('submit');
+        const resetButton = document.getElementById('reset');
         const resultDiv = document.getElementById('result');
         const input = document.querySelector('.guess-input');
 
@@ -476,6 +477,10 @@ document.addEventListener('DOMContentLoaded', () => {
             awardPoints();
             submitButton.disabled = true;
             saveToLocalStorage(); // Save scores after submitting
+        });
+
+        resetButton.addEventListener('click', () => {
+            resetLeaderboard();
         });
 
         input.addEventListener('input', updateSubmitButtonState);
