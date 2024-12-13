@@ -342,7 +342,6 @@ function updateLeaderboard() {
             leaderboardDiv.appendChild(entry);
         });
 
-    console.log(`Leaderboard updated with top ${playerCount} players: ${JSON.stringify(playerScores)}`);
 }
 
 function awardPoints() {
