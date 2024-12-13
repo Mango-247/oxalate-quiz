@@ -3,7 +3,7 @@ let playerData = {};
 let currentFood = null;
 let inputsDisabled = false;
 
-function logToScreen(message) {
+function console.log(message) {
     const consoleDiv = document.getElementById('debug-console');
     if (consoleDiv) {
         const logEntry = document.createElement('div');
@@ -36,7 +36,7 @@ function saveToLocalStorage() {
 
         localStorage.setItem('https://mango-247.github.io/oxalate-quiz/GameData', JSON.stringify(dataToSave));
     } catch (error) {
-        logToScreen("Error in saveToLocalStorage:", error);
+        console.log("Error in saveToLocalStorage:", error);
     }
 }
 
@@ -49,7 +49,7 @@ function loadFromLocalStorage() {
             return playerCount;
         }
     } catch (error) {
-        logToScreen("Error in loadFromLocalStorage:", error);
+        console.log("Error in loadFromLocalStorage:", error);
     }
     return 0;
 }
@@ -102,7 +102,7 @@ function initializePlayersFromLocalStorage(playerCount) {
 
         updateButtons();
     } catch (error) {
-        logToScreen("Error in initializePlayersFromLocalStorage:", error);
+        console.log("Error in initializePlayersFromLocalStorage:", error);
     }
 }
 
@@ -111,7 +111,7 @@ function applyListenersToLabel(label, playerId) {
         label.addEventListener('keydown', event => enforceCharacterLimit(event));
         label.addEventListener('input', event => handleNameChange(event, playerId));
     } catch (error) {
-        logToScreen("Error in applyListenersToLabel:", error);
+        console.log("Error in applyListenersToLabel:", error);
     }
 }
 
@@ -120,7 +120,7 @@ async function fetchFoods() {
         const response = await fetch('foods.json');
         foods = await response.json();
     } catch (error) {
-        logToScreen("Error in fetchFoods:", error);
+        console.log("Error in fetchFoods:", error);
     }
 }
 
@@ -129,7 +129,7 @@ function getRandomFood() {
         const randomIndex = Math.floor(Math.random() * foods.length);
         return foods[randomIndex];
     } catch (error) {
-        logToScreen("Error in getRandomFood:", error);
+        console.log("Error in getRandomFood:", error);
     }
 }
 
@@ -140,7 +140,7 @@ function displayFood(food) {
         const quantity = document.getElementById('quantity');
         quantity.textContent = `Quantity: ${food.quantity}`;
     } catch (error) {
-        logToScreen("Error in displayFood:", error);
+        console.log("Error in displayFood:", error);
     }
 }
 
@@ -150,7 +150,7 @@ function lockInputs() {
         inputs.forEach(input => input.disabled = true);
         inputsDisabled = true;
     } catch (error) {
-        logToScreen("Error in lockInputs:", error);
+        console.log("Error in lockInputs:", error);
     }
 }
 
@@ -160,7 +160,7 @@ function unlockInputs() {
         inputs.forEach(input => input.disabled = false);
         inputsDisabled = false;
     } catch (error) {
-        logToScreen("Error in unlockInputs:", error);
+        console.log("Error in unlockInputs:", error);
     }
 }
 
@@ -171,7 +171,7 @@ function updateSubmitButtonState() {
         const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
         submitButton.disabled = !allFilled;
     } catch (error) {
-        logToScreen("Error in updateSubmitButtonState:", error);
+        console.log("Error in updateSubmitButtonState:", error);
     }
 }
 
@@ -189,7 +189,7 @@ function resetLeaderboard() {
             console.log("Leaderboard has been reset.");
         }
     } catch (error) {
-        logToScreen("Error in resetLeaderboard:", error);
+        console.log("Error in resetLeaderboard:", error);
     }
 }
 
@@ -203,7 +203,7 @@ function enforceCharacterLimit(event, maxLength = 12) {
             event.preventDefault();
         }
     } catch (error) {
-        logToScreen("Error in enforceCharacterLimit:", error);
+        console.log("Error in enforceCharacterLimit:", error);
     }
 }
 
@@ -219,7 +219,7 @@ function handleNameChange(event, playerId) {
             saveToLocalStorage();
         }
     } catch (error) {
-        logToScreen("Error in handleNameChange:", error);
+        console.log("Error in handleNameChange:", error);
     }
 }
 
@@ -275,7 +275,7 @@ function addPlayerInput() {
             saveToLocalStorage();
         }
     } catch (error) {
-        logToScreen("Error in addPlayerInput:", error);
+        console.log("Error in addPlayerInput:", error);
     }
 }
 
@@ -302,7 +302,7 @@ function createButton(text, className, onClick) {
         button.addEventListener('click', onClick);
         return button;
     } catch (error) {
-        logToScreen("Error in createButton:", error);
+        console.log("Error in createButton:", error);
     }
 }
 
@@ -330,7 +330,7 @@ function updateButtons() {
             }
         });
     } catch (error) {
-        logToScreen("Error in updateButtons:", error);
+        console.log("Error in updateButtons:", error);
     }
 }
 
@@ -368,7 +368,7 @@ function findClosestPlayer() {
             closestPlayerDiv.textContent = `${closestPlayer} was the closest!`;
         }
     } catch (error) {
-        logToScreen("Error in findClosestPlayer:", error);
+        console.log("Error in findClosestPlayer:", error);
     }
 }
 
@@ -384,7 +384,7 @@ function initializeLeaderboard() {
         });
         updateLeaderboard();
     } catch (error) {
-        logToScreen("Error in initializeLeaderboard:", error);
+        console.log("Error in initializeLeaderboard:", error);
     }
 }
 
@@ -421,7 +421,7 @@ function updateLeaderboard() {
                 leaderboardDiv.appendChild(entry);
             });
     } catch (error) {
-        logToScreen("Error in updateLeaderboard:", error);
+        console.log("Error in updateLeaderboard:", error);
     }
 }
 
@@ -480,7 +480,7 @@ function awardPoints() {
         updateLeaderboard();
         saveToLocalStorage(); 
     } catch (error) {
-        logToScreen("Error in awardPoints:", error);
+        console.log("Error in awardPoints:", error);
     }
 }
 
@@ -503,12 +503,12 @@ function syncLeaderboardWithPlayers() {
         updateLeaderboard();
         saveToLocalStorage();
     } catch (error) {
-        logToScreen("Error in syncLeaderboardWithPlayers:", error);
+        console.log("Error in syncLeaderboardWithPlayers:", error);
     }
 }
 
 
-    logToScreen("dom loaded")
+    console.log("dom loaded")
     const player1Label = document.querySelector('.player-label');
     const player1Id = 'player1';
     player1Label.addEventListener('keydown', event => enforceCharacterLimit(event));
