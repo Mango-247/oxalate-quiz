@@ -479,7 +479,7 @@ function syncLeaderboardWithPlayers() {
     logToScreen("Done")
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+
     logToScreen("dom loaded")
     const player1Label = document.querySelector('.player-label');
     const player1Id = 'player1';
@@ -538,4 +538,4 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSubmitButtonState();
         updateLeaderboard();
     });
-});
+
