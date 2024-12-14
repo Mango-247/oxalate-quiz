@@ -200,28 +200,20 @@ function handleNameChange(event, playerId) {
         const playerInfo = playerData[playerId];
 
         if (playerInfo) {
-            console.log(`[DEBUG] Changing name for playerId: ${playerId}, Old Name: ${playerInfo.name}, New Name: ${newName}`);
-
-            // Remove old name reference from playerScores
+            // Remove the old name from playerScores
             if (playerScores[playerInfo.name] !== undefined) {
                 delete playerScores[playerInfo.name];
-                console.log(`[DEBUG] Removed old name "${playerInfo.name}" from playerScores.`);
             }
 
-            // Update name in playerData and sync score
+            // Update playerData and sync with playerScores
             playerInfo.name = newName;
             playerScores[newName] = playerInfo.score || 0;
 
-            console.log(`[DEBUG] Updated playerData:`, playerData);
-            console.log(`[DEBUG] Updated playerScores:`, playerScores);
-
             saveToLocalStorage();
             updateLeaderboard();
-        } else {
-            console.warn(`[DEBUG] PlayerId ${playerId} not found in playerData.`);
         }
     } catch (error) {
-        console.error(`[ERROR] in handleNameChange:`, error);
+        console.log(`Error in handleNameChange:`, error);
     }
 }
 
@@ -504,28 +496,20 @@ function syncLeaderboardWithPlayers() {
             const playerId = `player${index + 1}`;
             const playerName = row.querySelector('.player-label').textContent.trim();
 
-            console.log(`[DEBUG] Syncing PlayerRow: PlayerId: ${playerId}, PlayerName: ${playerName}`);
-
-            // Retrieve score or default to 0, ensure indexing remains correct
             if (playerData[playerId]) {
                 playerData[playerId].name = playerName;
                 updatedPlayerScores[playerName] = playerData[playerId].score || 0;
             }
-
-            console.log(`[DEBUG] Updated playerData for ${playerId}:`, playerData[playerId]);
         });
 
         playerScores = updatedPlayerScores;
 
-        console.log(`[DEBUG] Final updated playerScores:`, playerScores);
-
         updateLeaderboard();
         saveToLocalStorage();
     } catch (error) {
-        console.error(`[ERROR] in syncLeaderboardWithPlayers:`, error);
+        console.log(`Error in syncLeaderboardWithPlayers:`, error);
     }
 }
-
 
 
 
@@ -575,7 +559,6 @@ function syncLeaderboardWithPlayers() {
 
         resetButton.addEventListener('click', () => {
             resetLeaderboard();
-            localStorage.clear() //REMOVE AFTER USE
         });
 
         input.addEventListener('input', updateSubmitButtonState);
