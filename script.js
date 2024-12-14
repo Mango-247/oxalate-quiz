@@ -199,16 +199,24 @@ function handleNameChange(event, playerId) {
         const newName = event.target.textContent.trim();
         const playerInfo = playerData[playerId];
         if (playerInfo) {
-            delete playerScores[playerInfo.name];
+            // Remove old name reference from scores
+            if (playerScores[playerInfo.name]) {
+                delete playerScores[playerInfo.name];
+            }
+
+            // Update name and sync scores
             playerInfo.name = newName;
-            playerScores[newName] = playerInfo.score;
-            updateLeaderboard();
+            playerScores[newName] = playerInfo.score || 0;
+
+            // Save updated data
             saveToLocalStorage();
+            updateLeaderboard();
         }
     } catch (error) {
         console.log("Error in handleNameChange:", error);
     }
 }
+
 
 function addPlayerInput() {
    
