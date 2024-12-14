@@ -495,9 +495,9 @@ function syncLeaderboardWithPlayers() {
             const playerId = `player${index + 1}`;
             const playerName = row.querySelector('.player-label').textContent.trim();
 
+            // Sync scores and update playerData
             let score = playerScores[playerName] || 0;
-
-            playerData[playerId] = { name: playerName, score: score };
+            playerData[playerId] = { name: playerName, score };
             updatedPlayerScores[playerName] = score;
         });
 
@@ -508,6 +508,7 @@ function syncLeaderboardWithPlayers() {
         console.log("Error in syncLeaderboardWithPlayers:", error);
     }
 }
+
 
 
     console.log("dom loaded")
