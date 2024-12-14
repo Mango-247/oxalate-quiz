@@ -575,6 +575,7 @@ function syncLeaderboardWithPlayers() {
 
         resetButton.addEventListener('click', () => {
             resetLeaderboard();
+            localStorage.clear() //REMOVE AFTER USE
         });
 
         input.addEventListener('input', updateSubmitButtonState);
