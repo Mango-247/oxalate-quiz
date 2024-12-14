@@ -198,24 +198,33 @@ function handleNameChange(event, playerId) {
     try {
         const newName = event.target.textContent.trim();
         const playerInfo = playerData[playerId];
+
         if (playerInfo) {
-            // Remove old name reference from scores
-            if (playerScores[playerInfo.name]) {
+            console.log(`[DEBUG] Changing name for playerId: ${playerId}, Old Name: ${playerInfo.name}, New Name: ${newName}`);
+
+            // Remove the old name from playerScores
+            if (playerScores[playerInfo.name] !== undefined) {
                 delete playerScores[playerInfo.name];
+                console.log(`[DEBUG] Removed old name "${playerInfo.name}" from playerScores.`);
             }
 
-            // Update name and sync scores
+            // Update playerData and playerScores
             playerInfo.name = newName;
             playerScores[newName] = playerInfo.score || 0;
 
-            // Save updated data
+            console.log(`[DEBUG] Updated playerData:`, playerData);
+            console.log(`[DEBUG] Updated playerScores:`, playerScores);
+
             saveToLocalStorage();
             updateLeaderboard();
+        } else {
+            console.warn(`[DEBUG] PlayerId ${playerId} not found in playerData.`);
         }
     } catch (error) {
-        console.log("Error in handleNameChange:", error);
+        console.error(`[ERROR] in handleNameChange:`, error);
     }
 }
+
 
 
 function addPlayerInput() {
@@ -495,17 +504,26 @@ function syncLeaderboardWithPlayers() {
             const playerId = `player${index + 1}`;
             const playerName = row.querySelector('.player-label').textContent.trim();
 
-            // Sync scores and update playerData
-            let score = playerScores[playerName] || 0;
+            console.log(`[DEBUG] Syncing PlayerRow: PlayerId: ${playerId}, PlayerName: ${playerName}`);
+
+            // Retrieve score or default to 0
+            const score = playerScores[playerName] || 0;
+
+            // Sync playerData and scores
             playerData[playerId] = { name: playerName, score };
             updatedPlayerScores[playerName] = score;
+
+            console.log(`[DEBUG] Updated playerData for ${playerId}:`, playerData[playerId]);
         });
 
-        playerScores = updatedPlayerScores; 
+        playerScores = updatedPlayerScores;
+
+        console.log(`[DEBUG] Final updated playerScores:`, playerScores);
+
         updateLeaderboard();
         saveToLocalStorage();
     } catch (error) {
-        console.log("Error in syncLeaderboardWithPlayers:", error);
+        console.error(`[ERROR] in syncLeaderboardWithPlayers:`, error);
     }
 }
 
