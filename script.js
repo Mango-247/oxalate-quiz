@@ -202,13 +202,13 @@ function handleNameChange(event, playerId) {
         if (playerInfo) {
             console.log(`[DEBUG] Changing name for playerId: ${playerId}, Old Name: ${playerInfo.name}, New Name: ${newName}`);
 
-            // Remove the old name from playerScores
+            // Remove old name reference from playerScores
             if (playerScores[playerInfo.name] !== undefined) {
                 delete playerScores[playerInfo.name];
                 console.log(`[DEBUG] Removed old name "${playerInfo.name}" from playerScores.`);
             }
 
-            // Update playerData and playerScores
+            // Update name in playerData and sync score
             playerInfo.name = newName;
             playerScores[newName] = playerInfo.score || 0;
 
@@ -498,7 +498,7 @@ function awardPoints() {
 function syncLeaderboardWithPlayers() {
     try {
         const playerRows = document.querySelectorAll('.player-row');
-        const updatedPlayerScores = {}; 
+        const updatedPlayerScores = {};
 
         playerRows.forEach((row, index) => {
             const playerId = `player${index + 1}`;
@@ -506,12 +506,11 @@ function syncLeaderboardWithPlayers() {
 
             console.log(`[DEBUG] Syncing PlayerRow: PlayerId: ${playerId}, PlayerName: ${playerName}`);
 
-            // Retrieve score or default to 0
-            const score = playerScores[playerName] || 0;
-
-            // Sync playerData and scores
-            playerData[playerId] = { name: playerName, score };
-            updatedPlayerScores[playerName] = score;
+            // Retrieve score or default to 0, ensure indexing remains correct
+            if (playerData[playerId]) {
+                playerData[playerId].name = playerName;
+                updatedPlayerScores[playerName] = playerData[playerId].score || 0;
+            }
 
             console.log(`[DEBUG] Updated playerData for ${playerId}:`, playerData[playerId]);
         });
@@ -526,6 +525,7 @@ function syncLeaderboardWithPlayers() {
         console.error(`[ERROR] in syncLeaderboardWithPlayers:`, error);
     }
 }
+
 
 
 
