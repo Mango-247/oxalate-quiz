@@ -97,7 +97,6 @@ function applyListenersToLabel(label, playerId) {
     try {
         label.addEventListener('keydown', event => enforceCharacterLimit(event));
         label.addEventListener('input', event => handleNameChange(event, playerId));
-        label.addEventListener('input', event => updateLeaderboard());
     } catch (error) {
         console.log("Error in applyListenersToLabel:", error);
     }
@@ -508,7 +507,6 @@ function syncLeaderboardWithPlayers() {
     const player1Id = 'player1';
     player1Label.addEventListener('keydown', event => enforceCharacterLimit(event));
     player1Label.addEventListener('input', event => handleNameChange(event, player1Id));
-    player1Label.addEventListener('input', event => updateLeaderboard());
 
     fetchFoods().then(() => {
         const rerollButton = document.getElementById('reroll');
@@ -562,4 +560,3 @@ function syncLeaderboardWithPlayers() {
         updateSubmitButtonState();
         updateLeaderboard();
     });
-
